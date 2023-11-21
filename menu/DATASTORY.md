@@ -3,6 +3,7 @@ layout: page
 title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 author: "Thomas"
 categories: datastory
+permalink: /datastory
 tags: [datastory]
 image: beer.jpg
 ---
