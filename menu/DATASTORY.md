@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: page
 title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 author: "Thomas"
-categories: journal
-tags: [documentation,sample]
+categories: datastory
+tags: [datastory]
 image: beer.jpg
 ---
 
