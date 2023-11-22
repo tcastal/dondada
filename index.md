@@ -1,6 +1,8 @@
 ---
 layout: home
 title: Home
-permalink: /index
+permalink: /
 ---
- TEST 
+### Questions?
+
+This theme is completely free and open source software. You may use it however you want, as it is distributed under the
