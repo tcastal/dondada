@@ -1,29 +1,36 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <style>
+      header {
+        background-image: url('assets/img/beer.jpg');
+        background-size: cover;
+        background-position: center;
+        /* Autres styles pour le header si nécessaire */
+      }
 
-<style>
-  body {
-    background-image: url('assets/img/beer.jpg'); /* Chemin vers votre image */
-    background-size: cover;
-    background-position: center;
-    /* Autres styles pour la mise en page */
-  }
+      body {
+        background-image: url('assets/img/beer.jpg'); /* Chemin vers votre image */
+        background-size: cover;
+        background-position: center;
+        /* Autres styles pour la mise en page */
+      }
 
-  h1 {
-    /* Styles pour votre titre */
-  }
+      h1 {
+        /* Styles pour votre titre */
+      }
 
-  article {
-    /* Styles pour votre contenu */
-  }
-</style>
+      article {
+        /* Styles pour votre contenu */
+      }
+    </style>
 
-
-
-<h1>
-  {{ page.title }}
-</h1>
-<article>
-  {{ content }}
-</article>
+    <div class="container">
+      {% include header.html %}
+      <h1>{{ page.title }}</h1>
+      <article>{{ content }}</article>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
