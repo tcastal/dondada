@@ -5,7 +5,6 @@ author: "Thomas"
 categories: datastory
 permalink: /datastory
 tags: [datastory]
-image: beer.jpg
 ---
 
 # Lagrange
