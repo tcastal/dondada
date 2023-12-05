@@ -4,48 +4,73 @@ layout: default
 
 <style>
   body {
-    margin: 0; /* Pour enlever les marges par défaut */
-    background-color: #ffffff;
+    margin: 0;
   }
-  
-  #liquid {
+
+  #content-wrapper {
+    /* Fond de couleur pour le contenu */
     background-color: #f4bb10;
-    border: 10px solid #f2c025;
-    height: 100vh; /* Hauteur à 100% de la vue */
-    width: 100%; /* Largeur de l'élément à 100% */
-    position: absolute; /* Position absolue pour remplir toute la page */
-    top: 0; /* Collé en haut de la page */
-    left: 0; /* Collé sur le bord gauche */
-    z-index: -1; /* Placer en arrière-plan */
+    /* Autres styles pour l'élément contenant le contenu */
+    position: relative; /* Nécessaire pour que les bulles soient positionnées correctement */
     overflow: hidden; /* Pour cacher les bulles qui dépassent */
   }
-  
-  #liquid .bubble {
-    animation-name: bubble;
+
+  /* Styles pour les bulles */
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation-name: bubbleAnimation;
+    animation-duration: 3s; /* Durée de l'animation */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-    height: 20px;
-    width: 20px;
-    position: absolute;
   }
-  
-  @keyframes bubble {
-    0% { bottom: 0; }
-    50% { background-color: rgba(255, 255, 255, 0.2); bottom: 80px; }
-    100% { background-color: rgba(255, 255, 255, 0); bottom: 160px; }
+
+  /* Animation des bulles */
+  @keyframes bubbleAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
+      opacity: 1; /* Rendre les bulles visibles */
+    }
+    100% {
+      transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
+      opacity: 0; /* Rendre les bulles invisibles */
+    }
   }
-  
+
   /* Styles spécifiques pour chaque bulle si nécessaire */
-  .bubble1 { left: 10px; animation-delay: 1s; animation-duration: 1s; }
-  .bubble2 { left: 50px; animation-delay: 0.7s; animation-duration: 1.1s; }
-  /* ... et ainsi de suite pour chaque bulle */
+  .bubble1 {
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: 10%;
+    animation-delay: 1s; /* Délai pour le début de l'animation */
+  }
+
+  .bubble2 {
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 25%;
+    animation-delay: 2s;
+  }
+
+  /* Ajoutez d'autres bulles selon vos besoins */
 </style>
 
-<h1>
-  {{ page.title }}
-</h1>
-<article>
-  {{ content }}
-</article>
+<div id="content-wrapper">
+  <h1>
+    {{ page.title }}
+  </h1>
+  <article>
+    {{ content }}
+  </article>
+
+  <!-- Ajoutez des éléments pour représenter les bulles -->
+  <div class="bubble bubble1"></div>
+  <div class="bubble bubble2"></div>
+  <!-- Ajoutez plus d'éléments de bulles si nécessaire -->
+</div>
