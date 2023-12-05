@@ -4,19 +4,20 @@ layout: default
 
 <style>
   body {
+    margin: 0; /* Pour enlever les marges par défaut */
     background-color: #ffffff;
   }
   
   #liquid {
     background-color: #f4bb10;
     border: 10px solid #f2c025;
-    height: 170px;
-    overflow: hidden;
+    height: 100vh; /* Hauteur à 100% de la vue */
     width: 100%; /* Largeur de l'élément à 100% */
-    position: fixed; /* Le rendre fixe pour le mettre en arrière-plan */
-    bottom: 0; /* L'ancrer en bas de la page */
+    position: absolute; /* Position absolue pour remplir toute la page */
+    top: 0; /* Collé en haut de la page */
     left: 0; /* Collé sur le bord gauche */
     z-index: -1; /* Placer en arrière-plan */
+    overflow: hidden; /* Pour cacher les bulles qui dépassent */
   }
   
   #liquid .bubble {
