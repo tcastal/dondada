@@ -5,14 +5,9 @@ layout: default
 <style>
   body {
     margin: 0;
-  }
-
-  #content-wrapper {
-    /* Fond de couleur pour le contenu */
+    /* Fond de couleur pour toute la page */
     background-color: #f4bb10;
-    /* Autres styles pour l'élément contenant le contenu */
-    position: relative; /* Nécessaire pour que les bulles soient positionnées correctement */
-    overflow: hidden; /* Pour cacher les bulles qui dépassent */
+    /* Autres styles pour le corps si nécessaire */
   }
 
   /* Styles pour les bulles */
@@ -61,16 +56,14 @@ layout: default
   /* Ajoutez d'autres bulles selon vos besoins */
 </style>
 
-<div id="content-wrapper">
-  <h1>
-    {{ page.title }}
-  </h1>
-  <article>
-    {{ content }}
-  </article>
+<h1>
+  {{ page.title }}
+</h1>
+<article>
+  {{ content }}
+</article>
 
-  <!-- Ajoutez des éléments pour représenter les bulles -->
-  <div class="bubble bubble1"></div>
-  <div class="bubble bubble2"></div>
-  <!-- Ajoutez plus d'éléments de bulles si nécessaire -->
-</div>
+<!-- Ajoutez des éléments pour représenter les bulles -->
+<div class="bubble bubble1"></div>
+<div class="bubble bubble2"></div>
+<!-- Ajoutez plus d'éléments de bulles si nécessaire -->
