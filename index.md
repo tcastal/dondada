@@ -4,7 +4,6 @@ title: Home
 permalink: /
 ---
 
-<link rel="stylesheet" href="assets/beer.css">
 
 ### Questions?
 
