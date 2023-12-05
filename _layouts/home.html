@@ -3,11 +3,11 @@ layout: default
 ---
 
 <style>
+  /* Styles pour le corps si nécessaire */
   body {
     margin: 0;
     /* Fond de couleur pour toute la page */
     background-color: #f4bb10;
-    /* Autres styles pour le corps si nécessaire */
   }
 
   /* Styles pour les bulles */
@@ -35,25 +35,6 @@ layout: default
       opacity: 0; /* Rendre les bulles invisibles */
     }
   }
-
-  /* Styles spécifiques pour chaque bulle si nécessaire */
-  .bubble1 {
-    width: 20px;
-    height: 20px;
-    top: 0;
-    left: 10%;
-    animation-delay: 1s; /* Délai pour le début de l'animation */
-  }
-
-  .bubble2 {
-    width: 30px;
-    height: 30px;
-    top: 0;
-    left: 25%;
-    animation-delay: 2s;
-  }
-
-  /* Ajoutez d'autres bulles selon vos besoins */
 </style>
 
 <h1>
@@ -63,7 +44,18 @@ layout: default
   {{ content }}
 </article>
 
-<!-- Ajoutez des éléments pour représenter les bulles -->
-<div class="bubble bubble1"></div>
-<div class="bubble bubble2"></div>
-<!-- Ajoutez plus d'éléments de bulles si nécessaire -->
+<!-- Ajout d'éléments pour représenter les bulles -->
+<script>
+  // Création de 100 bulles et ajout au document
+  for (let i = 1; i <= 100; i++) {
+    const bubble = document.createElement('div');
+    bubble.classList.add('bubble');
+    bubble.style.width = Math.floor(Math.random() * 50) + 'px'; // Largeur aléatoire entre 1px et 50px
+    bubble.style.height = bubble.style.width; // Hauteur égale à la largeur pour former des cercles
+    bubble.style.top = Math.floor(Math.random() * window.innerHeight) + 'px'; // Position aléatoire en hauteur
+    bubble.style.left = Math.floor(Math.random() * window.innerWidth) + 'px'; // Position aléatoire en largeur
+    bubble.style.animationDelay = Math.random() * 5 + 's'; // Délai d'animation aléatoire
+
+    document.body.appendChild(bubble); // Ajout de la bulle au document
+  }
+</script>
