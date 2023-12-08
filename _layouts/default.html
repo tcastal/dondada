@@ -23,8 +23,30 @@
       {% include footer.html %}
     </div>
 
-    <div class="circle" style="top: 10px; left: 50px; width: 30px; height: 30px;"></div>
-    <div class="circle" style="top: 20px; left: 120px; width: 20px; height: 20px;"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const container = document.querySelector('.container');
+        const circlesContainer = document.createElement('div');
+        circlesContainer.classList.add('circles-container');
+  
+        for (let i = 0; i < 100; i++) {
+          const circle = document.createElement('div');
+          circle.classList.add('circle');
+          circle.style.top = Math.floor(Math.random() * 200) + 'px'; // Valeur de top aléatoire
+          circle.style.left = Math.floor(Math.random() * pageWidth) + 'px'; // Valeur de left aléatoire
+          circle.style.width = Math.floor(Math.random() * 50) + 'px'; // Largeur aléatoire entre 10px et 60px
+          circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
+          circlesContainer.appendChild(circle);
+        }
+  
+        container.appendChild(circlesContainer);
+      });
+    </script>
+
+
+
+
+
   </body>
 </html>
 
