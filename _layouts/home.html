@@ -16,7 +16,7 @@ layout: default
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
     animation-name: bubbleAnimation;
-    animation-duration: 3s; /* Durée de l'animation */
+    animation-duration: 5s; /* Durée de l'animation */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     opacity: 0; /* Rendre les bulles initialement invisibles */
@@ -53,10 +53,10 @@ layout: default
     for (let i = 1; i <= 100; i++) {
       const bubble = document.createElement('div');
       bubble.classList.add('bubble');
-      bubble.style.width = Math.floor(Math.random() * 50) + 'px'; // Largeur aléatoire entre 1px et 50px
+      bubble.style.width = Math.floor(Math.random() * 10 + 10) + 'vw'; // Largeur entre 10vw et 20vw
       bubble.style.height = bubble.style.width; // Hauteur égale à la largeur pour former des cercles
-      bubble.style.top = Math.floor(Math.random() * window.innerHeight) + 'px'; // Position aléatoire en hauteur
-      bubble.style.left = Math.floor(Math.random() * window.innerWidth) + 'px'; // Position aléatoire en largeur
+      bubble.style.top = Math.floor(Math.random() * 100) + 'vh'; // Position entre 0vh et 100vh en hauteur
+      bubble.style.left = Math.floor(Math.random() * 100) + 'vw'; // Position entre 0vw et 100vw en largeur
       bubble.style.animationDelay = Math.random() * 5 + 's'; // Délai d'animation aléatoire
 
       const isVisible = bubble.getBoundingClientRect().top < window.innerHeight;
@@ -64,5 +64,5 @@ layout: default
         document.body.appendChild(bubble); // Ajout de la bulle au document si elle est visible
       }
     }
-  }, 1000); // Délai d'attente de 1 seconde avant de créer les bulles
+  }, 100); // Délai d'attente de 0,1 seconde avant de créer les bulles
 </script>
