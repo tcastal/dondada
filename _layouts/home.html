@@ -26,7 +26,7 @@ layout: default
   @keyframes bubbleAnimation {
     0% {
       transform: translateY(0);
-      opacity: 0; /* Rendre les bulles initialement invisibles */
+      opacity: 0,5; /* Rendre les bulles initialement invisibles */
     }
     50% {
       transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
@@ -53,10 +53,10 @@ layout: default
     for (let i = 1; i <= 100; i++) {
       const bubble = document.createElement('div');
       bubble.classList.add('bubble');
-      bubble.style.width = Math.floor(Math.random() * 10 + 10) + 'vw'; // Largeur entre 10vw et 20vw
+      bubble.style.width = Math.floor(Math.random() * 50) + 'vw'; // Largeur aléatoire entre 1px et 50px
       bubble.style.height = bubble.style.width; // Hauteur égale à la largeur pour former des cercles
-      bubble.style.top = Math.floor(Math.random() * 100) + 'vh'; // Position entre 0vh et 100vh en hauteur
-      bubble.style.left = Math.floor(Math.random() * 100) + 'vw'; // Position entre 0vw et 100vw en largeur
+      bubble.style.top = Math.floor(Math.random() * window.innerHeight) + 'vh'; // Position aléatoire en hauteur
+      bubble.style.left = Math.floor(Math.random() * window.innerWidth) + 'vw'; // Position aléatoire en largeur
       bubble.style.animationDelay = Math.random() * 5 + 's'; // Délai d'animation aléatoire
 
       const isVisible = bubble.getBoundingClientRect().top < window.innerHeight;
