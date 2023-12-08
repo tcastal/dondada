@@ -10,6 +10,17 @@ layout: default
     background-color: #ebbb40;
   }
 
+
+  /* Styles pour la mousse */
+  .foam-container {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Hauteur de la bande de ronds */
+    background-color: white; /* Couleur de fond de la bande */
+    overflow: hidden; /* Pour cacher les ronds qui dépassent de la bande */
+  }
+
+
   /* Styles pour les bulles */
   .bubble {
     position: absolute;
@@ -39,12 +50,20 @@ layout: default
   }
 </style>
 
+
+
+
 <h1>
   {{ page.title }}
 </h1>
 <article>
   {{ content }}
 </article>
+
+
+<div class="foam-container"></div> 
+
+
 
 <!-- Ajout d'éléments pour représenter les bulles -->
 <script>
