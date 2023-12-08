@@ -35,8 +35,8 @@
           const circle = document.createElement('div');
           circle.classList.add('circle');
           circle.style.top = Math.floor(Math.random() * 100) + 'px'; // Valeur de top aléatoire
-          circle.style.left = Math.floor(Math.random() * (pageWidth - circleWidth)) + 'px'; // Valeur de left aléatoire limitée à la largeur de la fenêtre moins la largeur du cercle
-          circle.style.width = Math.floor(Math.random() * 50) + 'px'; // Largeur fixe des cercles
+          circle.style.left = Math.floor(Math.random() * pageWidth) + 'px'; // Valeur de left aléatoire
+          circle.style.width = Math.floor(Math.random() * 50) + 'px'; // Largeur aléatoire entre 10px et 60px
           circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
           circlesContainer.appendChild(circle);
         }
