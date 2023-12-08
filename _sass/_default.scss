@@ -53,14 +53,20 @@
 .foam-2 { top: -35px; left: 20px; }
 /* ... et ainsi de suite pour chaque bulle */
 
+/* Modifié par thomas */
 
 .header {
+  position: absolute; /* Position absolue */
+  width: 100%; /* Largeur à 100% de la fenêtre */
+  top: 0; /* Positionner en haut */
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 4rem;
-  background-color: #fefefe;
+  background-color: #fefefe; /* Couleur de fond */
   font-family: $sans-serif-font-family;
 }
+
+
 
 .header a:hover {
   color:black;
