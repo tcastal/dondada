@@ -49,6 +49,7 @@ layout: default
 <!-- Ajout d'éléments pour représenter les bulles -->
 <script>
   // Fonction pour générer les bulles
+setTimeout(() => {
   function createBubbles() {
     for (let i = 1; i <= 100; i++) {
       const bubble = document.createElement('div');
@@ -63,4 +64,5 @@ layout: default
       document.body.appendChild(bubble); // Ajout de la bulle au document
     }
   }
+  }, 100); 
 </script>
