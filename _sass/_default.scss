@@ -5,7 +5,7 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 615px;
+  width: 1000px;
 }
 
 .content-container {
@@ -23,6 +23,35 @@
 /*
   Header
 */
+
+/* Styles spécifiques pour les bulles de mousse */
+.beer-foam {
+  position: absolute;
+  bottom: 10px;
+  height: 180px;
+  width: 100%;
+}
+
+.foam-1, .foam-2, .foam-3, .foam-4, 
+.foam-5, .foam-6, .foam-7, .foam-8, 
+.foam-9, .foam-10, .foam-11, .foam-12,
+.foam-13, .foam-14, .foam-15 {
+  /* Les styles spécifiques à chaque bulle */
+  float: left;
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #fefefe;
+  /* ... Autres styles pour chaque bulle */
+}
+
+/* Appliquer les positions spécifiques pour chaque bulle */
+.foam-1 { top: -30px; left: -10px; }
+.foam-2 { top: -35px; left: 20px; }
+/* ... et ainsi de suite pour chaque bulle */
+
 
 .header {
   padding-top: 0.5rem;
