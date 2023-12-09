@@ -40,7 +40,7 @@
           const circle = document.createElement('div');
           circle.classList.add('circle');
           const verticalPos = oddRow ? verticalOffset : 0; // Calcul de l'offset vertical alternatif
-          circle.style.top = Math.floor(Math.random() * (window.innerHeight - circleWidth - verticalPos)) + verticalPos + 'px'; // Valeur de top aléatoire dans la plage de la hauteur de la fenêtre
+          circle.style.top = verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
           circle.style.left = leftPosition + 'px'; // Positionnement du cercle à gauche
           circle.style.width = circleWidth + 'px'; // Largeur fixe des cercles
           circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
