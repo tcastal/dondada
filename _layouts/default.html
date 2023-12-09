@@ -7,7 +7,6 @@
     background-color: white;
     border-radius: 50%;
     z-index: -1;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
   }
 
   .square {
@@ -72,7 +71,7 @@
             rowCounter++; // Incrémentation du compteur de lignes
           }
     
-          if (leftPosition > window.innerWidth + Math.abs(padding)) {
+          if (leftPosition > window.innerWidth) {
             maxWidthReached = true; // La largeur maximale est atteinte en incluant le padding négatif
           }
         }
