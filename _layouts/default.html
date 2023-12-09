@@ -37,20 +37,21 @@
         const circlesContainer = document.createElement('div');
         circlesContainer.classList.add('circles-container');
     
-        const padding = -50; // Espacement entre les cercles
+        const padding = -40; // Espacement entre les cercles
+        const rowLimit = 4; // Nombre de lignes pour l'alternance
         
         let leftPosition = -20; // Position initiale à gauche
         let rowCounter = 0; // Compteur pour suivre les lignes
         let maxWidthReached = false; // Variable pour vérifier si la largeur maximale est atteinte
     
         while (!maxWidthReached) {
-          if (rowCounter < 5) {
+          if (rowCounter < 3) {
             const square = document.createElement('div');
             square.classList.add('square');
             square.style.top = '0'; // Positionnement du carré au sommet de la fenêtre
             square.style.left = '0'; // Positionnement du carré à gauche
             square.style.width = window.innerWidth + 'px'; // Largeur du carré égale à la fenêtre
-            square.style.height = '100px'; // Hauteur fixe pour les trois premières lignes
+            square.style.height = '50px'; // Hauteur fixe pour les trois premières lignes
             circlesContainer.appendChild(square);
             rowCounter++; // Incrémentation du compteur de lignes
           } else {
@@ -58,9 +59,9 @@
             circle.classList.add('circle');
             const randomSize = Math.floor(Math.random() * 21) + 40; // Taille aléatoire entre 40 et 60
             const circleWidth = randomSize; // Largeur aléatoire des cercles
-            const verticalOffset = Math.floor(Math.random() * 21) + 70; // Offset vertical aléatoire entre 40 et 60
+            const verticalOffset = Math.floor(Math.random() * 21) + 5; // Offset vertical aléatoire entre 5 et 25
             
-            const verticalPos = rowCounter % 3 === 0 ? verticalOffset : 0; // Alterner les lignes sur une période de 3 lignes
+            const verticalPos = rowCounter % 2 === 0 ? verticalOffset : 0; // Alterner les lignes sur une période de quatre lignes
             circle.style.top = verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
             circle.style.left = leftPosition + 'px'; // Positionnement du cercle à gauche
             circle.style.width = circleWidth + 'px'; // Largeur des cercles
@@ -71,14 +72,15 @@
             rowCounter++; // Incrémentation du compteur de lignes
           }
     
-          if (leftPosition > window.innerWidth - 50) {
-            maxWidthReached = true; // La largeur maximale est atteinte en incluant le padding négatif
+          if (leftPosition > window.innerWidth + 30) {
+            maxWidthReached = true; // La largeur maximale est atteinte
           }
         }
     
         container.appendChild(circlesContainer);
       });
     </script>
+
 
 
 
