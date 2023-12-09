@@ -23,33 +23,35 @@
       {% include footer.html %}
     </div>
 
+
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const container = document.querySelector('.container');
         const circlesContainer = document.createElement('div');
         circlesContainer.classList.add('circles-container');
-  
-        const circleWidth = 50; // Largeur fixe des cercles
-        const padding = 2; // Espacement entre les cercles
+    
+        const circleWidth = 40; // Largeur fixe des cercles
+        const padding = -7; // Espacement entre les cercles
         const verticalOffset = 10; // Offset vertical entre les lignes
+        const rowLimit = 4; // Nombre de lignes pour l'alternance
+        
+        let leftPosition = -20; // Position initiale à gauche
+        let rowCounter = 0; // Compteur pour suivre les lignes
   
-        let leftPosition = -3; // Position initiale à gauche
-        let oddRow = false; // Variable pour alterner les lignes en quinconce
-  
-        while (leftPosition + circleWidth < window.innerWidth) {
+        while (leftPosition + circleWidth + 30 < window.innerWidth && rowCounter < rowLimit) {
           const circle = document.createElement('div');
           circle.classList.add('circle');
-          const verticalPos = oddRow ? verticalOffset : 0; // Calcul de l'offset vertical alternatif
+          const verticalPos = rowCounter % 2 === 0 ? verticalOffset : 0; // Alterner les lignes sur une période de quatre lignes
           circle.style.top = verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
           circle.style.left = leftPosition + 'px'; // Positionnement du cercle à gauche
           circle.style.width = circleWidth + 'px'; // Largeur fixe des cercles
           circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
           circlesContainer.appendChild(circle);
-  
+    
           leftPosition += circleWidth + padding; // Mise à jour de la position à gauche
-          oddRow = !oddRow; // Alterner les lignes
+          rowCounter++; // Incrémentation du compteur de lignes
         }
-  
+    
         container.appendChild(circlesContainer);
       });
     </script>
