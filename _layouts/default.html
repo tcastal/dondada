@@ -36,24 +36,22 @@
         const container = document.querySelector('.container');
         const circlesContainer = document.createElement('div');
         circlesContainer.classList.add('circles-container');
-    
+
         const padding = -40; // Espacement entre les cercles
-        const rowLimit = 4; // Nombre de lignes pour l'alternance
-        
+
         let leftPosition = -20; // Position initiale à gauche
         let rowCounter = 0; // Compteur pour suivre les lignes
-        let maxWidthReached = false; // Variable pour vérifier si la largeur maximale est atteinte
-    
-        while (!maxWidthReached) {
+        let containerWidth = window.innerWidth; // Largeur du conteneur
+        
+        while (rowCounter < 6) {
           if (rowCounter < 3) {
             const square = document.createElement('div');
             square.classList.add('square');
             square.style.top = '0'; // Positionnement du carré au sommet de la fenêtre
             square.style.left = '0'; // Positionnement du carré à gauche
-            square.style.width = window.innerWidth + 'px'; // Largeur du carré égale à la fenêtre
+            square.style.width = containerWidth + 'px'; // Largeur du carré égale à la fenêtre
             square.style.height = '50px'; // Hauteur fixe pour les trois premières lignes
             circlesContainer.appendChild(square);
-            rowCounter++; // Incrémentation du compteur de lignes
           } else {
             const circle = document.createElement('div');
             circle.classList.add('circle');
@@ -67,16 +65,13 @@
             circle.style.width = circleWidth + 'px'; // Largeur des cercles
             circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
             circlesContainer.appendChild(circle);
-      
+
             leftPosition += circleWidth + padding; // Mise à jour de la position à gauche
-            rowCounter++; // Incrémentation du compteur de lignes
           }
-    
-          if (leftPosition > window.innerWidth + 30) {
-            maxWidthReached = true; // La largeur maximale est atteinte
-          }
+
+          rowCounter++; // Incrémentation du compteur de lignes
         }
-    
+
         container.appendChild(circlesContainer);
       });
     </script>
