@@ -30,13 +30,13 @@
         circlesContainer.classList.add('circles-container');
   
         const circleWidth = 50; // Largeur fixe des cercles
-        const padding = 20; // Espacement entre les cercles
+        const padding = 2; // Espacement entre les cercles
         const verticalOffset = 10; // Offset vertical entre les lignes
   
-        let leftPosition = 0; // Position initiale à gauche
+        let leftPosition = -3; // Position initiale à gauche
         let oddRow = false; // Variable pour alterner les lignes en quinconce
   
-        while (leftPosition + circleWidth <= window.innerWidth) {
+        while (leftPosition + circleWidth < window.innerWidth) {
           const circle = document.createElement('div');
           circle.classList.add('circle');
           const verticalPos = oddRow ? verticalOffset : 0; // Calcul de l'offset vertical alternatif
