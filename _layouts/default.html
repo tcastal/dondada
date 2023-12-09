@@ -38,22 +38,21 @@
         circlesContainer.classList.add('circles-container');
     
         const padding = -40; // Espacement entre les cercles
-        const rowLimit = 4; // Nombre de lignes pour l'alternance
+        const rowLimit = 6; // Nombre de lignes pour l'alternance
         
         let leftPosition = -20; // Position initiale à gauche
         let rowCounter = 0; // Compteur pour suivre les lignes
         let maxWidthReached = false; // Variable pour vérifier si la largeur maximale est atteinte
     
-        while (!maxWidthReached) {
+        while (!maxWidthReached && rowCounter < rowLimit) {
           if (rowCounter < 3) {
             const square = document.createElement('div');
             square.classList.add('square');
-            square.style.top = '0'; // Positionnement du carré au sommet de la fenêtre
+            square.style.top = rowCounter * 50 + 'px'; // Positionnement du carré au sommet de la fenêtre
             square.style.left = '0'; // Positionnement du carré à gauche
             square.style.width = window.innerWidth + 'px'; // Largeur du carré égale à la fenêtre
-            square.style.height = '50px'; // Hauteur fixe pour les trois premières lignes
+            square.style.height = '50px'; // Hauteur fixe pour les six premières lignes
             circlesContainer.appendChild(square);
-            rowCounter++; // Incrémentation du compteur de lignes
           } else {
             const circle = document.createElement('div');
             circle.classList.add('circle');
@@ -62,19 +61,16 @@
             const verticalOffset = Math.floor(Math.random() * 21) + 5; // Offset vertical aléatoire entre 5 et 25
             
             const verticalPos = rowCounter % 2 === 0 ? verticalOffset : 0; // Alterner les lignes sur une période de quatre lignes
-            circle.style.top = verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
+            circle.style.top = rowCounter * 50 + verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
             circle.style.left = leftPosition + 'px'; // Positionnement du cercle à gauche
             circle.style.width = circleWidth + 'px'; // Largeur des cercles
             circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
             circlesContainer.appendChild(circle);
-      
+    
             leftPosition += circleWidth + padding; // Mise à jour de la position à gauche
-            rowCounter++; // Incrémentation du compteur de lignes
           }
     
-          if (leftPosition > window.innerWidth + 30) {
-            maxWidthReached = true; // La largeur maximale est atteinte
-          }
+          rowCounter++; // Incrémentation du compteur de lignes
         }
     
         container.appendChild(circlesContainer);
