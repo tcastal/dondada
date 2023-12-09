@@ -35,8 +35,9 @@
         
         let leftPosition = -20; // Position initiale à gauche
         let rowCounter = 0; // Compteur pour suivre les lignes
+        let maxWidthReached = false; // Variable pour vérifier si la largeur maximale est atteinte
     
-        while (leftPosition < window.innerWidth + 50 < rowLimit) {
+        while (!maxWidthReached) {
           const circle = document.createElement('div');
           circle.classList.add('circle');
           const randomSize = Math.floor(Math.random() * 21) + 40; // Taille aléatoire entre 40 et 60
@@ -52,6 +53,10 @@
     
           leftPosition += circleWidth + padding; // Mise à jour de la position à gauche
           rowCounter++; // Incrémentation du compteur de lignes
+  
+          if (leftPosition > window.innerWidth+30) {
+            maxWidthReached = true; // La largeur maximale est atteinte
+          }
         }
     
         container.appendChild(circlesContainer);
