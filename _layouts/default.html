@@ -36,49 +36,72 @@
         const container = document.querySelector('.container');
         const circlesContainer = document.createElement('div');
         circlesContainer.classList.add('circles-container');
-    
+
         const padding = -40; // Espacement entre les cercles
         const rowLimit = 4; // Nombre de lignes pour l'alternance
         
+        const windowWidth = window.innerWidth;
+        const center = windowWidth / 2; // Centre de la fenêtre
+
         let leftPosition = -20; // Position initiale à gauche
+        let rightPosition = windowWidth + 20; // Position initiale à droite
         let rowCounter = 0; // Compteur pour suivre les lignes
         let maxWidthReached = false; // Variable pour vérifier si la largeur maximale est atteinte
-    
+
         while (!maxWidthReached) {
           if (rowCounter < 3) {
-            const square = document.createElement('div');
-            square.classList.add('square');
-            square.style.top = '0'; // Positionnement du carré au sommet de la fenêtre
-            square.style.left = '0'; // Positionnement du carré à gauche
-            square.style.width = window.innerWidth + 'px'; // Largeur du carré égale à la fenêtre
-            square.style.height = '50px'; // Hauteur fixe pour les trois premières lignes
-            circlesContainer.appendChild(square);
-            rowCounter++; // Incrémentation du compteur de lignes
+            const squareLeft = document.createElement('div');
+            const squareRight = document.createElement('div');
+            squareLeft.classList.add('square');
+            squareRight.classList.add('square');
+            squareLeft.style.top = '0';
+            squareRight.style.top = '0';
+            squareLeft.style.left = '0';
+            squareRight.style.left = '0';
+            squareLeft.style.width = center + 'px';
+            squareRight.style.width = center + 'px';
+            squareLeft.style.height = '50px';
+            squareRight.style.height = '50px';
+            circlesContainer.appendChild(squareLeft);
+            circlesContainer.appendChild(squareRight);
+            rowCounter++;
           } else {
-            const circle = document.createElement('div');
-            circle.classList.add('circle');
-            const randomSize = Math.floor(Math.random() * 21) + 40; // Taille aléatoire entre 40 et 60
-            const circleWidth = randomSize; // Largeur aléatoire des cercles
-            const verticalOffset = Math.floor(Math.random() * 21) + 5; // Offset vertical aléatoire entre 5 et 25
+            const circleLeft = document.createElement('div');
+            const circleRight = document.createElement('div');
+            circleLeft.classList.add('circle');
+            circleRight.classList.add('circle');
+            const randomSize = Math.floor(Math.random() * 21) + 40;
+            const circleWidth = randomSize;
+            const verticalOffset = Math.floor(Math.random() * 21) + 5;
             
-            const verticalPos = rowCounter % 2 === 0 ? verticalOffset : 0; // Alterner les lignes sur une période de quatre lignes
-            circle.style.top = verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
-            circle.style.left = leftPosition + 'px'; // Positionnement du cercle à gauche
-            circle.style.width = circleWidth + 'px'; // Largeur des cercles
-            circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
-            circlesContainer.appendChild(circle);
-      
-            leftPosition += circleWidth + padding; // Mise à jour de la position à gauche
-            rowCounter++; // Incrémentation du compteur de lignes
+            const verticalPos = rowCounter % 2 === 0 ? verticalOffset : 0;
+            circleLeft.style.top = verticalPos + 'px';
+            circleRight.style.top = verticalPos + 'px';
+            
+            circleLeft.style.left = leftPosition + 'px';
+            circleRight.style.left = rightPosition - circleWidth + 'px';
+            
+            circleLeft.style.width = circleWidth + 'px';
+            circleLeft.style.height = circleLeft.style.width;
+            circleRight.style.width = circleWidth + 'px';
+            circleRight.style.height = circleRight.style.width;
+            
+            circlesContainer.appendChild(circleLeft);
+            circlesContainer.appendChild(circleRight);
+            
+            leftPosition += circleWidth + padding;
+            rightPosition -= circleWidth + padding;
+            rowCounter++;
           }
-    
-          if (leftPosition > window.innerWidth + 30) {
-            maxWidthReached = true; // La largeur maximale est atteinte
+
+          if (leftPosition > center + 30 || rightPosition < center - 30) {
+            maxWidthReached = true;
           }
         }
-    
+
         container.appendChild(circlesContainer);
       });
+
     </script>
 
 
