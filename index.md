@@ -5,6 +5,7 @@ permalink: /
 ---
 
 
-### Questions?
+<div style="text-align: center;">
+  ### Welcome
+</div>
 
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the
