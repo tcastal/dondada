@@ -9,6 +9,7 @@ layout: default
     /* Fond de couleur pour toute la page */
     background-color: #ebbb40;
     z-index: 0;
+    overflow-x: hidden; /*modif */
   }
 
 
@@ -42,8 +43,25 @@ layout: default
     }
   }
 
+
+
+
+  .white-background {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 615px;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+  }
+
+
+
 </style>
 
+<div class="white-background"></div>
 
 <h1>
   {{ page.title }}
