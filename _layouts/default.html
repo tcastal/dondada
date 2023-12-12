@@ -73,7 +73,7 @@
               rowCounter++; // Incrémentation du compteur de lignes
             } else {
               circle.style.top = Math.floor(Math.random() * 5) + 60 + 'px'; // Positionnement du cercle au sommet de la fenêtre
-              circle.style.width = (window.innerWidth + 2 - leftPosition) + 'px'; // Largeur des cercles
+              circle.style.width = (window.innerWidth - leftPosition) + 'px'; // Largeur des cercles
               circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
 
               circlesContainer.appendChild(circle);
