@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Brewmageddon
+layout: home
+title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 permalink: /datastory
 ---
 
