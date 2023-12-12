@@ -1,11 +1,11 @@
 ---
 layout: home
-title: Home
+title: 
 permalink: /
 ---
 
 
 <div style="text-align: center;">
-  ### Welcome
+  <h1>Welcome</h1>
 </div>
 
