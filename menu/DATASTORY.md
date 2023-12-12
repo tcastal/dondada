@@ -1,12 +1,11 @@
 ---
 layout: page
-title:
+title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 categories: datastory
 permalink: /datastory
 tags: [datastory]
 ---
 
-# Brewmageddon: How IPAs Took Over the Beeriverse
 
 JUST A SMALL TEST HERE 
 
