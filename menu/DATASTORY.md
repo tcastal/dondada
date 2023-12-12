@@ -1,13 +1,12 @@
 ---
 layout: page
-title: "Brewmageddon: How IPAs Took Over the Beeriverse"
-author: "Thomas"
+title:
 categories: datastory
 permalink: /datastory
 tags: [datastory]
 ---
 
-# Lagrange
+# Brewmageddon: How IPAs Took Over the Beeriverse
 
 JUST A SMALL TEST HERE 
 
