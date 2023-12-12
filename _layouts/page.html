@@ -2,9 +2,88 @@
 layout: default
 ---
 
+<style>
+  /* Styles pour le corps si nécessaire */
+  body {
+    margin: 0;
+    /* Fond de couleur pour toute la page */
+    background-color: #ebbb40;
+    z-index: 0;
+  }
+
+
+
+  /* Styles pour les bulles */
+  .bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation-name: bubbleAnimation;
+    animation-duration: 5s; /* Durée de l'animation */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0; /* Rendre les bulles initialement invisibles */
+    z-index: 2;
+  }
+
+  /* Animation des bulles */
+  @keyframes bubbleAnimation {
+    0% {
+      transform: translateY(0);
+      opacity: 0; /* Rendre les bulles initialement invisibles */
+    }
+    50% {
+      transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
+      opacity: 1; /* Rendre les bulles visibles */
+    }
+    100% {
+      transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
+      opacity: 0; /* Rendre les bulles invisibles */
+    }
+  }
+
+
+
+      /* Nouvelle classe pour le fond blanc */
+      .full-width-background {
+      background-color: white;
+      padding-left: calc(50px + 10px); /* 50px (de chaque côté) + 10px (ajustement pour la marge) */
+      padding-right: calc(50px + 10px); /* 50px (de chaque côté) + 10px (ajustement pour la marge) */
+    }
+
+</style>
+
+<!-- Nouveau div pour le fond blanc -->
+<div class="full-width-background">
+
+
 <h1>
   {{ page.title }}
 </h1>
 <article>
   {{ content }}
 </article>
+
+
+
+<!-- Ajout d'éléments pour représenter les bulles -->
+<script>
+  // Fonction pour générer les bulles
+
+  function createBubbles() {
+    for (let i = 1; i <= 100; i++) {
+      const bubble = document.createElement('div');
+      bubble.classList.add('bubble');
+      const bubbleSize = Math.floor(Math.random() * 50) + 10; // Taille aléatoire entre 10px et 60px
+      bubble.style.width = bubbleSize + 'px';
+      bubble.style.height = bubbleSize + 'px';
+      bubble.style.top = Math.random() * (window.innerHeight - bubbleSize) + 'px'; // Position aléatoire en hauteur
+      bubble.style.left = Math.random() * (window.innerWidth - bubbleSize) + 'px'; // Position aléatoire en largeur
+      bubble.style.animationDelay = Math.random() * 5 + 's'; // Délai d'animation aléatoire
+
+      document.body.appendChild(bubble); // Ajout de la bulle au document
+    }
+  }
+  
+  setTimeout(createBubbles, 100);
+</script>

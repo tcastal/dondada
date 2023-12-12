@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div style="text-align: center;">
-  <h1>Welcome</h1>
+  <h1>Welcome!</h1>
 </div>
 
 This website contains the datastory of the dondADA group's project based on the dataset of two well-known beer-lovers' websites: BeerAdvocate and RateBeer.  
