@@ -59,7 +59,7 @@
             circle.classList.add('circle');
             const randomSize = Math.floor(Math.random() * 21) + 40; // Taille aléatoire entre 40 et 60
             const circleWidth = randomSize; // Largeur aléatoire des cercles
-            const verticalOffset = Math.floor(Math.random() * 21) + 50; // Offset vertical aléatoire entre 50 et 70
+            const verticalOffset = Math.floor(Math.random() * 15) + 55; // Offset vertical aléatoire entre 55 et 65
             
             const verticalPos = rowCounter % 2 === 0 ? verticalOffset : 0; // Alterner les lignes sur une période de quatre lignes
             circle.style.top = verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
@@ -72,7 +72,7 @@
               leftPosition += circleWidth + padding; // Mise à jour de la position à gauche
               rowCounter++; // Incrémentation du compteur de lignes
             } else {
-
+              circle.style.top = Math.floor(Math.random() * 5) + 60 + 'px'; // Positionnement du cercle au sommet de la fenêtre
               circle.style.width = (window.innerWidth - leftPosition) + 'px'; // Largeur des cercles
               circle.style.height = circle.style.width; // Assurer que la hauteur est la même que la largeur pour former des cercles
 
