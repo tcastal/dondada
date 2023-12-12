@@ -51,7 +51,7 @@
             square.style.top = '0'; // Positionnement du carré au sommet de la fenêtre
             square.style.left = '0'; // Positionnement du carré à gauche
             square.style.width = window.innerWidth + 'px'; // Largeur du carré égale à la fenêtre
-            square.style.height = '50px'; // Hauteur fixe pour les trois premières lignes
+            square.style.height = '80px'; // Hauteur fixe pour les trois premières lignes
             circlesContainer.appendChild(square);
             rowCounter++; // Incrémentation du compteur de lignes
           } else {
@@ -59,7 +59,7 @@
             circle.classList.add('circle');
             const randomSize = Math.floor(Math.random() * 21) + 40; // Taille aléatoire entre 40 et 60
             const circleWidth = randomSize; // Largeur aléatoire des cercles
-            const verticalOffset = Math.floor(Math.random() * 21) + 5; // Offset vertical aléatoire entre 5 et 25
+            const verticalOffset = Math.floor(Math.random() * 21) + 50; // Offset vertical aléatoire entre 50 et 70
             
             const verticalPos = rowCounter % 2 === 0 ? verticalOffset : 0; // Alterner les lignes sur une période de quatre lignes
             circle.style.top = verticalPos + 'px'; // Positionnement du cercle au sommet de la fenêtre
