@@ -4,31 +4,31 @@ title: Contact
 permalink: /contact
 ---
 
-
 <div class="gallery">
     <div class="image">
-        <img src="../assets/img/Adrien.jpeg" alt="Nom de la personne 1">
+        <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg">
         <p>Adrien Sizaret</p>
     </div>
     <div class="image">
-        <img src="chemin_vers_image_2.jpg" alt="Nom de la personne 2">
+        <img src="chemin_vers_image_2.jpg">
         <p>Nom de la personne 2</p>
     </div>
     <div class="image">
-        <img src="chemin_vers_image_3.jpg" alt="Nom de la personne 3">
+        <img src="chemin_vers_image_3.jpg">
         <p>Nom de la personne 3</p>
     </div>
     <div class="image">
-        <img src="chemin_vers_image_4.jpg" alt="Nom de la personne 4">
+        <img src="chemin_vers_image_4.jpg">
         <p>Nom de la personne 4</p>
     </div>
     <div class="image">
-        <img src="chemin_vers_image_5.jpg" alt="Nom de la personne 5">
+        <img src="chemin_vers_image_5.jpg">
         <p>Nom de la personne 5</p>
     </div>
 </div>
 
 <style>
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
