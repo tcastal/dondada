@@ -55,14 +55,14 @@ layout: default
     z-index: -1;
   }
 
-/* Styles pour le carré blanc */
-.white-square {
-  position: absolute;
+  .white-square {
+  position: fixed;
   top: -100vh; /* Position au-dessus de la zone visible */
   left: 0;
   width: 100%; /* Pour couvrir toute la largeur */
   height: 100vh; /* Hauteur pour couvrir la hauteur de la fenêtre */
   background-color: white; /* Couleur blanche */
+  z-index: -1; /* Pour placer derrière le contenu de la page */
 }
 
 
