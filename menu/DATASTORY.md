@@ -4,19 +4,21 @@ title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 permalink: /datastory
 ---
 
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
-En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme un paragraphe au lieu d'un titre de premier niveau. Cela changera la sémantique de la balise et le rendra visuellement différent, mais le texte restera là où vous l'avez placé dans votre code HTML.
+Welcome to Brewmageddon: How IPAs Took Over the Beeriverse! In this exploration, we embark on a journey to uncover the meteoric rise of India Pale Ales (IPAs) within the realm of beer culture. While the term 'IPA' has historical roots tracing back to centuries past, its explosion in popularity has been a recent phenomenon. Today, it's nearly impossible to enter a bar without encountering this ubiquitous term adorning beer taps worldwide. But what catalyzed this unprecedented craze?
+
+This project delves deep into unraveling the enigma surrounding the IPA's ascendancy, scrutinizing its spread across geographical and social landscapes. Through meticulous analysis of millions of reviews from esteemed beer rating websites such as BeerAdvocate and RateBeer, we aim to unearth the intricacies behind the IPA's global dominance.
+
+Our research sets forth compelling inquiries:
+
+- Is the IPA genuinely the supreme choice amongst beer enthusiasts, or do other beer styles trail behind in a similar trend?
+- Geographically, where did this trend originate, and what pivotal regions acted as its launchpad? Are there distinctive patterns in its global dissemination?
+- Can we establish a correlation between the surge of microbreweries, craft beer, and the soaring popularity of IPAs?
+- From a social perspective, where does the passionate fanbase of IPAs predominantly reside? 
+- Do successful breweries consistently craft trendsetting beers akin to IPAs?
+
+Furthermore, armed with insights gained from our analysis, we aspire to forecast the next evolutionary wave in beer preference. What will succeed the IPA in the hearts of beer aficionados, and from which corner of the world will this emergence originate?
+
+Join us in this riveting expedition through the beeriverse as we uncover the past, present, and future of beer trends, aiming to decipher the recipe behind the global dissemination of beer styles and predicting the ever-evolving preferences of beer enthusiasts.
 
 
 ## Number of ratings for the IPA's around the world
