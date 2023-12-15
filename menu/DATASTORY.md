@@ -4,7 +4,8 @@ title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 permalink: /datastory
 ---
 
-Welcome to Brewmageddon: How IPAs Took Over the Beeriverse! In this exploration, we embark on a journey to uncover the meteoric rise of India Pale Ales (IPAs) within the realm of beer culture. While the term 'IPA' has historical roots tracing back to centuries past, its explosion in popularity has been a recent phenomenon. Today, it's nearly impossible to enter a bar without encountering this ubiquitous term adorning beer taps worldwide. But what catalyzed this unprecedented craze?
+In this exploration, we embark on a journey to uncover the meteoric rise of India Pale Ales (IPAs) within the realm of beer culture.  
+While the term 'IPA' has historical roots tracing back to centuries past, its explosion in popularity has been a recent phenomenon. Today, it's nearly impossible to enter a bar without encountering this ubiquitous term adorning beer taps worldwide. But what catalyzed this unprecedented craze?
 
 This project delves deep into unraveling the enigma surrounding the IPA's ascendancy, scrutinizing its spread across geographical and social landscapes. Through meticulous analysis of millions of reviews from esteemed beer rating websites such as BeerAdvocate and RateBeer, we aim to unearth the intricacies behind the IPA's global dominance.
 
@@ -33,24 +34,28 @@ Join us in this riveting expedition through the beeriverse as we uncover the pas
     <!-- Le contenu sera affiché ici -->
 </div>
 
-<!-- Inclusion du script JavaScript -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector');
-    const content = document.getElementById('content');
+<!-- Définition de la variable globale siteBaseurl -->
+  <script>
+    window.siteBaseurl = '{{ site.baseurl }}';
+  </script>
 
-    select.addEventListener('change', function() {
-        const selectedValue = select.value;
-        if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
-        } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
-        }
+  <!-- Inclusion du script JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const select = document.getElementById('selector');
+        const content = document.getElementById('content');
+
+        select.addEventListener('change', function() {
+            const selectedValue = select.value;
+            if (selectedValue === 'ba_IPA') {
+                content.innerHTML = '<object type="text/html" data="' + window.siteBaseurl + '/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
+            } else if (selectedValue === 'rb_IPA') {
+                content.innerHTML = '<object type="text/html" data="' + window.siteBaseurl + '/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
+            }
+        });
     });
-});
-</script>
-
-Comment ?
+  </script>
 
 
-Comment ?
+
+
