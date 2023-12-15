@@ -33,20 +33,15 @@ permalink: /contact
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
-  overflow-x: hidden;
+    margin-left: -50px; /* Compenser l'espacement négatif pour aligner avec le container */
+    margin-right: 50px; /* Compenser l'espacement négatif pour aligner avec le container */
 }
 
 .image {
     width: 18%;
     margin-bottom: 20px; /* Espacement en bas de chaque image */
     text-align: center;
-    margin-right: 3%; /* Espacement horizontal entre les images */
+    margin-right: 10px; /* Espacement horizontal entre les images */
 }
 
 .image:last-child {
