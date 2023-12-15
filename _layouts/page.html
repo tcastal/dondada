@@ -56,19 +56,19 @@ layout: default
   }
 
   .even-deeper-white-background {
-  content: '';
   position: fixed;
   top: -500px; /* Déplace le fond vers le haut pour couvrir toute la hauteur de défilement possible */
   left: 0;
   width: 100%;
   height: 501px; /* Hauteur suffisamment grande pour couvrir la zone non visible */
   background-color: white;
-  z-index: 2; /* Place le fond derrière la plupart des autres éléments */
+  z-index: 1; /* Place le fond derrière la plupart des autres éléments */
 }
 
 
 
 </style>
+
 <div class="even-deeper-white-background"></div>
 <div class="white-background"></div>
 
