@@ -34,32 +34,31 @@ Join us in this riveting expedition through the beeriverse as we uncover the pas
     <!-- Le contenu sera affiché ici -->
 </div>
 
-
-
-
-<script>
-    window.siteBaseurl = '{{ site.baseurl }}';
-</script>
-
 <!-- Inclusion du script JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const select = document.getElementById('selector');
     const content = document.getElementById('content');
 
+
+        function loadBeerAdvocateImage() {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
+        }
+
+        // Charger l'image BeerAdvocate au chargement initial
+        loadBeerAdvocateImage();
+
+
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="' + window.siteBaseurl + '/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
         } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="' + window.siteBaseurl + '/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
         }
     });
 });
 </script>
-
-
-
 
 Comment ?
 
