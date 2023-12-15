@@ -22,8 +22,7 @@ En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme u
 Test for Thib:
 
 
-<img src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" alt="Beer Advocate IPA worldmap" style="height: 100%; width:100%;">
-
+<iframe src="{{ site.baseurl }}/assets/img/ba_IPA_worldmap.html" width="100%"></iframe>
 
 
 
