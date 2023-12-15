@@ -7,7 +7,7 @@ permalink: /contact
 
 <div class="gallery">
     <div class="image">
-        <img src="chemin_vers_image_1.jpg" alt="Nom de la personne 1">
+        <img src="Adrien.jpeg" alt="Nom de la personne 1">
         <p>Nom de la personne 1</p>
     </div>
     <div class="image">
