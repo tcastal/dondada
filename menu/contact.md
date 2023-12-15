@@ -4,11 +4,6 @@ title: Contact
 permalink: /contact
 ---
 
----
-layout: home
-title: Contact
-permalink: /contact
----
 
 <div class="gallery">
     <div class="image">
