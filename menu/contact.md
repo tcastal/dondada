@@ -22,7 +22,7 @@ permalink: /contact
         <p>Gaspard Oudinot</p>
     </div>
     <div class="image">
-        <img src="chemin_vers_image_5.jpg">
+        <img src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html">
         <p>Thomas Castaldi</p>
     </div>
 </div>
