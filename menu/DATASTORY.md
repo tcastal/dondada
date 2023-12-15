@@ -4,6 +4,14 @@ title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 permalink: /datastory
 ---
 
+<style>
+    .custom-object {
+        max-width: 700px;
+        width: 100%;
+        height: 600px;
+    }
+</style>
+
 In this exploration, we embark on a journey to uncover the meteoric rise of India Pale Ales (IPAs) within the realm of beer culture.  
 While the term 'IPA' has historical roots tracing back to centuries past, its explosion in popularity has been a recent phenomenon. Today, it's nearly impossible to enter a bar without encountering this ubiquitous term adorning beer taps worldwide. But what catalyzed this unprecedented craze?
 
@@ -42,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" class="custom-object"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
