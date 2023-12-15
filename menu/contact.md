@@ -27,12 +27,19 @@ permalink: /contact
     </div>
 </div>
 
-<style>
 
+<style>
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  overflow-x: hidden;
 }
 
 .image {
