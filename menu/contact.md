@@ -11,19 +11,19 @@ permalink: /contact
     </div>
     <div class="image">
         <img src="chemin_vers_image_2.jpg">
-        <p>Nom de la personne 2</p>
+        <p>Margot Chapot</p>
     </div>
     <div class="image">
         <img src="chemin_vers_image_3.jpg">
-        <p>Nom de la personne 3</p>
+        <p>Thibaut Haslé</p>
     </div>
     <div class="image">
         <img src="chemin_vers_image_4.jpg">
-        <p>Nom de la personne 4</p>
+        <p>Gaspard Oudinot</p>
     </div>
     <div class="image">
         <img src="chemin_vers_image_5.jpg">
-        <p>Nom de la personne 5</p>
+        <p>Thomas Castaldi</p>
     </div>
 </div>
 
@@ -37,9 +37,15 @@ permalink: /contact
 
 .image {
     width: 18%;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espacement en bas de chaque image */
     text-align: center;
+    margin-right: 3%; /* Espacement horizontal entre les images */
 }
+
+.image:last-child {
+    margin-right: 0; /* Supprime l'espacement à droite de la dernière image */
+}
+
 
 .image img {
     width: 100%;
