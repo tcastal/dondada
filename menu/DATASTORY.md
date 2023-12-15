@@ -21,8 +21,51 @@ En remplaçant la balise <h1> par <p>, le texte sera désormais formaté comme u
 
 Test for Thib:
 
+<select id="selector">
+    <option value="ba_IPA">Contenu BA IPA</option>
+    <option value="rb_IPA">Contenu RB IPA</option>
+</select>
+
+<!-- Conteneur pour afficher le contenu sélectionné -->
+<div id="content">
+    <!-- Le contenu sera affiché ici -->
+</div>
+
+<!-- Inclusion du script JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('selector');
+    const content = document.getElementById('content');
+
+    select.addEventListener('change', function() {
+        const selectedValue = select.value;
+        if (selectedValue === 'ba_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/img/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
+        } else if (selectedValue === 'rb_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/img/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
+        }
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <object type="text/html" data="{{ site.baseurl }}/assets/img/ba_IPA_worldmap.html" width="100%" height="600px"></object>
+
+<object type="text/html" data="{{ site.baseurl }}/assets/img/rb_IPA_worldmap.html" width="100%" height="600px"></object>
+
+
+Comment ?
 
 
 Comment ?
