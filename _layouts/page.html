@@ -55,22 +55,24 @@ layout: default
     z-index: -1;
   }
 
-  .even-deeper-white-background {
-  position: fixed;
-  top: -500px; /* Déplace le fond vers le haut pour couvrir toute la hauteur de défilement possible */
+/* Styles pour le carré blanc */
+.white-square {
+  position: absolute;
+  top: -100vh; /* Position au-dessus de la zone visible */
   left: 0;
-  width: 100%;
-  height: 501px; /* Hauteur suffisamment grande pour couvrir la zone non visible */
-  background-color: white;
-  z-index: 1; /* Place le fond derrière la plupart des autres éléments */
+  width: 100%; /* Pour couvrir toute la largeur */
+  height: 100vh; /* Hauteur pour couvrir la hauteur de la fenêtre */
+  background-color: white; /* Couleur blanche */
 }
+
 
 
 
 </style>
 
-<div class="even-deeper-white-background"></div>
+
 <div class="white-background"></div>
+<div class="white-square"></div>
 
 <h1>
   {{ page.title }}
