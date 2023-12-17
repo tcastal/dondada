@@ -21,28 +21,27 @@ After years of continuous progress in the pursuit of crafting the finest beers, 
 
 **ADD PLOT**
 
-### Row 1
 
 <!-- Image 1 -->
 <div style="display: inline-block; width: 45%;">
-    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image1.html" width="100%" height="300px"></object>
+    <img src="{{ site.baseurl }}/assets/images/image1.png" alt="Image 1" style="width: 100%; height: auto;">
 </div>
 
 <!-- Image 2 -->
 <div style="display: inline-block; width: 45%;">
-    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image2.html" width="100%" height="300px"></object>
+    <img src="{{ site.baseurl }}/assets/images/image2.png" alt="Image 2" style="width: 100%; height: auto;">
 </div>
 
 ### Row 2
 
 <!-- Image 3 -->
 <div style="display: inline-block; width: 45%;">
-    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image3.html" width="100%" height="300px"></object>
+    <img src="{{ site.baseurl }}/assets/images/image3.png" alt="Image 3" style="width: 100%; height: auto;">
 </div>
 
 <!-- Image 4 -->
 <div style="display: inline-block; width: 45%;">
-    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image4.html" width="100%" height="300px"></object>
+    <img src="{{ site.baseurl }}/assets/images/image4.png" alt="Image 4" style="width: 100%; height: auto;">
 </div>
 
 
