@@ -21,6 +21,34 @@ After years of continuous progress in the pursuit of crafting the finest beers, 
 
 **ADD PLOT**
 
+### Row 1
+
+<!-- Image 1 -->
+<div style="display: inline-block; width: 45%;">
+    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image1.html" width="100%" height="300px"></object>
+</div>
+
+<!-- Image 2 -->
+<div style="display: inline-block; width: 45%;">
+    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image2.html" width="100%" height="300px"></object>
+</div>
+
+### Row 2
+
+<!-- Image 3 -->
+<div style="display: inline-block; width: 45%;">
+    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image3.html" width="100%" height="300px"></object>
+</div>
+
+<!-- Image 4 -->
+<div style="display: inline-block; width: 45%;">
+    <object type="text/html" data="{{ site.baseurl }}/assets/plots/image4.html" width="100%" height="300px"></object>
+</div>
+
+
+
+
+
 
 
 Certain beers, such as India Pale Ale (IPA), American IPA, and Pale Ale (APA), stand out from others. Moreover, there are styles that share similarities like Imperial Stout and Stout. Hence, we opted to consolidate styles into broader categories.We drew inspiration from the BeerAdvocate website, which has already established some "bigger style" groupings; we now have a total of fifteen larger styles. This approach enables us to present a more streamlined version of the Beeriverse for enhanced visualization.
@@ -47,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="100%"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="100%" height="600px"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
@@ -57,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
         } else if (selectedValue === 'rb_IPA') {
             content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
         }
