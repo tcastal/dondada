@@ -9,10 +9,14 @@ permalink: /contact
         width: 100px;
         height: 100px;
     }
+
+    .centered-content {
+        text-align: center;
+    }
 </style>
 
 
-<div style="display: flex; justify-content: center;">
+<div class="centered-content">
     <div style="width: 80%;">
         <div style="display: flex; justify-content: space-between;">
             <div style="width: 45%;">
@@ -27,7 +31,7 @@ permalink: /contact
     </div>
 </div>
 
-<div style="display: flex; justify-content: center;">
+<div class="centered-content">
     <div style="width: 80%;">
         <div style="display: flex; justify-content: space-between;">
             <div style="width: 45%;">
@@ -42,9 +46,9 @@ permalink: /contact
     </div>
 </div>
 
-<div style="display: flex; justify-content: center;">
+<div class="centered-content">
     <div style="width: 50%;">
-        <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" class="square-image"">
+        <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" class="square-image">
         <p>Thomas Castaldi</p>
     </div>
 </div>
