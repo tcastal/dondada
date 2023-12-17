@@ -100,9 +100,4 @@ document.addEventListener('DOMContentLoaded', function() {
 Comment ?
 
 
-<div id="content">
-    <div style="height:600px;">
-        <iframe id="optomaFeed" src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" scrolling="auto"
-            frameborder="0" height="100%" width="100%"></iframe>
-    </div>
-</div> 
+<iframe id="optomaFeed" src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" frameborder="0" height="100%" width="100%"></iframe>
