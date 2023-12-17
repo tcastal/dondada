@@ -5,11 +5,11 @@ permalink: /datastory
 ---
 ## Setting the scene
 
-<p style="width: 80%; margin: 0 auto;">
+<div style="text-align: justify;">
 Beer is one of the oldest human-producest drinks. At the dawn of Beeriverse, about 8 thousand years ago, humans in Mesopotamia produced a drink by fermenting bread. If one of us drinked it nowadays, we would probably find the taste awful. Later, during the middle age, people in Germany started to cultivate hops, which flower can be used to adjust beer flavor and bitterness. Then, in the past centuries, what was just a simple beverage with plain taste eventually evolved with the humans that produced it. For example porters were brewed for cargo carriers working in the cold londonian environment, while trappist monks in belgium who used to produce everything they consumed developed a taste for strong “tripel” beers. These two examples are but a glimpse of the many styles of this godly beverage that were created and how they were influenced by many geographical and social factors.
 
 So embark on a journey to discover which style will win the battle to claim the title of most popular beer style of the Beeriverse.
-</p>
+</div>
 
 ## Introduction
 
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="max-width:100%; max-height:100%;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="width:100%; height:100%; overflow:hidden;"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="auto" height="auto"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="699px" height="599px"></object>';
         } else if (selectedValue === 'rb_IPA') {
             content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
         }
