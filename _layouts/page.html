@@ -20,7 +20,7 @@ layout: default
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
     animation-name: bubbleAnimation;
-    animation-duration: 5s; /* Durée de l'animation */
+    animation-duration: 7s; /* Durée de l'animation */
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     opacity: 0; /* Rendre les bulles initialement invisibles */
@@ -30,15 +30,15 @@ layout: default
   /* Animation des bulles */
   @keyframes bubbleAnimation {
     0% {
-      transform: translateY(100%); /* Début de l'animation en bas de la fenêtre */
+      transform: translateY(0);
       opacity: 0; /* Rendre les bulles initialement invisibles */
     }
-    70% {
-      transform: translateY(20%); /* Montée des bulles vers le haut */
+    30% {
+      transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
       opacity: 1; /* Rendre les bulles visibles */
     }
     100% {
-      transform: translateY(-200%); /* Disparition des bulles au sommet */
+      transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
       opacity: 0; /* Rendre les bulles invisibles */
     }
   }
