@@ -37,10 +37,6 @@ layout: default
       transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
       opacity: 1; /* Rendre les bulles visibles */
     }
-    100% {
-      transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
-      opacity: 1; /* Rendre les bulles invisibles */
-    }
   }
 
 /* Bande blanche pour la datastory */
@@ -76,23 +72,25 @@ layout: default
 <script>
   function createBubbles() {
     const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    const totalHeight = Math.max(windowHeight, documentHeight);
+    const bubbles = document.querySelectorAll('.bubble');
 
-    for (let i = 1; i <= 100; i++) {
-      const bubble = document.createElement('div');
-      bubble.classList.add('bubble');
+    bubbles.forEach(bubble => {
       const bubbleSize = Math.floor(Math.random() * 50) + 10;
       bubble.style.width = bubbleSize + 'px';
       bubble.style.height = bubbleSize + 'px';
-      bubble.style.top = Math.random() * (totalHeight - bubbleSize) + 'px';
+      bubble.style.top = (windowHeight - bubbleSize) + 'px';
       bubble.style.left = Math.random() * (window.innerWidth - bubbleSize) + 'px';
-      bubble.style.animationDelay = Math.random() * 5 + 's';
 
-      document.body.appendChild(bubble);
-    }
+      bubble.style.animationDelay = Math.random() * 1 + 's';
+      bubble.addEventListener('animationiteration', function() {
+        const bubbleRect = bubble.getBoundingClientRect();
+        if (bubbleRect.top <= 0) {
+          bubble.style.display = 'none';
+        }
+      });
+    });
   }
-  
-  setTimeout(createBubbles, 100);
+
+  createBubbles();
 </script>
 
