@@ -1,7 +1,7 @@
 ---
 layout: home
 title: 
-permalink:
+permalink: /test
 ---
 
 <div style="text-align: center;">
