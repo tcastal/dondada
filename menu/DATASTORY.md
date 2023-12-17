@@ -17,7 +17,8 @@ We will try to understand which beer styles are popular, but also factors that f
 
 ## What styles of beers are popular?
 
-After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. To enhance visual clarity, we will display only the fifteen largest numbers of beers and ratings for each style of beers.
+After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles.  
+To enhance visual clarity, we will display only the fifteen largest numbers of beers and ratings for each style of beers.
 
 
 
@@ -79,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="width:100%; height:100%; overflow:hidden;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="width: 700px; height: 600px; transform: scale(0.9); transform-origin: 0 0;"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
@@ -89,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="750px" height="650px"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="710px" height="610px"></object>';
         } else if (selectedValue === 'rb_IPA') {
             content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
         }
