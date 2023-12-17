@@ -9,54 +9,36 @@ permalink: /contact
         <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg">
         <p>Adrien Sizaret</p>
     </div>
-    <div class="image">
-        <img src="chemin_vers_image_2.jpg">
-        <p>Margot Chapot</p>
-    </div>
-    <div class="image">
-        <img src="chemin_vers_image_3.jpg">
-        <p>Thibaut Haslé</p>
-    </div>
-    <div class="image">
-        <img src="chemin_vers_image_4.jpg">
-        <p>Gaspard Oudinot</p>
-    </div>
-    <div class="image">
-        <img src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html">
-        <p>Thomas Castaldi</p>
+
+
+<div style="display: flex; justify-content: center;">
+    <div style="width: 80%;">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" style="width: 100%; height: auto;">
+            </div>
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+            </div>
+        </div>
     </div>
 </div>
 
+<div style="display: flex; justify-content: center;">
+    <div style="width: 80%;">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" style="width: 100%; height: auto;">
+            </div>
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+</div>
 
-<style>
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: -50px; /* Compenser l'espacement négatif pour aligner avec le container */
-    margin-right: 50px; /* Compenser l'espacement négatif pour aligner avec le container */
-}
-
-.image {
-    width: 18%;
-    margin-bottom: 20px; /* Espacement en bas de chaque image */
-    text-align: center;
-    margin-right: 10px; /* Espacement horizontal entre les images */
-}
-
-.image:last-child {
-    margin-right: 0; /* Supprime l'espacement à droite de la dernière image */
-}
-
-
-.image img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.image p {
-    margin-top: 5px;
-    font-size: 14px;
-}
-</style>
+<div style="display: flex; justify-content: center;">
+    <div style="width: 50%;">
+        <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" style="display: block; margin: 0 auto; width: 100%; height: auto;">
+    </div>
+</div>
