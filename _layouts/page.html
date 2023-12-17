@@ -27,21 +27,17 @@ layout: default
     z-index: -2;
   }
 
-  /* Animation des bulles */
   @keyframes bubbleAnimation {
-    0% {
-      transform: translateY(0);
-      opacity: 0; /* Rendre les bulles initialement invisibles */
-    }
-    50% {
-      transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
-      opacity: 1; /* Rendre les bulles visibles */
-    }
-    100% {
-      transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
-      opacity: 1; /* Rendre les bulles invisibles */
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0; /* Rendre les bulles initialement invisibles */
   }
+  100% {
+    transform: translateY(-200vh); /* Faire monter les bulles jusqu'à deux fois la hauteur de la fenêtre */
+    opacity: 1; /* Rendre les bulles visibles */
+  }
+}
+
 
 /* Bande blanche pour la datastory */
   .white-background {
@@ -74,22 +70,20 @@ layout: default
 
 <!-- Ajout d'éléments pour représenter les bulles -->
 <script>
-  function createBubbles() {
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-    const totalHeight = Math.max(windowHeight, documentHeight);
+  // Fonction pour générer les bulles
 
+  function createBubbles() {
     for (let i = 1; i <= 100; i++) {
       const bubble = document.createElement('div');
       bubble.classList.add('bubble');
-      const bubbleSize = Math.floor(Math.random() * 50) + 10;
+      const bubbleSize = Math.floor(Math.random() * 50) + 10; // Taille aléatoire entre 10px et 60px
       bubble.style.width = bubbleSize + 'px';
       bubble.style.height = bubbleSize + 'px';
-      bubble.style.top = Math.random() * (totalHeight - bubbleSize) + 'px';
-      bubble.style.left = Math.random() * (window.innerWidth - bubbleSize) + 'px';
-      bubble.style.animationDelay = Math.random() * 1 + 's';
+      bubble.style.top = Math.random() * (window.innerHeight - bubbleSize) + 'px'; // Position aléatoire en hauteur
+      bubble.style.left = Math.random() * (window.innerWidth - bubbleSize) + 'px'; // Position aléatoire en largeur
+      bubble.style.animationDelay = Math.random() * 4 + 's'; // Délai d'animation aléatoire
 
-      document.body.appendChild(bubble);
+      document.body.appendChild(bubble); // Ajout de la bulle au document
     }
   }
   
