@@ -13,15 +13,16 @@ So embark on a journey to discover which style will win the battle to claim the 
 
 ## Introduction
 
+<div style="text-align: justify;">
 We will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, BeerAdvocate and RateBeer. These websites populate the Beeriverse with more than 100 beer styles, thousands of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
+</div>
 
 ## What styles of beers are popular?
 
+<div style="text-align: justify;">
 After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. To enhance visual clarity, we will display only the fifteen largest numbers of beers and ratings for each style of beers.
+</div>
 
-
-
-**ADD PLOT**
 
 
 <div style="display: flex; justify-content: center;">
@@ -40,23 +41,24 @@ After years of continuous progress in the pursuit of crafting the finest beers, 
 
 ### Row 2
 
-<div style="text-align: center;">
-    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
-        <img src="{{ site.baseurl }}/assets/plots/image1.png" alt="Image 1" style="width: 100%; height: auto;">
-    </div>
-    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
-        <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+<div style="display: flex; justify-content: center;">
+    <div style="width: 80%;">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/plots/image3.png" alt="Image 3" style="width: 100%; height: auto;">
+            </div>
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/plots/image4.png" alt="Image 4" style="width: 100%; height: auto;">
+            </div>
+        </div>
     </div>
 </div>
 
 
 
-
-
-
-
+<div style="text-align: justify;">
 Certain beers, such as India Pale Ale (IPA), American IPA, and Pale Ale (APA), stand out from others. Moreover, there are styles that share similarities like Imperial Stout and Stout. Hence, we opted to consolidate styles into broader categories.We drew inspiration from the BeerAdvocate website, which has already established some "bigger style" groupings; we now have a total of fifteen larger styles. This approach enables us to present a more streamlined version of the Beeriverse for enhanced visualization.
-
+</div>
 
 
 ## Number of ratings for the IPA's around the world
@@ -98,6 +100,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 Comment ?
-
-
-<iframe id="optomaFeed" src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" frameborder="0" height="600" width="700"></iframe>
