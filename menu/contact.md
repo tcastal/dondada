@@ -3,18 +3,29 @@ layout: home
 title: Contact
 permalink: /contact
 ---
+<style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 700px; margin: 0 auto;">
-    <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Image 1" style="width: 200px; height: 200px;">
-    <p>Adrien Sizaret</p>
-    <img src="chemin/vers/image2.png" alt="Image 2" style="width: 200px; height: 200px;">
-    <p>Margot Chapot</p>
-</div>
+    .d {
+      display: flex;
+      justify-content: space-between;
+      width: 50%; /* Vous pouvez ajuster la largeur en pourcentage */
+    }
+
+    img {
+      max-width: 45%; /* Ajustez la largeur maximale des images */
+      height: auto;
+    }
+</style>
 
 
-<div class="centered-content">
-    <div style="width: 50%;">
-        <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" class="square-image">
-        <p>Thomas Castaldi</p>
-    </div>
+<div class="d">
+    <img src="../assets/img/Adrien.jpeg" alt="Image 1">
+    <img src="../assets/plots/image1.png" alt="Image 2">
 </div>
