@@ -30,16 +30,16 @@ layout: default
   /* Animation des bulles */
   @keyframes bubbleAnimation {
     0% {
-      transform: translateY(100vh); /* Début de l'animation en bas de la fenêtre */
+      transform: translateY(100%); /* Début de l'animation en bas de la fenêtre */
       opacity: 0; /* Rendre les bulles initialement invisibles */
     }
-    50% {
-      transform: translateY(-50vh); /* Montée des bulles vers le haut */
+    70% {
+      transform: translateY(20%); /* Montée des bulles vers le haut */
       opacity: 1; /* Rendre les bulles visibles */
     }
     100% {
-      transform: translateY(-50vh); /* Disparition des bulles au sommet */
-      opacity: 1; /* Rendre les bulles invisibles */
+      transform: translateY(-200%); /* Disparition des bulles au sommet */
+      opacity: 0; /* Rendre les bulles invisibles */
     }
   }
 
