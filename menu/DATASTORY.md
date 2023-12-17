@@ -100,4 +100,4 @@ document.addEventListener('DOMContentLoaded', function() {
 Comment ?
 
 
-<iframe id="optomaFeed" src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" frameborder="0" height="100%" width="100%"></iframe>
+<iframe id="optomaFeed" src="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" frameborder="0" height="600" width="700"></iframe>
