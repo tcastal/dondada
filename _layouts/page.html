@@ -33,13 +33,9 @@ layout: default
       transform: translateY(0);
       opacity: 0; /* Rendre les bulles initialement invisibles */
     }
-    30% {
-      transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
-      opacity: 1; /* Rendre les bulles visibles */
-    }
     100% {
-      transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
-      opacity: 0; /* Rendre les bulles invisibles */
+      transform: translateY(-200vh); /* Faire monter les bulles jusqu'à deux fois la hauteur de la fenêtre */
+      opacity: 1; /* Rendre les bulles visibles */
     }
   }
 
