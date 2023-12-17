@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Brewmageddon: How IPAs Took Over the Beeriverse"
-permalink: /datastory
+permalink: /
 ---
 ## Setting the scene
 
@@ -38,8 +38,6 @@ After years of continuous progress in the pursuit of crafting the finest beers, 
     </div>
 </div>
 
-
-### Row 2
 
 <div style="display: flex; justify-content: center;">
     <div style="width: 80%;">
@@ -91,9 +89,9 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="710px" height="610px"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="width: 700px; height: 600px;"></object>';
         } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" style="width: 700px; height: 600px;"></object>';
         }
     });
 });
