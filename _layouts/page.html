@@ -39,7 +39,7 @@ layout: default
     }
     100% {
       transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
-      opacity: 1; /* Rendre les bulles invisibles */
+      opacity: 0; /* Rendre les bulles invisibles */
     }
   }
 
@@ -83,14 +83,17 @@ layout: default
       const bubbleSize = Math.floor(Math.random() * 50) + 10; // Taille aléatoire entre 10px et 60px
       bubble.style.width = bubbleSize + 'px';
       bubble.style.height = bubbleSize + 'px';
-      bubble.style.top = Math.random() * (window.innerHeight - bubbleSize) + 'px'; // Position aléatoire en hauteur
+      
+      // Position des bulles en bas de la page
+      bubble.style.bottom = '-' + bubbleSize + 'px'; // Début en dehors de la fenêtre
       bubble.style.left = Math.random() * (window.innerWidth - bubbleSize) + 'px'; // Position aléatoire en largeur
+      
       bubble.style.animationDelay = Math.random() * 4 + 's'; // Délai d'animation aléatoire
 
       document.body.appendChild(bubble); // Ajout de la bulle au document
     }
   }
-  
+
   setTimeout(createBubbles, 100);
 </script>
 
