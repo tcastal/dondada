@@ -4,49 +4,13 @@ title: Contact
 permalink: /contact
 ---
 
-<style>
-    .square-image {
-        width: 100px;
-        height: 100px;
-    }
-
-    .centered-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-</style>
-
-
-<div class="centered-content">
-    <div style="width: 80%;">
-        <div style="display: flex; justify-content: space-between;">
-            <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" class="square-image">
-                <p>Adrien Sizaret</p>
-            </div>
-            <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" class="square-image">
-                <p>Margot Chapot</p>
-            </div>
-        </div>
-    </div>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 700px; margin: 0 auto;">
+    <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Image 1" style="width: 200px; height: 200px;">
+    <p>Adrien Sizaret</p>
+    <img src="chemin/vers/image2.png" alt="Image 2" style="width: 200px; height: 200px;">
+    <p>Margot Chapot</p>
 </div>
 
-<div class="centered-content">
-    <div style="width: 80%;">
-        <div style="display: flex; justify-content: space-between;">
-            <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg" alt="Adrien" class="square-image">
-                <p>Gaspard Oudinot</p>
-            </div>
-            <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" class="square-image">
-                <p>Thibaut Haslé</p>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="centered-content">
     <div style="width: 50%;">
