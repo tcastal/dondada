@@ -3,31 +3,28 @@ layout: page
 title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 permalink: /datastory
 ---
+## Setting the scene
 
-<style>
-    .custom-object {
-        max-width: 700px;
-        width: 100%;
-        height: 600px;
-    }
-</style>
+Beer is one of the oldest human-producest drinks. At the dawn of Beeriverse, about 8 thousand years ago, humans in Mesopotamia produced a drink by fermenting bread. If one of us drinked it nowadays, we would probably find the taste awful. Later, during the middle age, people in Germany started to cultivate hops, which flower can be used to adjust beer flavor and bitterness. Then, in the past centuries, what was just a simple beverage with plain taste eventually evolved with the humans that produced it. For example porters were brewed for cargo carriers working in the cold londonian environment, while trappist monks in belgium who used to produce everything they consumed developed a taste for strong “tripel” beers. These two examples are but a glimpse of the many styles of this godly beverage that were created and how they were influenced by many geographical and social factors.
 
-In this exploration, we embark on a journey to uncover the meteoric rise of India Pale Ales (IPAs) within the realm of beer culture.  
-While the term 'IPA' has historical roots tracing back to centuries past, its explosion in popularity has been a recent phenomenon. Today, it's nearly impossible to enter a bar without encountering this ubiquitous term adorning beer taps worldwide. But what catalyzed this unprecedented craze?
+So embark on a journey to discover which style will win the battle to claim the title of most popular beer style of the Beeriverse.
 
-This project delves deep into unraveling the enigma surrounding the IPA's ascendancy, scrutinizing its spread across geographical and social landscapes. Through meticulous analysis of millions of reviews from esteemed beer rating websites such as BeerAdvocate and RateBeer, we aim to unearth the intricacies behind the IPA's global dominance.
+## Introduction
 
-Our research sets forth compelling inquiries:
+We will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, BeerAdvocate and RateBeer. These websites populate the Beeriverse with more than 100 beer styles, thousands of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
 
-- Is the IPA genuinely the supreme choice amongst beer enthusiasts, or do other beer styles trail behind in a similar trend?
-- Geographically, where did this trend originate, and what pivotal regions acted as its launchpad? Are there distinctive patterns in its global dissemination?
-- Can we establish a correlation between the surge of microbreweries, craft beer, and the soaring popularity of IPAs?
-- From a social perspective, where does the passionate fanbase of IPAs predominantly reside? 
-- Do successful breweries consistently craft trendsetting beers akin to IPAs?
+## What styles of beers are popular?
 
-Furthermore, armed with insights gained from our analysis, we aspire to forecast the next evolutionary wave in beer preference. What will succeed the IPA in the hearts of beer aficionados, and from which corner of the world will this emergence originate?
+After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. To enhance visual clarity, we will display only the fifteen largest numbers of beers and ratings for each style of beers.
 
-Join us in this riveting expedition through the beeriverse as we uncover the past, present, and future of beer trends, aiming to decipher the recipe behind the global dissemination of beer styles and predicting the ever-evolving preferences of beer enthusiasts.
+
+
+**ADD PLOT**
+
+
+
+Certain beers, such as India Pale Ale (IPA), American IPA, and Pale Ale (APA), stand out from others. Moreover, there are styles that share similarities like Imperial Stout and Stout. Hence, we opted to consolidate styles into broader categories.We drew inspiration from the BeerAdvocate website, which has already established some "bigger style" groupings; we now have a total of fifteen larger styles. This approach enables us to present a more streamlined version of the Beeriverse for enhanced visualization.
+
 
 
 ## Number of ratings for the IPA's around the world
@@ -50,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" class="custom-object"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%" height="600px"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
