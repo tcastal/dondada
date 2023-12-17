@@ -4,12 +4,6 @@ title: Contact
 permalink: /contact
 ---
 
-<div class="gallery">
-    <div class="image">
-        <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg">
-        <p>Adrien Sizaret</p>
-    </div>
-
 
 <div style="display: flex; justify-content: center;">
     <div style="width: 80%;">
