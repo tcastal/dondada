@@ -24,14 +24,19 @@ After years of continuous progress in the pursuit of crafting the finest beers, 
 **ADD PLOT**
 
 
-<div style="text-align: center;">
-    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
-        <img src="{{ site.baseurl }}/assets/plots/image1.png" alt="Image 1" style="width: 100%; height: auto;">
-    </div>
-    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
-        <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+<div style="display: flex; justify-content: center;">
+    <div style="width: 80%;">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/plots/image1.png" alt="Image 1" style="width: 100%; height: auto;">
+            </div>
+            <div style="width: 45%;">
+                <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+            </div>
+        </div>
     </div>
 </div>
+
 
 ### Row 2
 
@@ -74,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="100%" height="100%"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="max-width:100%; max-height:100%;"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
@@ -84,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="auto" height="auto"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" width="auto" height="auto"></object>';
         } else if (selectedValue === 'rb_IPA') {
             content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
         }
