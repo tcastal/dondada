@@ -4,28 +4,24 @@ title: Contact
 permalink: /contact
 ---
 <style>
-    body {
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+    #imagesMain {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        text-align: center;
+    }
+    #imagesMain img {
+        height: 100px;
+        width: 100px;
+        vertical-align: middle;
     }
 
-    .d {
-      display: flex;
-      justify-content: space-between;
-      width: 50%; /* Vous pouvez ajuster la largeur en pourcentage */
-    }
-
-    img {
-      max-width: 45%; /* Ajustez la largeur maximale des images */
-      height: auto;
-    }
 </style>
 
 
-<div class="d">
-    <img src="../assets/img/Adrien.jpeg" alt="Image 1">
-    <img src="../assets/plots/image1.png" alt="Image 2">
+<div id="imagesMain">
+  <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg">
+  <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg">
+  <img src="{{ site.baseurl }}/assets/img/Adrien.jpeg">
 </div>
