@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="width: 700px; height: 600px; transform: scale(0.9); transform-origin: 0 0;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_700px.html" style="width: 700px; height: 600px;"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
