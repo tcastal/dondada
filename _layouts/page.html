@@ -33,7 +33,7 @@ layout: default
       transform: translateY(0);
       opacity: 0; /* Rendre les bulles initialement invisibles */
     }
-    10% {
+    20% {
       opacity: 1; /* Rendre les bulles rapidement visibles */
     }
     90% {
@@ -82,7 +82,7 @@ layout: default
     const documentHeight = document.documentElement.scrollHeight;
     const totalHeight = Math.max(windowHeight, documentHeight);
 
-    for (let i = 1; i <= 400; i++) {
+    for (let i = 1; i <= 150; i++) {
       const bubble = document.createElement('div');
       bubble.classList.add('bubble');
       const bubbleSize = Math.floor(Math.random() * 50) + 10;
