@@ -5,9 +5,11 @@ permalink: /datastory
 ---
 ## Setting the scene
 
+<p style="width: 80%; margin: 0 auto;">
 Beer is one of the oldest human-producest drinks. At the dawn of Beeriverse, about 8 thousand years ago, humans in Mesopotamia produced a drink by fermenting bread. If one of us drinked it nowadays, we would probably find the taste awful. Later, during the middle age, people in Germany started to cultivate hops, which flower can be used to adjust beer flavor and bitterness. Then, in the past centuries, what was just a simple beverage with plain taste eventually evolved with the humans that produced it. For example porters were brewed for cargo carriers working in the cold londonian environment, while trappist monks in belgium who used to produce everything they consumed developed a taste for strong “tripel” beers. These two examples are but a glimpse of the many styles of this godly beverage that were created and how they were influenced by many geographical and social factors.
 
 So embark on a journey to discover which style will win the battle to claim the title of most popular beer style of the Beeriverse.
+</p>
 
 ## Introduction
 
@@ -22,26 +24,24 @@ After years of continuous progress in the pursuit of crafting the finest beers, 
 **ADD PLOT**
 
 
-<!-- Image 1 -->
-<div style="display: inline-block; width: 45%;">
-    <img src="{{ site.baseurl }}/assets/plots/image1.png" alt="Image 1" style="width: 100%; height: auto;">
-</div>
-
-<!-- Image 2 -->
-<div style="display: inline-block; width: 45%;">
-    <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+<div style="text-align: center;">
+    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
+        <img src="{{ site.baseurl }}/assets/plots/image1.png" alt="Image 1" style="width: 100%; height: auto;">
+    </div>
+    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
+        <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+    </div>
 </div>
 
 ### Row 2
 
-<!-- Image 3 -->
-<div style="display: inline-block; width: 45%;">
-    <img src="{{ site.baseurl }}/assets/plots/image3.png" alt="Image 3" style="width: 100%; height: auto;">
-</div>
-
-<!-- Image 4 -->
-<div style="display: inline-block; width: 45%;">
-    <img src="{{ site.baseurl }}/assets/plots/image4.png" alt="Image 4" style="width: 100%; height: auto;">
+<div style="text-align: center;">
+    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
+        <img src="{{ site.baseurl }}/assets/plots/image1.png" alt="Image 1" style="width: 100%; height: auto;">
+    </div>
+    <div style="display: inline-block; width: 45%; margin: 0 2.5%;">
+        <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+    </div>
 </div>
 
 
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="100%" height="100%"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap.html" width="auto" height="auto"></object>';
         } else if (selectedValue === 'rb_IPA') {
             content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap.html" width="100%" height="600px"></object>';
         }
