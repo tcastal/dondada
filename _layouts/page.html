@@ -33,15 +33,18 @@ layout: default
       transform: translateY(0);
       opacity: 0; /* Rendre les bulles initialement invisibles */
     }
-    50% {
-      transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
-      opacity: 1; /* Rendre les bulles visibles */
+    10% {
+      opacity: 1; /* Rendre les bulles rapidement visibles */
+    }
+    90% {
+      opacity: 1; /* Garder les bulles visibles */
     }
     100% {
       transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
-      opacity: 0; /* Rendre les bulles invisibles */
+      opacity: 0; /* Rendre les bulles invisibles à la fin */
     }
   }
+
 
 /* Bande blanche pour la datastory */
   .white-background {
