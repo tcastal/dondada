@@ -373,8 +373,8 @@ Comment ?
 <!-- Image Microbrewery IPA overall  -->
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
 
-<div style="display: flex; justify-content: center;">
-    <table class="styled-table-no-last-tr" style="width: 200px;">
+<div style="display: flex; justify-content: center; width: 300px;">
+    <table class="styled-table-no-last-tr">
         <tbody>
             <tr>
                 <th class="first-column">Chi-square statistic:</th>
