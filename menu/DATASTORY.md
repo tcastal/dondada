@@ -60,6 +60,7 @@ Let’s see what the Beeriversers from BeerAdvocate think of this by looking at 
 
 
 <div style="text-align: justify;">
+<br>
 Let’s observe words that are highly represented in positive reviews, but not in negative reviews. We can notice the presence of interesting words such as “nice”, “malt”, “hops” or “carbonation”. We can hypothesize that these words represent beer characteristics that are appreciated. For example we can see that malts and hops content are factors influencing Beeriversers appreciation towards a beer (even more considering that these words are quite small in the bad reviews word cloud).
 </div>
 
@@ -81,25 +82,33 @@ Let’s observe words that are highly represented in positive reviews, but not i
 
 
 <div style="text-align: justify;">
+<br>
 Now let’s look at words highly represented in reviews about IPAs. IPAs are notoriously very hoppy, which is represented by “hops” and “hop” in the top 3 words. This might be a factor explaining the IPA popularity, since people seem to enjoy beers with hoppy characteristics. We can also notice the presence of the word “nice” that seems to be a good indicator of a beer's popularity. In contrast, we cannot find any word associated exclusively with bad reviews, such as “bad” or “water”. These observations suggest that in general, IPAs are quite appreciated by Beeriversers.  
 
 Then, if we take a look at Stout reviews, we see that many words are exclusive to stouts. This may come as surprising, as we saw that stouts seemed to be quite popular. However, considering that stouts have a unique taste, very different from other beers, it makes sense that the vocabulary used to describe them is also unique.
+<br>
 </div>
 
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-jqdd{background-color:#FFD966;text-align:left;vertical-align:top}
-.tg .tg-apnh{background-color:#999;text-align:left;vertical-align:top}
-.tg .tg-7utg{background-color:#93C47D;text-align:left;vertical-align:top}
+    .tg { max-width: 500px; margin: 0 auto; }
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-0lax{text-align:left;vertical-align:top}
+    .tg .tg-jqdd{background-color:#FFD966;text-align:left;vertical-align:top}
+    .tg .tg-apnh{background-color:#999;text-align:left;vertical-align:top}
+    .tg .tg-7utg{background-color:#93C47D;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
+<caption>
+Green: Words that are in good reviews top 10 but not bad reviews<br>
+Yellow: Match words only in good reviews and IPA reviews<br>
+Grey: Words exclusive to stout reviews top 10<br>
+</caption>
 <thead>
   <tr>
     <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none">Good Rev.</span></th>
