@@ -91,7 +91,7 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 
 
 <style type="text/css">
-    .tg { max-width: 500px; margin: 0 auto; }
+    .tg { max-width: 600px; margin: 0 auto; }
     .tg  {border-collapse:collapse;border-spacing:0;}
     .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
     overflow:hidden;padding:10px 5px;word-break:normal;}
