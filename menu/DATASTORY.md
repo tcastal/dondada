@@ -364,41 +364,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
-
-
-
-
-
-
-
-## A bit of geography
-
-<div style="text-align: justify;">
-Now that we are convinced that IPA is the style of the moment in the Beeriverse, let’s try to understand how this happened. What were the key factors of this explosion ? First of all, let’s see if we can identify a pattern at the scale of the world by displaying the IPA ratings on for each years.
-</div>
-
-
-<select id="selector">
-    <option value="ba_IPA">BeerAdvocate</option>
-    <option value="rb_IPA">RateBeer</option>
-</select>
-
-<!-- Conteneur pour afficher le contenu sélectionné -->
-<div id="content">
-    <!-- Le contenu sera affiché ici -->
-</div>
-
-<!-- Inclusion du script JavaScript -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector');
-    const content = document.getElementById('content');
-
-
-        function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>
-                 // Chargement du tableau
+/* // Chargement du tableau
                 <div style="display: flex; justify-content: center;">
                     <table class="styled-table">
                         <thead>
@@ -430,7 +396,38 @@ document.addEventListener('DOMContentLoaded', function() {
                             </tr>
                         </tbody>
                     </table>
-                </div>';
+                </div>*/
+
+
+
+
+
+## A bit of geography
+
+<div style="text-align: justify;">
+Now that we are convinced that IPA is the style of the moment in the Beeriverse, let’s try to understand how this happened. What were the key factors of this explosion ? First of all, let’s see if we can identify a pattern at the scale of the world by displaying the IPA ratings on for each years.
+</div>
+
+
+<select id="selector">
+    <option value="ba_IPA">BeerAdvocate</option>
+    <option value="rb_IPA">RateBeer</option>
+</select>
+
+<!-- Conteneur pour afficher le contenu sélectionné -->
+<div id="content">
+    <!-- Le contenu sera affiché ici -->
+</div>
+
+<!-- Inclusion du script JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('selector');
+    const content = document.getElementById('content');
+
+
+        function loadBeerAdvocateImage() {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
@@ -440,29 +437,9 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>
-            
-            
-            
-            
-
-
-
-            
-            
-            ';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
         } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            ';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
         }
     });
 });
