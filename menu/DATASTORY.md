@@ -81,7 +81,7 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 .styled-table-no-last-tr td {
     /* Styles pour les cellules */
     text-align: center;
-    padding: 8px 10px;
+    padding: 5px 10px;
 }
 
 .styled-table-no-last-tr tbody tr {
@@ -425,7 +425,7 @@ As the density of ratings is enormous in the U.S., we should have a look at what
 ## US STATE POTENTIELLEMENT SELECTEUR
 
 <!-- US STATE  -->
-<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_USAmap_690px.html" width="690px" height="620px"></object>
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_USAmap_690px.html" width="700px" height="620px"></object>
 
 
 
