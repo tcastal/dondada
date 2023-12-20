@@ -80,7 +80,8 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 .styled-table-no-last-tr th,
 .styled-table-no-last-tr td {
     /* Styles pour les cellules */
-    padding: 4px 6px;
+    text-align: center;
+    padding: 8px 10px;
 }
 
 .styled-table-no-last-tr tbody tr {
@@ -424,14 +425,14 @@ As the density of ratings is enormous in the U.S., we should have a look at what
 ## US STATE POTENTIELLEMENT SELECTEUR
 
 <!-- US STATE  -->
-<object type="text/html" data="{{ site.baseurl }}/assets/plots/IPA_USAmap_690px" width="690px" height="610px"></object>
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_USAmap_690px.html" width="690px" height="620px"></object>
 
 
 
 <div style="text-align: justify;">
-Looking at the map, it seems that two states at opposite coasts of the U.S., California and Pennsylvania played a big role in the development of IPAs in the U.S. They were the 2 only states with more than 100 ratings in 2009 and were only caught up by very big states like New-York, Massachusetts or Illinois in 2013. We can even hypothesize that, once IPAs gained popularity in states that had similarities with Europe (such as Massachusetts and New-York), IPAs started to gain popularity on the old continent.
+Looking at the map, it seems that two states at opposite coasts of the U.S., California and Pennsylvania played a big role in the development of IPAs in the U.S. They were the 2 only states with more than 100 ratings in 2009 and were only caught up by very big states like New-York, Massachusetts or Illinois in 2013. We can even hypothesize that, once IPAs gained popularity in states that had similarities with Europe (such as Massachusetts and New-York), IPAs started to gain popularity on the old continent.  
 
-Nonetheless, by looking at this map, it is undeniable that California and Pennsylvania constitute the cradle of IPAs.
+Nonetheless, by looking at this map, it is undeniable that California and Pennsylvania constitute the cradle of IPAs.  
 </div>
 
 
