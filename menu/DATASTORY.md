@@ -45,8 +45,8 @@ permalink: /
     color: #b84d14;
     }
 
-    .styled-table tx {
-        background-color: #b84d14;
+    .styled-table th {
+        background-color: #e38b12;
         color: #ffffff;
     }
 </style>
@@ -327,11 +327,11 @@ Comment ?
     <table class="styled-table">
         <tbody>
             <tr>
-                <tx class="first-column">Chi-square statistic:</tx>
+                <th class="first-column">Chi-square statistic:</th>
                 <td>853.347</td>
             </tr>
             <tr>
-                <tx class="first-column">P-value:</tx>
+                <th class="first-column">P-value:</th>
                 <td>1.361e-187</td>
             </tr>
         </tbody>
