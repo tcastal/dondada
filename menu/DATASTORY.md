@@ -81,7 +81,7 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 .styled-table-no-last-tr td {
     /* Styles pour les cellules */
     text-align: center;
-    padding: 5px 10px;
+    padding: 2.5px 10px;
 }
 
 .styled-table-no-last-tr tbody tr {
@@ -328,21 +328,21 @@ It is only now that we look at this graph that we understand at what point IPAs 
 
 
 
-<select id="selector2">
+<select id="selector3">
     <option value="ba_IPA">BeerAdvocate</option>
     <option value="rb_IPA">RateBeer</option>
 </select>
 
 <!-- Conteneur pour afficher le contenu sélectionné -->
-<div id="content_ratings_per_year">
+<div id="content_nb_rating_year">
     <!-- Le contenu sera affiché ici -->
 </div>
 
 <!-- Inclusion du script JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector2');
-    const content = document.getElementById('content_ratings_per_year');
+    const select = document.getElementById('selector3');
+    const content = document.getElementById('content_nb_rating_year');
 
 
         function loadBeerAdvocateImage() {
