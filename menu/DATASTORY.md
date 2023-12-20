@@ -45,11 +45,6 @@ permalink: /
     color: #b84d14;
     }
 
-    .styled-table th {
-        background-color: #e38b12;
-        color: #ffffff;
-    }
-
 /* #################################################################
 Styles communs, similaires à .styled-table mais sans tr:last-of-type 
 */
@@ -376,10 +371,10 @@ Comment ?
 ## SOCIAL 
 
 <!-- Image Microbrewery IPA overall  -->
-<object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px" style="position: absolute; right: 50px;"></object>
 
 <div style="display: flex; justify-content: center;">
-    <table class="styled-table styled-table-no-last-tr">
+    <table class="styled-table-no-last-tr">
         <tbody>
             <tr>
                 <th class="first-column">Chi-square statistic:</th>
