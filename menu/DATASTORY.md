@@ -317,3 +317,20 @@ Comment ?
 
 <!-- Image Microbrewery IPA overall  -->
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
+
+<div style="display: flex; justify-content: center;">
+    <table class="styled-table">
+        <tbody>
+            <tr>
+                <td class="first-column">Chi-square statistic:</td>
+                <td>853.347</td>
+            </tr>
+            <tr>
+                <td class="first-column">P-value:</td>
+                <td>1.361e-187</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+Reject the null hypothesis: There is a significant difference.
