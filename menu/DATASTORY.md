@@ -57,7 +57,7 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
     margin: 25px 0;
     font-size: 0.9em;
     font-family: sans-serif;
-    min-width: 400px;
+    min-width: 200px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 5px 5px 5px 5px;
     overflow: hidden;
@@ -96,7 +96,6 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 .styled-table-no-last-tr th {
     /* Styles pour les cellules d'en-tête */
     background-color: #ffffff;
-    color: #ffffff;
 }
 
 </style>
@@ -373,7 +372,7 @@ Comment ?
 <!-- Image Microbrewery IPA overall  -->
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
 
-<div style="display: flex; justify-content: center; width: 300px;">
+<div style="display: flex; justify-content: center;">
     <table class="styled-table-no-last-tr">
         <tbody>
             <tr>
