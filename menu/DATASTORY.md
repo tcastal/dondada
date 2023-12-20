@@ -17,7 +17,7 @@ permalink: /
     }
 
     .styled-table thead tr {
-        background-color: #fec44f;
+        background-color: #e38b11;
         color: #ffffff;
         text-align: left;
     }
@@ -42,15 +42,15 @@ permalink: /
     }
 
     .pils-cell {
-        background-color: #ec7014;
+        background-color: rgba(254,196,79,0.4);
     }
 
     .brique-cell {
-        background-color: #cc4c02;
+        background-color: rgba(236,112,20,0.4);
     }
 
     .marron-cell {
-        background-color: #662506;
+        background-color: rgba(153,52,4,0.4);
     }
 
 /* #################################################################
