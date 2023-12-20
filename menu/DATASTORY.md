@@ -316,4 +316,4 @@ Comment ?
 ## SOCIAL 
 
 <!-- Image Microbrewery IPA overall  -->
-<object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="690px" height="500px"></object>
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
