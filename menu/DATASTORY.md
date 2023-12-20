@@ -47,11 +47,11 @@ Let’s see what the Beeriversers from BeerAdvocate think of this by looking at 
     <div style="width: 80%;">
         <div style="display: flex; justify-content: space-between;">
             <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/plots/image1.png" alt="Image 1" style="width: 100%; height: auto;">
+                <img src="{{ site.baseurl }}/assets/plots/good.png" alt="Image 1" style="width: 100%; height: auto;">
                 <figcaption style="text-align: center;">Good reviews</figcaption>
             </div>
             <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/plots/image2.png" alt="Image 2" style="width: 100%; height: auto;">
+                <img src="{{ site.baseurl }}/assets/plots/bad.png" alt="Image 2" style="width: 100%; height: auto;">
                 <figcaption style="text-align: center;">Bad reviews</figcaption>
             </div>
         </div>
@@ -69,11 +69,11 @@ Let’s observe words that are highly represented in positive reviews, but not i
     <div style="width: 80%;">
         <div style="display: flex; justify-content: space-between;">
             <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/plots/image3.png" alt="Image 3" style="width: 100%; height: auto;">
+                <img src="{{ site.baseurl }}/assets/plots/ipa.png" alt="Image 3" style="width: 100%; height: auto;">
                 <figcaption style="text-align: center;">IPA reviews</figcaption>
             </div>
             <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/plots/image4.png" alt="Image 4" style="width: 100%; height: auto;">
+                <img src="{{ site.baseurl }}/assets/plots/stout.png" alt="Image 4" style="width: 100%; height: auto;">
                 <figcaption style="text-align: center;">Stout reviews</figcaption>
             </div>
         </div>
