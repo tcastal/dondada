@@ -62,7 +62,7 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 .styled-table-no-last-tr {
     /* Styles communs, similaires à .styled-table mais sans tr:last-of-type */
     border-collapse: collapse;
-    font-size: 0.6em;
+    font-size: 0.7em;
     font-family: sans-serif;
     min-width: 100px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -80,7 +80,7 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 .styled-table-no-last-tr th,
 .styled-table-no-last-tr td {
     /* Styles pour les cellules */
-    padding: 12px 15px;
+    padding: 4px 6px;
 }
 
 .styled-table-no-last-tr tbody tr {
