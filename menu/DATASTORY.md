@@ -55,9 +55,9 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
     /* Styles communs, similaires à .styled-table mais sans tr:last-of-type */
     border-collapse: collapse;
     margin: 25px 0;
-    font-size: 0.9em;
+    font-size: 0.6em;
     font-family: sans-serif;
-    min-width: 200px;
+    min-width: 100px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-radius: 5px 5px 5px 5px;
     overflow: hidden;
