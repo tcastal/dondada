@@ -12,6 +12,8 @@ permalink: /
         font-family: sans-serif;
         min-width: 400px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-radius: 5px 5px 5px 5px;
+        overflow: hidden
     }
 
     .styled-table thead tr {
@@ -166,7 +168,6 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 
 
 
-
 <div style="text-align: justify;">
 Now that we have the intuition that the IPA is a popular beer style, let’s try to dive deeper in the analysis. Even though tales about this style have been around for a long time, it seems that recently they are on many Beeriversers lips. Let’s confirm that by looking at the distribution of ratings per beer style in the past decades.
 </div>
@@ -174,21 +175,21 @@ Now that we have the intuition that the IPA is a popular beer style, let’s try
 
 ## INSERER BARBLOT COULEUR THIB
 
-<select id="selector">
+<select id="selector1">
     <option value="ba_IPA">BeerAdvocate</option>
     <option value="rb_IPA">RateBeer</option>
 </select>
 
 <!-- Conteneur pour afficher le contenu sélectionné -->
-<div id="content">
+<div id="content_ratings">
     <!-- Le contenu sera affiché ici -->
 </div>
 
 <!-- Inclusion du script JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector');
-    const content = document.getElementById('content');
+    const select = document.getElementById('selector1');
+    const content = document.getElementById('content_ratings');
 
 
         function loadBeerAdvocateImage() {
