@@ -17,7 +17,7 @@ permalink: /
     }
 
     .styled-table thead tr {
-        background-color: #b84d14;
+        background-color: #fea230;
         color: #ffffff;
         text-align: left;
     }
@@ -37,7 +37,7 @@ permalink: /
     }
 
     .styled-table tbody tr:last-of-type {
-        border-bottom: 2px solid #b84d14;
+        border-bottom: 2px solid #fea230;
     }
 
     .styled-table tbody tr.active-row {
@@ -143,20 +143,73 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 <table class="styled-table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Points</th>
+            <th>Good Reviews</th>
+            <th>Bad Reviews</th>
+            <th>IPA Reviews</th>
+            <th>Stout Reviews</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>Dom</td>
-            <td>6000</td>
+            <td>Head</td>
+            <td>Head</td>
+            <td>Hops</td>
+            <td>Chocolate</td>
         </tr>
-        <tr class="active-row">
-            <td>Melissa</td>
-            <td>5150</td>
+        <tr>
+            <td>Nice</td>
+            <td>Light</td>
+            <td>Head</td>
+            <td>Dark</td>
         </tr>
-        <!-- and so on... -->
+        <tr>
+            <td>Good</td>
+            <td>Quot</td>
+            <td>Hop</td>
+            <td>Coffee</td>
+        </tr>
+        <tr>
+            <td>Dark</td>
+            <td>Smell</td>
+            <td>Nice</td>
+            <td>Head</td>
+        </tr>
+        <tr>
+            <td>Sweet</td>
+            <td>Bottle</td>
+            <td>Citrus</td>
+            <td>Black</td>
+        </tr>
+        <tr>
+            <td>Malt</td>
+            <td>Good</td>
+            <td>Malt</td>
+            <td>Roasted</td>
+        </tr>
+        <tr>
+            <td>Light</td>
+            <td>Flavor</td>
+            <td>Good</td>
+            <td>Nice</td>
+        </tr>
+        <tr>
+            <td>Hops</td>
+            <td>Sweet</td>
+            <td>Orange</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>Well</td>
+            <td>Bad</td>
+            <td>White</td>
+            <td>Sweet</td>
+        </tr>
+        <tr>
+            <td>Carbonation</td>
+            <td>Much</td>
+            <td>Light</td>
+            <td>Brown</td>
+        </tr>
     </tbody>
 </table>
 
