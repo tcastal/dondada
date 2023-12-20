@@ -73,7 +73,7 @@ Let’s observe words that are highly represented in positive reviews, but not i
                 <figcaption style="text-align: center;">IPA reviews</figcaption>
             </div>
             <div style="width: 45%;">
-                <img src="{{ site.baseurl }}/assets/plots/stout.png" alt="Image 4" style="width: 100%; height: 350px;">
+                <img src="{{ site.baseurl }}/assets/plots/stout.png" alt="Image 4" style="width: 100%; height: 355px;">
                 <figcaption style="text-align: center;">Stout reviews</figcaption>
             </div>
         </div>
