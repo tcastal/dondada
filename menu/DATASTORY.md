@@ -89,11 +89,6 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
     border-bottom: 1px solid #dddddd;
 }
 
-.styled-table-no-last-tr tbody tr:nth-of-type(even) {
-    /* Styles pour les lignes paires du corps du tableau */
-    background-color: #f3f3f3;
-}
-
 .styled-table-no-last-tr tbody tr.active-row {
     /* Styles pour les lignes actives du corps du tableau */
     font-weight: bold;
@@ -283,23 +278,23 @@ Now that we have the intuition that the IPA is a popular beer style, let’s try
 </div>
 
 
-## INSERER BARBLOT COULEUR THIB
+## BARBLOT COULEUR THIB
 
-<select id="selector1">
+<select id="selector2">
     <option value="ba_IPA">BeerAdvocate</option>
     <option value="rb_IPA">RateBeer</option>
 </select>
 
 <!-- Conteneur pour afficher le contenu sélectionné -->
-<div id="content_ratings">
+<div id="content_ratings_per_year">
     <!-- Le contenu sera affiché ici -->
 </div>
 
 <!-- Inclusion du script JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector1');
-    const content = document.getElementById('content_ratings');
+    const select = document.getElementById('selector2');
+    const content = document.getElementById('content_ratings_per_year');
 
 
         function loadBeerAdvocateImage() {
@@ -328,10 +323,60 @@ It is only now that we look at this graph that we understand at what point IPAs 
 </div>
 
 
+## NEW GRAPH MARGOT + TABLE 
 
 
 
-## Number of ratings for the IPA's around the world
+<select id="selector2">
+    <option value="ba_IPA">BeerAdvocate</option>
+    <option value="rb_IPA">RateBeer</option>
+</select>
+
+<!-- Conteneur pour afficher le contenu sélectionné -->
+<div id="content_ratings_per_year">
+    <!-- Le contenu sera affiché ici -->
+</div>
+
+<!-- Inclusion du script JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('selector2');
+    const content = document.getElementById('content_ratings_per_year');
+
+
+        function loadBeerAdvocateImage() {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+        }
+
+        // Charger l'image BeerAdvocate au chargement initial
+        loadBeerAdvocateImage();
+
+
+    select.addEventListener('change', function() {
+        const selectedValue = select.value;
+        if (selectedValue === 'ba_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+        } else if (selectedValue === 'rb_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+        }
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+## A bit of geography
+
+<div style="text-align: justify;">
+Now that we are convinced that IPA is the style of the moment in the Beeriverse, let’s try to understand how this happened. What were the key factors of this explosion ? First of all, let’s see if we can identify a pattern at the scale of the world by displaying the IPA ratings on for each years.
+</div>
+
 
 <select id="selector">
     <option value="ba_IPA">BeerAdvocate</option>
@@ -369,12 +414,29 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-Comment ?
+<div style="text-align: justify;">
+Interestingly, we see that even though IPAs are an english invention, it is in the U.S. that they started to develop. As a matter of fact, before 2010, IPAs received ratings almost exclusively from Canada and the U.S. After that, the trend started to spread to Europe, while remaining at its top in America.
+
+Finalement, ce serait intéressant de regarder ratebeer ici. Parce que le peu de note européennes meme au top de la trend donne un peu un biais.  
+As the density of ratings is enormous in the U.S., we should have a look at what is happening there to understand if any state were influential in the IPAs explosion.
+</div>
+
+## US STATE POTENTIELLEMENT SELECTEUR
+
+<!-- US STATE  -->
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/IPA_USAmap_690px" width="690px" height="610px"></object>
 
 
 
+<div style="text-align: justify;">
+Looking at the map, it seems that two states at opposite coasts of the U.S., California and Pennsylvania played a big role in the development of IPAs in the U.S. They were the 2 only states with more than 100 ratings in 2009 and were only caught up by very big states like New-York, Massachusetts or Illinois in 2013. We can even hypothesize that, once IPAs gained popularity in states that had similarities with Europe (such as Massachusetts and New-York), IPAs started to gain popularity on the old continent.
 
-## SOCIAL 
+Nonetheless, by looking at this map, it is undeniable that California and Pennsylvania constitute the cradle of IPAs.
+</div>
+
+
+
+## SOCIAL POINT OF VIEW
 
 <!-- Image Microbrewery IPA overall  -->
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
