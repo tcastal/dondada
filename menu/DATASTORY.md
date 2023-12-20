@@ -17,7 +17,7 @@ permalink: /
     }
 
     .styled-table thead tr {
-        background-color: #fea230;
+        background-color: #e38b12;
         color: #ffffff;
         text-align: left;
     }
@@ -37,7 +37,7 @@ permalink: /
     }
 
     .styled-table tbody tr:last-of-type {
-        border-bottom: 2px solid #fea230;
+        border-bottom: 2px solid #e38b12;
     }
 
     .styled-table tbody tr.active-row {
