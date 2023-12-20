@@ -42,15 +42,15 @@ permalink: /
     }
 
     .pils-cell {
-        background-color: rgba(254,196,79,0.4);
+        background-color: rgba(254,196,79,0.2);
     }
 
     .brique-cell {
-        background-color: rgba(236,112,20,0.4);
+        background-color: rgba(236,112,20,0.2);
     }
 
     .marron-cell {
-        background-color: rgba(153,52,4,0.4);
+        background-color: rgba(153,52,4,0.2);
     }
 
 /* #################################################################
@@ -388,7 +388,7 @@ Comment ?
             </tr>
             <tr>
                 <th class="first-column">P-value:</th>
-                <td>1.361e-187</td>
+                <td>1.361e<sup>-187</sup></td>
             </tr>
         </tbody>
     </table>
