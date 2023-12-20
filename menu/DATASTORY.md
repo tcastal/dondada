@@ -54,7 +54,6 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 .styled-table-no-last-tr {
     /* Styles communs, similaires à .styled-table mais sans tr:last-of-type */
     border-collapse: collapse;
-    margin: 25px 0;
     font-size: 0.6em;
     font-family: sans-serif;
     min-width: 100px;
