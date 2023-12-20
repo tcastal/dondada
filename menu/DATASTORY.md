@@ -45,6 +45,18 @@ permalink: /
     color: #b84d14;
     }
 
+    .grey-cell {
+        background-color: #939597;
+    }
+
+    .mauve-cell {
+        background-color: #845b54;
+    }
+
+    .sand-cell {
+        background-color: #b9905e;
+    }
+
 /* #################################################################
 Styles communs, similaires à .styled-table mais sans tr:last-of-type 
 */
@@ -191,6 +203,20 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 
 # TABLE INSERTION:
 
+
+
+    .green-cell {
+        background-color: green;
+    }
+
+    .mauve-cell {
+        background-color: #845b54;
+    }
+
+    .sand-cell {
+        background-color: #b9905e;
+    }
+
 <div style="display: flex; justify-content: center;">
     <table class="styled-table">
         <thead>
@@ -205,11 +231,11 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
             <tr>
                 <td>Head</td>
                 <td>Head</td>
-                <td>Hops</td>
-                <td>Chocolate</td>
+                <td class="sand-cell">Hops</td>
+                <td class="grey-cell">Chocolate</td>
             </tr>
             <tr>
-                <td>Nice</td>
+                <td class="mauve-cell">Nice</td>
                 <td>Light</td>
                 <td>Head</td>
                 <td>Dark</td>
@@ -217,26 +243,26 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
             <tr>
                 <td>Good</td>
                 <td>Quot</td>
-                <td>Hop</td>
-                <td>Coffee</td>
+                <td class="sand-cell">Hop</td>
+                <td class="grey-cell">Coffee</td>
             </tr>
             <tr>
-                <td>Dark</td>
+                <td class="mauve-cell">Dark</td>
                 <td>Smell</td>
-                <td>Nice</td>
+                <td class="sand-cell">Nice</td>
                 <td>Head</td>
             </tr>
             <tr>
                 <td>Sweet</td>
                 <td>Bottle</td>
                 <td>Citrus</td>
-                <td>Black</td>
+                <td class="grey-cell">Black</td>
             </tr>
             <tr>
-                <td>Malt</td>
+                <td class="mauve-cell">Malt</td>
                 <td>Good</td>
-                <td>Malt</td>
-                <td>Roasted</td>
+                <td class="sand-cell">Malt</td>
+                <td class="grey-cell">Roasted</td>
             </tr>
             <tr>
                 <td>Light</td>
@@ -245,22 +271,22 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
                 <td>Nice</td>
             </tr>
             <tr>
-                <td>Hops</td>
+                <td class="mauve-cell">Hops</td>
                 <td>Sweet</td>
                 <td>Orange</td>
                 <td>Good</td>
             </tr>
             <tr>
-                <td>Well</td>
+                <td class="mauve-cell">Well</td>
                 <td>Bad</td>
                 <td>White</td>
                 <td>Sweet</td>
             </tr>
             <tr>
-                <td>Carbonation</td>
+                <td class="mauve-cell">Carbonation</td>
                 <td>Much</td>
                 <td>Light</td>
-                <td>Brown</td>
+                <td class="grey-cell">Brown</td>
             </tr>
         </tbody>
     </table>
