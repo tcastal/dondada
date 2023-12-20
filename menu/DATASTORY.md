@@ -36,10 +36,6 @@ permalink: /
         background-color: #f3f3f3;
     }
 
-    .styled-table tbody tr:last-of-type {
-        border-bottom: 2px solid #e38b12;
-    }
-
     .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #b84d14;
@@ -202,20 +198,6 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 </div>
 
 # TABLE INSERTION:
-
-
-
-    .green-cell {
-        background-color: green;
-    }
-
-    .mauve-cell {
-        background-color: #845b54;
-    }
-
-    .sand-cell {
-        background-color: #b9905e;
-    }
 
 <div style="display: flex; justify-content: center;">
     <table class="styled-table">
