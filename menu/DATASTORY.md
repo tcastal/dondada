@@ -95,7 +95,7 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 
 .styled-table-no-last-tr th {
     /* Styles pour les cellules d'en-tête */
-    background-color: #e38b12;
+    background-color: #ffffff;
     color: #ffffff;
 }
 
@@ -371,10 +371,10 @@ Comment ?
 ## SOCIAL 
 
 <!-- Image Microbrewery IPA overall  -->
-<object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px" style="position: absolute; right: 50px;"></object>
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
 
 <div style="display: flex; justify-content: center;">
-    <table class="styled-table-no-last-tr">
+    <table class="styled-table-no-last-tr" style="width: 200px;">
         <tbody>
             <tr>
                 <th class="first-column">Chi-square statistic:</th>
