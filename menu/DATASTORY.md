@@ -17,7 +17,7 @@ permalink: /
     }
 
     .styled-table thead tr {
-        background-color: #e38b12;
+        background-color: #fec44f;
         color: #ffffff;
         text-align: left;
     }
@@ -41,16 +41,16 @@ permalink: /
     color: #b84d14;
     }
 
-    .grey-cell {
-        background-color: #939597;
+    .pils-cell {
+        background-color: #ec7014;
     }
 
-    .mauve-cell {
-        background-color: #845b54;
+    .brique-cell {
+        background-color: #cc4c02;
     }
 
-    .sand-cell {
-        background-color: #b9905e;
+    .marron-cell {
+        background-color: #662506;
     }
 
 /* #################################################################
@@ -114,7 +114,7 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
 ## Setting the scene
 
 <div style="text-align: justify;">
-Beer is one of the oldest human-producest drinks. At the dawn of Beeriverse, about 6 thousand years before B.C. (Beerus Christ), humans in Mesopotamia produced a drink by fermenting bread. If one of us drinked it nowadays, we would probably find the taste awful. Later, during the middle age, people in Germany started to cultivate hops, which flower can be used to adjust beer flavor and bitterness. Then, in the past centuries, what was just a simple beverage with plain taste eventually evolved with the humans that produced it. For example porters were brewed for cargo carriers working in the cold Londonian environment, while trappist monks in belgium who used to produce everything they consumed developed a taste for strong “tripel” beers. These two examples are but a glimpse of the many styles of this godly beverage that were created and how they were influenced by many geographical and social factors.  
+Beer is one of the oldest human-producest drinks. At the dawn of Beeriverse, about 6 tho"pils years before B.C. (Beerus Christ), humans in Mesopotamia produced a drink by fermenting bread. If one of us drinked it nowadays, we would probably find the taste awful. Later, during the middle age, people in Germany started to cultivate hops, which flower can be used to adjust beer flavor and bitterness. Then, in the past centuries, what was just a simple beverage with plain taste eventually evolved with the humans that produced it. For example porters were brewed for cargo carriers working in the cold Londonian environment, while trappist monks in belgium who used to produce everything they consumed developed a taste for strong “tripel” beers. These two examples are but a glimpse of the many styles of this godly beverage that were created and how they were influenced by many geographical and social factors.  
 
 So embark on a journey to discover which style will win the battle to claim the title of most popular beer style of the Beeriverse.
 </div>
@@ -122,7 +122,7 @@ So embark on a journey to discover which style will win the battle to claim the 
 ## Introduction
 
 <div style="text-align: justify;">
-We will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, <a href="https://www.beeradvocate.com/" target="_blank">BeerAdvocate</a> and <a href="https://www.ratebeer.com/" target="_blank">RateBeer</a>. These websites populate the Beeriverse with more than 100 beer styles, thousands of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
+We will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, <a href="https://www.beeradvocate.com/" target="_blank">BeerAdvocate</a> and <a href="https://www.ratebeer.com/" target="_blank">RateBeer</a>. These websites populate the Beeriverse with more than 100 beer styles, tho"pilss of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
 </div>
 
 ## What styles of beers are popular?
@@ -213,11 +213,11 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
             <tr>
                 <td>Head</td>
                 <td>Head</td>
-                <td class="sand-cell">Hops</td>
-                <td class="grey-cell">Chocolate</td>
+                <td class="pils-cell">Hops</td>
+                <td class="marron-cell">Chocolate</td>
             </tr>
             <tr>
-                <td class="mauve-cell">Nice</td>
+                <td class="brique-cell">Nice</td>
                 <td>Light</td>
                 <td>Head</td>
                 <td>Dark</td>
@@ -225,26 +225,26 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
             <tr>
                 <td>Good</td>
                 <td>Quot</td>
-                <td class="sand-cell">Hop</td>
-                <td class="grey-cell">Coffee</td>
+                <td class="pils-cell">Hop</td>
+                <td class="marron-cell">Coffee</td>
             </tr>
             <tr>
-                <td class="mauve-cell">Dark</td>
+                <td class="brique-cell">Dark</td>
                 <td>Smell</td>
-                <td class="sand-cell">Nice</td>
+                <td class="pils-cell">Nice</td>
                 <td>Head</td>
             </tr>
             <tr>
                 <td>Sweet</td>
                 <td>Bottle</td>
                 <td>Citrus</td>
-                <td class="grey-cell">Black</td>
+                <td class="marron-cell">Black</td>
             </tr>
             <tr>
-                <td class="mauve-cell">Malt</td>
+                <td class="brique-cell">Malt</td>
                 <td>Good</td>
-                <td class="sand-cell">Malt</td>
-                <td class="grey-cell">Roasted</td>
+                <td class="pils-cell">Malt</td>
+                <td class="marron-cell">Roasted</td>
             </tr>
             <tr>
                 <td>Light</td>
@@ -253,22 +253,22 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
                 <td>Nice</td>
             </tr>
             <tr>
-                <td class="mauve-cell">Hops</td>
+                <td class="brique-cell">Hops</td>
                 <td>Sweet</td>
                 <td>Orange</td>
                 <td>Good</td>
             </tr>
             <tr>
-                <td class="mauve-cell">Well</td>
+                <td class="brique-cell">Well</td>
                 <td>Bad</td>
                 <td>White</td>
                 <td>Sweet</td>
             </tr>
             <tr>
-                <td class="mauve-cell">Carbonation</td>
+                <td class="brique-cell">Carbonation</td>
                 <td>Much</td>
                 <td>Light</td>
-                <td class="grey-cell">Brown</td>
+                <td class="marron-cell">Brown</td>
             </tr>
         </tbody>
     </table>
