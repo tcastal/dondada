@@ -44,7 +44,6 @@ permalink: /
     font-weight: bold;
     color: #b84d14;
     }
-
 </style>
 
 
@@ -139,84 +138,80 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 
 # TABLE INSERTION:
 
-
-<table class="styled-table">
-    <thead>
-        <tr>
-            <th>Good Reviews</th>
-            <th>Bad Reviews</th>
-            <th>IPA Reviews</th>
-            <th>Stout Reviews</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Head</td>
-            <td>Head</td>
-            <td>Hops</td>
-            <td>Chocolate</td>
-        </tr>
-        <tr>
-            <td>Nice</td>
-            <td>Light</td>
-            <td>Head</td>
-            <td>Dark</td>
-        </tr>
-        <tr>
-            <td>Good</td>
-            <td>Quot</td>
-            <td>Hop</td>
-            <td>Coffee</td>
-        </tr>
-        <tr>
-            <td>Dark</td>
-            <td>Smell</td>
-            <td>Nice</td>
-            <td>Head</td>
-        </tr>
-        <tr>
-            <td>Sweet</td>
-            <td>Bottle</td>
-            <td>Citrus</td>
-            <td>Black</td>
-        </tr>
-        <tr>
-            <td>Malt</td>
-            <td>Good</td>
-            <td>Malt</td>
-            <td>Roasted</td>
-        </tr>
-        <tr>
-            <td>Light</td>
-            <td>Flavor</td>
-            <td>Good</td>
-            <td>Nice</td>
-        </tr>
-        <tr>
-            <td>Hops</td>
-            <td>Sweet</td>
-            <td>Orange</td>
-            <td>Good</td>
-        </tr>
-        <tr>
-            <td>Well</td>
-            <td>Bad</td>
-            <td>White</td>
-            <td>Sweet</td>
-        </tr>
-        <tr>
-            <td>Carbonation</td>
-            <td>Much</td>
-            <td>Light</td>
-            <td>Brown</td>
-        </tr>
-    </tbody>
-</table>
-
-
-
-
-
+<div style="display: flex; justify-content: center;">
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Good Reviews</th>
+                <th>Bad Reviews</th>
+                <th>IPA Reviews</th>
+                <th>Stout Reviews</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Head</td>
+                <td>Head</td>
+                <td>Hops</td>
+                <td>Chocolate</td>
+            </tr>
+            <tr>
+                <td>Nice</td>
+                <td>Light</td>
+                <td>Head</td>
+                <td>Dark</td>
+            </tr>
+            <tr>
+                <td>Good</td>
+                <td>Quot</td>
+                <td>Hop</td>
+                <td>Coffee</td>
+            </tr>
+            <tr>
+                <td>Dark</td>
+                <td>Smell</td>
+                <td>Nice</td>
+                <td>Head</td>
+            </tr>
+            <tr>
+                <td>Sweet</td>
+                <td>Bottle</td>
+                <td>Citrus</td>
+                <td>Black</td>
+            </tr>
+            <tr>
+                <td>Malt</td>
+                <td>Good</td>
+                <td>Malt</td>
+                <td>Roasted</td>
+            </tr>
+            <tr>
+                <td>Light</td>
+                <td>Flavor</td>
+                <td>Good</td>
+                <td>Nice</td>
+            </tr>
+            <tr>
+                <td>Hops</td>
+                <td>Sweet</td>
+                <td>Orange</td>
+                <td>Good</td>
+            </tr>
+            <tr>
+                <td>Well</td>
+                <td>Bad</td>
+                <td>White</td>
+                <td>Sweet</td>
+            </tr>
+            <tr>
+                <td>Carbonation</td>
+                <td>Much</td>
+                <td>Light</td>
+                <td>Brown</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 
 
