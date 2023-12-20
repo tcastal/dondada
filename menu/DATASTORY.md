@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
         function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 600px;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
         }
 
         // Charger l'image BeerAdvocate au chargement initial
@@ -228,9 +228,9 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 600px;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
         } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap_690px.html" style="width: 700px; height: 600px;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
         }
     });
 });
