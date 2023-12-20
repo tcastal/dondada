@@ -262,12 +262,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
 <div style="text-align: justify;">
 It is only now that we look at this graph that we understand at what point IPAs have taken over the Beeriverse. Before 2003 IPAs were nowhere to be seen, nobody graded them. But since 2004 their share in the number of beer rated hasn’t stopped growing, up to the point where, in 2017, more than 40% of beer rated were IPAs. Interestingly they started to be popular at the same time as stouts, however stouts made astonishing debuts, only to be slowly taken over by IPAs in the past years.
 </div>
-
-
 
 
 
@@ -312,3 +309,11 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 Comment ?
+
+
+
+
+## SOCIAL 
+
+<!-- Image Microbrewery IPA overall  -->
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="690px" height="500px"></object>
