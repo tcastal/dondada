@@ -3,6 +3,51 @@ layout: page
 title: "Brewmageddon: How IPAs Took Over the Beeriverse"
 permalink: /
 ---
+
+<style>
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .styled-table thead tr {
+        background-color: #b84d14;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px 15px;
+    }
+
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #b84d14;
+    }
+
+    .styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #b84d14;
+    }
+
+</style>
+
+
+
+
+
 ## Setting the scene
 
 <div style="text-align: justify;">
@@ -89,97 +134,38 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 <br>
 </div>
 
+# TABLE INSERTION:
 
-<style type="text/css">
-    .tg { max-width: 600px; margin: 0 auto; }
-    .tg  {border-collapse:collapse;border-spacing:0;}
-    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-    .tg .tg-0lax{text-align:left;vertical-align:top}
-    .tg .tg-jqdd{background-color:#FFD966;text-align:left;vertical-align:top}
-    .tg .tg-apnh{background-color:#999;text-align:left;vertical-align:top}
-    .tg .tg-7utg{background-color:#93C47D;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<caption>
-Green: Words that are in good reviews top 10 but not bad reviews<br>
-Yellow: Match words only in good reviews and IPA reviews<br>
-Grey: Words exclusive to stout reviews top 10<br>
-</caption>
-<thead>
-  <tr>
-    <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none">Good Rev.</span></th>
-    <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none">Bad Rev.</span></th>
-    <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none">IPA Rev.</span></th>
-    <th class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none">Stout Rev.</span></th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">head </span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">head </span></td>
-    <td class="tg-jqdd"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">hops</span></td>
-    <td class="tg-apnh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">chocolate</span></td>
-  </tr>
-  <tr>
-    <td class="tg-7utg"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">nice</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">light</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">head</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">dark</span></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">good</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">quot</span></td>
-    <td class="tg-jqdd"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">hop</span></td>
-    <td class="tg-apnh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">coffee</span></td>
-  </tr>
-  <tr>
-    <td class="tg-7utg"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">dark</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">smell</span></td>
-    <td class="tg-jqdd"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">nice</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">head</span></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">sweet</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">bottle</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">citrus</span></td>
-    <td class="tg-apnh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">black</span></td>
-  </tr>
-  <tr>
-    <td class="tg-7utg"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">malt</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">good</span></td>
-    <td class="tg-jqdd"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">malt</span></td>
-    <td class="tg-apnh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">roasted</span></td>
-  </tr>
-  <tr>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">light</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">flavor</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">good</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">nice</span></td>
-  </tr>
-  <tr>
-    <td class="tg-7utg"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">hops</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">sweet</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">orange</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">good</span></td>
-  </tr>
-  <tr>
-    <td class="tg-7utg"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">well</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">bad</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">white</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">sweet</span></td>
-  </tr>
-  <tr>
-    <td class="tg-7utg"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">carbonation</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">much</span></td>
-    <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">light</span></td>
-    <td class="tg-apnh"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">brown</span></td>
-  </tr>
-</tbody>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dom</td>
+            <td>6000</td>
+        </tr>
+        <tr class="active-row">
+            <td>Melissa</td>
+            <td>5150</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
 </table>
+
+
+
+
+
+
+
+
+
+
 
 <div style="text-align: justify;">
 Now that we have the intuition that the IPA is a popular beer style, let’s try to dive deeper in the analysis. Even though tales about this style have been around for a long time, it seems that recently they are on many Beeriversers lips. Let’s confirm that by looking at the distribution of ratings per beer style in the past decades.
@@ -187,6 +173,45 @@ Now that we have the intuition that the IPA is a popular beer style, let’s try
 
 
 ## INSERER BARBLOT COULEUR THIB
+
+<select id="selector">
+    <option value="ba_IPA">BeerAdvocate</option>
+    <option value="rb_IPA">RateBeer</option>
+</select>
+
+<!-- Conteneur pour afficher le contenu sélectionné -->
+<div id="content">
+    <!-- Le contenu sera affiché ici -->
+</div>
+
+<!-- Inclusion du script JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('selector');
+    const content = document.getElementById('content');
+
+
+        function loadBeerAdvocateImage() {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_normalized_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+        }
+
+        // Charger l'image BeerAdvocate au chargement initial
+        loadBeerAdvocateImage();
+
+
+    select.addEventListener('change', function() {
+        const selectedValue = select.value;
+        if (selectedValue === 'ba_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_normalized_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+        } else if (selectedValue === 'rb_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_normalized_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+        }
+    });
+});
+</script>
+
+
+
 
 <div style="text-align: justify;">
 It is only now that we look at this graph that we understand at what point IPAs have taken over the Beeriverse. Before 2003 IPAs were nowhere to be seen, nobody graded them. But since 2004 their share in the number of beer rated hasn’t stopped growing, up to the point where, in 2017, more than 40% of beer rated were IPAs. Interestingly they started to be popular at the same time as stouts, however stouts made astonishing debuts, only to be slowly taken over by IPAs in the past years.
