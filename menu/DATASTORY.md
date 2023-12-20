@@ -28,6 +28,7 @@ permalink: /
     }
 
     .styled-table tbody tr {
+        border: none;
         border-bottom: 1px solid #dddddd;
     }
 
@@ -138,27 +139,27 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 
 # TABLE INSERTION:
 
-<html>
-    <table class="styled-table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Points</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Dom</td>
-                <td>6000</td>
-            </tr>
-            <tr class="active-row">
-                <td>Melissa</td>
-                <td>5150</td>
-            </tr>
-            <!-- and so on... -->
-        </tbody>
-    </table>
-</html>
+
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dom</td>
+            <td>6000</td>
+        </tr>
+        <tr class="active-row">
+            <td>Melissa</td>
+            <td>5150</td>
+        </tr>
+        <!-- and so on... -->
+    </tbody>
+</table>
+
 
 
 
