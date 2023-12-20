@@ -49,6 +49,61 @@ permalink: /
         background-color: #e38b12;
         color: #ffffff;
     }
+
+/* #################################################################
+Styles communs, similaires à .styled-table mais sans tr:last-of-type 
+*/
+
+
+
+.styled-table-no-last-tr {
+    /* Styles communs, similaires à .styled-table mais sans tr:last-of-type */
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+}
+
+.styled-table-no-last-tr thead tr {
+    /* Styles pour l'en-tête */
+    background-color: #e38b12;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table-no-last-tr th,
+.styled-table-no-last-tr td {
+    /* Styles pour les cellules */
+    padding: 12px 15px;
+}
+
+.styled-table-no-last-tr tbody tr {
+    /* Styles pour les lignes du corps du tableau */
+    border: none;
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table-no-last-tr tbody tr:nth-of-type(even) {
+    /* Styles pour les lignes paires du corps du tableau */
+    background-color: #f3f3f3;
+}
+
+.styled-table-no-last-tr tbody tr.active-row {
+    /* Styles pour les lignes actives du corps du tableau */
+    font-weight: bold;
+    color: #b84d14;
+}
+
+.styled-table-no-last-tr th {
+    /* Styles pour les cellules d'en-tête */
+    background-color: #e38b12;
+    color: #ffffff;
+}
+
 </style>
 
 
@@ -324,7 +379,7 @@ Comment ?
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
 
 <div style="display: flex; justify-content: center;">
-    <table class="styled-table">
+    <table class="styled-table styled-table-no-last-tr">
         <tbody>
             <tr>
                 <th class="first-column">Chi-square statistic:</th>
