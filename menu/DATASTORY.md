@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Brewmageddon: How IPAs Took Over the Beeriverse"
+title: "Brewmageddon:<br> How IPAs Took Over the Beeriverse"
 permalink: /datastory
 ---
 
@@ -42,7 +42,7 @@ permalink: /datastory
     }
 
     .brique-cell {
-        background-color: rgba(236,112,20,0.3);
+        background-color: rgba(236,112,20,0.4);
     }
 
     .marron-cell {
@@ -166,7 +166,7 @@ Moreover, some styles share similarities like Imperial Stout and Stout. Hence, w
 From this plot, we can clearly observe that certain beers receive more attention than their counterparts. It is particularly the case for India Pale Ales, Pale Ales, Strong Ales and Stouts. Indian Pale Ales (IPAs) particularly stand out, with almost 3 millions cumulated ratings. Could IPA be the Beeriverse messiah ?  
 </div>
 
-### LANGUAGE PROCESSING
+### Language processing
 
 <div style="text-align: justify;">
 Let’s see what the Beeriversers from BeerAdvocate think of this by looking at their reviews. First of all, we've found that 99.99% of the comments on both sites are written in English, so we can ignore other languages in our future analysis. Below you can observe word clouds obtained with text from positive (grade&lt;4) and negative (grade&gt;2) reviews, as well as reviews for IPAs and Stouts. You might think, why compare IPAs and stouts ? We could have chosen to compare IPAs and pale ales, but you will see later that stouts are more interesting.
@@ -526,13 +526,40 @@ As the density of ratings is enormous in the U.S., we shall have a closer look a
 
 <div style="text-align: justify;">
 Examination of the map reveals that from 2009 to 2013 California and Pennsylvania, located on opposite coasts of the US, have significantly influenced the development of IPAs in the country.  
-They were the only two states with more than 100 ratings in 2009 and were only caught up in 2013 by very large states such as New York, Massachusetts or Illinois. We can even hypothesize that, once IPAs gained popularity in states that had similarities with Europe (such as Massachusetts and New-York), IPAs started to gain popularity on the old continent.  
+They were the only two states with more than 100 ratings in 2009 and were only caught up in 2013 by very large states such as New York, Massachusetts or Illinois. We can even hypothesize that, once IPAs gained popularity in states that had similarities with Europe (such as Massachusetts and New-York), IPAs started to gain popularity on the old continent.
+<br>
 However, one undeniable observation from this map is that California and Pennsylvania serve as the epicenter of IPA development. The trend then spread up the north-east coast and eventually crossed the Atlantic to reach European populations.
 </div>
 
 
 ## SOCIAL POINT OF VIEW
 ### Fanbase
+
+<div style="text-align: justify;">
+Geography alone is not enough to explain the boom of IPAs, because if a trend can spread from state to state and country to country, there must be underlying factors that explain why IPAs have conquered the hearts of the Beeriversers at lightspeed. A social aspect comes into play, the social behavior of the Beeriversers. One might distinguish a normal Beeriverser and a fan, known as a BeerAficionado. A fan is defined as someone who gives more ratings than 75% of the users. <br>
+In the case of a beer trend, we want to look at fan groups and their preferred style of beer.
+We noticed that some Beeriversers were present on both sites and decided to keep their comments on only one of them to avoid duplicates. The following graph shows the combined fan base of both sites.
+</div>
+
+# INSERER PLOT NUMBER OF FAN FOR EACH BEER STYLE
+
+
+
+<div style="text-align: justify;">
+It's evident that IPA stands out as the preferred style among fans, showing a great enthusiasm for this type of beer. Additionally, Pale Lagers and Stouts also constitute big fanbases. 
+But where do these BeerAficionados come from ? As mentioned, before the trend of IPA started in the United States. However, is it due to the country’s extensive brewery count and diverse beer styles ? Alternatively, could it be that the BeerAficionados of IPA are american ?
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Image Microbrewery IPA overall  -->
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
