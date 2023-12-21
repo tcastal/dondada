@@ -139,13 +139,14 @@ Styles communs, similaires à .styled-table mais taille réduite pour les graphs
 
 
 
-## __Introduction__
+## Introduction
+<h1><u>Introduction</u></h1>
 
 <div style="text-align: justify;">
 In this datastory, we will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, <a href="https://www.beeradvocate.com/" target="_blank">BeerAdvocate</a> and <a href="https://www.ratebeer.com/" target="_blank">RateBeer</a>. These websites populate the Beeriverse with more than 100 beer styles, thousands of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
 </div>
 
-## __What styles of beers are popular?__
+## What styles of beers are popular?
 
 <div style="text-align: justify;">
 After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. But are all these beer styles equally popular ? Let’s have a look at distribution of ratings and number of beers per beer style. Note that to enhance visual clarity, we will only display the fifteen most important beer styles, not the 100 existing.
