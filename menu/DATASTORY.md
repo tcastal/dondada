@@ -448,7 +448,7 @@ Finalement, ce serait intéressant de regarder ratebeer ici. Parce que le peu de
 As the density of ratings is enormous in the U.S., we should have a look at what is happening there to understand if any state were influential in the IPAs explosion.
 </div>
 
-## US STATE POTENTIELLEMENT SELECTEUR
+## US STATE 
 
 <!-- US STATE  -->
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_USAmap_690px.html" width="700px" height="620px"></object>
@@ -508,25 +508,43 @@ document.addEventListener('DOMContentLoaded', function() {
     const content = document.getElementById('content10');
 
     function loadBeerAdvocateImage() {
-        content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
+        content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
     }
 
     function loadBeerAdvocateTable() {
         const tableContent = `
             <div style="display: flex; justify-content: center;">
-                <table class="styled-table-no-last-tr">
-                    <tbody>
-                        <tr>
-                            <th class="first-column">Chi-square statistic:</th>
-                            <td>853.347</td>
-                        </tr>
-                        <tr>
-                            <th class="first-column">P-value:</th>
-                            <td>1.361e<sup>-187</sup></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>`;
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Style</th>
+                                <th>Mean Increase for each style per year:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>India Pale Ales: </td>
+                                <td><strong>217.70%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Pale Ales: </td>
+                                <td><strong>610.90%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Stouts: </td>
+                                <td><strong>129.22%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Strong Ales: </td>
+                                <td><strong>120.00%</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Wild/Sour Beers: </td>
+                                <td><strong>107.95%</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>`;
         content.insertAdjacentHTML('beforeend', tableContent);
     }
 
@@ -537,10 +555,10 @@ document.addEventListener('DOMContentLoaded', function() {
     select.addEventListener('change', function() {
         const selectedValue = select.value;
         if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
             loadBeerAdvocateTable();
         } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
             // Tu peux charger le tableau correspondant pour RateBeer ici si nécessaire
         }
     });
