@@ -32,10 +32,6 @@ permalink: /datastory
         border-bottom: 1px solid #dddddd;
     }
 
-    .styled-table tbody tr:nth-of-type(even) {
-        background-color: #f3f3f3;
-    }
-
     .styled-table tbody tr.active-row {
     font-weight: bold;
     color: #b84d14;
@@ -50,7 +46,7 @@ permalink: /datastory
     }
 
     .marron-cell {
-        background-color: rgba(153,52,4,0.2);
+        background-color: rgba(149, 0, 0, 0.46);
     }
 
 /* #################################################################
