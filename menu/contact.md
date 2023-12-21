@@ -6,8 +6,8 @@ permalink: /contact
 <style>
     #imagesMain {
         padding: 0;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 20px;
         text-align: center;
     }
