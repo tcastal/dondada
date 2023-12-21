@@ -7,16 +7,25 @@ layout: default
   body {
     margin: 0;
     /* Fond de couleur pour toute la page */
-    background-color: #ebbb40;
+    background-color: transparent; /* Fond transparent pour que l'arrière-plan jaune apparaisse plus tard */
     z-index: 0;
-    overflow-x: hidden; /*modif */
-    transform: translateY(100vh);
-    transition: transform 1s ease-in-out; /* Ajout de la transition */
+    overflow-x: hidden;
   }
 
-  /* Lorsque la classe .show est ajoutée au corps, l'animation est déclenchée */
-  body.show {
-    transform: translateY(0);
+  /* Arrière-plan jaune initial avec transition */
+  .yellow-background {
+    position: absolute;
+    top: 100vh; /* Commence en bas de la fenêtre */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ebbb40;
+    transition: top 3s ease-in-out; /* Transition pour le déplacement vers le haut */
+  }
+
+  /* Lorsque la classe .show est ajoutée, l'arrière-plan jaune monte */
+  .show .yellow-background {
+    top: 0; /* Montée jusqu'à la position originale */
   }
 
   /* Styles pour les bulles */
@@ -25,10 +34,10 @@ layout: default
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
     animation-name: bubbleAnimation;
-    animation-duration: 5s; /* Durée de l'animation */
+    animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    opacity: 0; /* Rendre les bulles initialement invisibles */
+    opacity: 0;
     z-index: 2;
   }
 
@@ -36,15 +45,15 @@ layout: default
   @keyframes bubbleAnimation {
     0% {
       transform: translateY(0);
-      opacity: 0; /* Rendre les bulles initialement invisibles */
+      opacity: 0;
     }
     50% {
-      transform: translateY(-100vh); /* Déplacement des bulles vers le haut */
-      opacity: 1; /* Rendre les bulles visibles */
+      transform: translateY(-100vh);
+      opacity: 1;
     }
     100% {
-      transform: translateY(-200vh); /* Assurez-vous que les bulles ne sont plus visibles */
-      opacity: 0; /* Rendre les bulles invisibles */
+      transform: translateY(-200vh);
+      opacity: 0;
     }
   }
 </style>
@@ -56,22 +65,24 @@ layout: default
     for (let i = 1; i <= 100; i++) {
       const bubble = document.createElement('div');
       bubble.classList.add('bubble');
-      const bubbleSize = Math.floor(Math.random() * 50) + 10; // Taille aléatoire entre 10px et 60px
+      const bubbleSize = Math.floor(Math.random() * 50) + 10;
       bubble.style.width = bubbleSize + 'px';
       bubble.style.height = bubbleSize + 'px';
-      bubble.style.top = Math.random() * (window.innerHeight - bubbleSize) + 'px'; // Position aléatoire en hauteur
-      bubble.style.left = Math.random() * (window.innerWidth - bubbleSize) + 'px'; // Position aléatoire en largeur
-      bubble.style.animationDelay = Math.random() * 5 + 's'; // Délai d'animation aléatoire
+      bubble.style.top = Math.random() * (window.innerHeight - bubbleSize) + 'px';
+      bubble.style.left = Math.random() * (window.innerWidth - bubbleSize) + 'px';
+      bubble.style.animationDelay = Math.random() * 5 + 's';
 
-      document.body.appendChild(bubble); // Ajout de la bulle au document
+      document.body.appendChild(bubble);
     }
   }
   
   setTimeout(function() {
     createBubbles();
-    document.body.classList.add('show'); // Ajout de la classe show au corps après un délai
+    document.body.classList.add('show');
   }, 100);
 </script>
+
+<div class="yellow-background"></div>
 
 <h1>
   {{ page.title }}
