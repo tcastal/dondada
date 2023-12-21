@@ -370,11 +370,10 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 
 <!-- Trois lignes avec les couleurs spécifiées -->
 <div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 100px;">
-    <div style="background-color: rgba(236,112,20,0.3); width: 200px; height: 5px; margin-right: 10px; text-align: center;">Words that appear in good reviews but not in bad ones</div>
-    <div style="background-color: rgba(254,196,79,0.3); width: 200px; height: 5px; margin-right: 10px; text-align: center;">Words found only in good and IPA reviews</div>
-    <div style="background-color: rgba(149, 0, 0, 0.36); width: 200px; height: 5px; text-align: center;">Words exclusive to stout reviews</div>
+    <div style="background-color: rgba(250,145,36,0.5); width: 200px; height: 5px; margin-right: 10px; text-align: center;">Words that appear in good reviews but not in bad ones</div>
+    <div style="background-color: rgba(254,204,96,0.5); width: 200px; height: 5px; margin-right: 10px; text-align: center;">Words found only in good and IPA reviews</div>
+    <div style="background-color: rgba(102,37,6, 0.5); width: 200px; height: 5px; text-align: center;">Words exclusive to stout reviews</div>
 </div>
-
 
 
 <div style="text-align: justify;">
