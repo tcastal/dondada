@@ -142,7 +142,9 @@ Styles communs, similaires à .styled-table mais taille réduite pour les graphs
 In this datastory, we will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, <a href="https://www.beeradvocate.com/" target="_blank">BeerAdvocate</a> and <a href="https://www.ratebeer.com/" target="_blank">RateBeer</a>. These websites populate the Beeriverse with more than 100 beer styles, thousands of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
 </div>
 
-# What styles of beers are popular?
+# What styles of beers are popular?  
+
+### Beer style analysis
 
 <div style="text-align: justify;">
 After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. But are all these beer styles equally popular ? Let’s have a look at distribution of ratings and number of beers per beer style. We see that several IPAs are greatly represented on both websites as well as Pale Ales and Stouts.  
@@ -166,10 +168,10 @@ Moreover, some styles share similarities like Imperial Stout and Stout. Hence, w
 From this plot, we can clearly observe that certain beers receive more attention than their counterparts. It is particularly the case for India Pale Ales, Pale Ales, Strong Ales and Stouts. Indian Pale Ales (IPAs) particularly stand out, with almost 3 millions cumulated ratings. Could IPA be the Beeriverse messiah ?  
 </div>
 
-### Language processing
+### Language analysis
 
 <div style="text-align: justify;">
-Let’s see what the Beeriversers from BeerAdvocate think of this by looking at their reviews. First of all, we've found that 99.99% of the comments on both sites are written in English, so we can ignore other languages in our future analysis. Below you can observe word clouds obtained with text from positive (grade&lt;4) and negative (grade&gt;2) reviews, as well as reviews for IPAs and Stouts. You might think, why compare IPAs and stouts ? We could have chosen to compare IPAs and pale ales, but you will see later that stouts are more interesting.
+Let’s see what the Beeriversers from BeerAdvocate think of this by looking at their reviews. First of all, we've found that 99.99% of the comments on both sites are written in English, so we can ignore other languages in our future analysis. Below you can observe word clouds obtained with text from positive (grade&gt;4) and negative (grade&lt;2) reviews, as well as reviews for IPAs and Stouts. You might think, why compare IPAs and stouts ? We could have chosen to compare IPAs and pale ales, but you will see later that stouts are more interesting.
 </div>
 
 
@@ -536,9 +538,8 @@ However, one undeniable observation from this map is that California and Pennsyl
 ### Fanbase
 
 <div style="text-align: justify;">
-Geography alone is not enough to explain the boom of IPAs, because if a trend can spread from state to state and country to country, there must be underlying factors that explain why IPAs have conquered the hearts of the Beeriversers at lightspeed. A social aspect comes into play, the social behavior of the Beeriversers. One might distinguish a normal Beeriverser and a fan, known as a BeerAficionado. A fan is defined as someone who gives more ratings than 75% of the users. <br>
-In the case of a beer trend, we want to look at fan groups and their preferred style of beer.
-We noticed that some Beeriversers were present on both sites and decided to keep their comments on only one of them to avoid duplicates. The following graph shows the combined fan base of both sites.
+Geography alone is not enough to explain the boom of IPAs, because if a trend can spread from state to state and country to country, there must be underlying factors that explain why IPAs have conquered the hearts of the Beeriversers at lightspeed. A social aspect comes into play, the behavior of the Beeriversers. One might distinguish a normal Beeriverser and a fan, known as a BeerAficionado. A fan is defined as someone who gives more ratings than 75% of the users.<br>
+In the case of a beer trend, we want to look at fan groups and their preferred style of beer. We noticed that some Beeriversers were present on both sites and decided to keep their comments on only one of them to avoid duplicates. The following graph shows the combined fan base of both sites.
 </div>
 
 <!-- FAN FOR EACH BEER STYLE  -->
