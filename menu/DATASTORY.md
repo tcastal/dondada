@@ -298,10 +298,10 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 </div>
 
 <!-- Trois lignes avec les couleurs spécifiées -->
-<div style="display: flex; justify-content: center; margin-top: 10px;">
-    <div style="background-color: rgba(236,112,20,0.3); width: 100px; height: 5px; margin-right: 10px;">Words that are in good reviews top 10 but not bad reviews</div>
-    <div style="background-color: rgba(254,196,79,0.3); width: 100px; height: 5px; margin-right: 10px;">Match words only in good reviews and IPA reviews </div>
-    <div style="background-color: rgba(149, 0, 0, 0.36); width: 100px; height: 5px;">Words exclusive to stout reviews top 10 </div>
+<div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 100px;">
+    <div style="background-color: rgba(236,112,20,0.3); width: 200px; height: 5px; margin-right: 10px;">Words that are in good reviews top 10 but not bad reviews</div>
+    <div style="background-color: rgba(254,196,79,0.3); width: 200px; height: 5px; margin-right: 10px;">Match words only in good reviews and IPA reviews </div>
+    <div style="background-color: rgba(149, 0, 0, 0.36); width: 200px; height: 5px;">Words exclusive to stout reviews top 10 </div>
 </div>
 
 
@@ -529,9 +529,9 @@ As the density of ratings is enormous in the U.S., we shall have a closer look a
 
 <div style="text-align: justify;">
 Examination of the map reveals that from 2009 to 2013 California and Pennsylvania, located on opposite coasts of the US, have significantly influenced the development of IPAs in the country.  
-They were the only two states with more than 100 ratings in 2009 and were only caught up in 2013 by very large states such as New York, Massachusetts or Illinois. We can even hypothesize that, once IPAs gained popularity in states that had similarities with Europe (such as Massachusetts and New-York), IPAs started to gain popularity on the old continent.However, one undeniable observation from this map is that California and Pennsylvania serve as the epicenter of IPA development. The trend then spread up the north-east coast and eventually crossed the Atlantic to reach European populations.
+They were the only two states with more than 100 ratings in 2009 and were only caught up in 2013 by very large states such as New York, Massachusetts or Illinois. We can even hypothesize that, once IPAs gained popularity in states that had similarities with Europe (such as Massachusetts and New-York), IPAs started to gain popularity on the old continent.  
+However, one undeniable observation from this map is that California and Pennsylvania serve as the epicenter of IPA development. The trend then spread up the north-east coast and eventually crossed the Atlantic to reach European populations.
 </div>
-
 
 
 ## SOCIAL POINT OF VIEW
