@@ -491,54 +491,58 @@ Reject the null hypothesis: There is a significant difference.
 
 # TEST 
 
-<!-- ... Votre code existant ... -->
-<select id="selecteur" onchange="afficherDonnees()">
-<option value="beeradvocate">BeerAdvocate</option>
-<option value="ratebeer">RateBeer</option>
+<select id="selector10">
+    <option value="ba_IPA">BeerAdvocate</option>
+    <option value="rb_IPA">RateBeer</option>
 </select>
 
-<div id="contenu">
-<!-- Les données de BeerAdvocate -->
-<div id="beeradvocate" style="display:none;">
-    <object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 720px; height: 650px;"></object>
-    <div style="display: flex; justify-content: center;">
-        <table class="styled-table-no-last-tr">
-            <tbody>
-                <tr>
-                    <th class="first-column">Chi-square statistic:</th>
-                    <td>853.347</td>
-                </tr>
-                <tr>
-                    <th class="first-column">P-value:</th>
-                    <td>1.361e<sup>-187</sup></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+<!-- Conteneur pour afficher le contenu sélectionné -->
+<div id="content10">
+    <!-- Le contenu sera affiché ici -->
 </div>
-<!-- Les données de RateBeer -->
-<div id="ratebeer" style="display:none;">
-    <object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>
 
-</div>
 
 <script>
-    function afficherDonnees() {
-        var selecteur = document.getElementById("selecteur");
-        var contenu = document.getElementById("contenu");
-        var ratebeerDiv = document.getElementById("ratebeer");
-        var beeradvocateDiv = document.getElementById("beeradvocate");
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('selector10');
+    const content = document.getElementById('content10');
 
-        if (selecteur.value === "beeradvocate") {
-        ratebeerDiv.style.display = "none";
-        beeradvocateDiv.style.display = "block";
-        } else if (selecteur.value === "ratebeer") {
-        ratebeerDiv.style.display = "block";
-        beeradvocateDiv.style.display = "none";
-        }
+    function loadBeerAdvocateImage() {
+        content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
     }
 
-    window.onload = function() {
-        afficherDonnees();
-    };
+    function loadBeerAdvocateTable() {
+        const tableContent = `
+            <div style="display: flex; justify-content: center;">
+                <table class="styled-table-no-last-tr">
+                    <tbody>
+                        <tr>
+                            <th class="first-column">Chi-square statistic:</th>
+                            <td>853.347</td>
+                        </tr>
+                        <tr>
+                            <th class="first-column">P-value:</th>
+                            <td>1.361e<sup>-187</sup></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>`;
+        content.insertAdjacentHTML('beforeend', tableContent);
+    }
+
+    // Charger l'image BeerAdvocate au chargement initial
+    loadBeerAdvocateImage();
+    loadBeerAdvocateTable();
+
+    select.addEventListener('change', function() {
+        const selectedValue = select.value;
+        if (selectedValue === 'ba_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
+            loadBeerAdvocateTable();
+        } else if (selectedValue === 'rb_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_IPA_worldmap_690px.html" style="width: 700px; height: 620px;"></object>';
+            // Tu peux charger le tableau correspondant pour RateBeer ici si nécessaire
+        }
+    });
+});
 </script>
