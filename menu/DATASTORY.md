@@ -38,15 +38,15 @@ permalink: /datastory
     }
 
     .pils-cell {
-        background-color: rgba(254,196,79,0.3);
+        background-color: rgba(254,204,96,0.5);
     }
 
     .brique-cell {
-        background-color: rgba(236,112,20,0.4);
+        background-color: rgba(250,145,36,0.5);
     }
 
     .marron-cell {
-        background-color: rgba(149, 0, 0, 0.36);
+        background-color: rgba(102,37,6, 0.5);
     }
 
 /* #################################################################
@@ -165,7 +165,11 @@ Moreover, some styles share similarities like Imperial Stout and Stout. Hence, w
 
 
 <div style="text-align: justify;">
-From this plot, we can clearly observe that certain beers receive more attention than their counterparts. It is particularly the case for India Pale Ales, Pale Ales, Strong Ales and Stouts. Indian Pale Ales (IPAs) particularly stand out, with almost 3 millions cumulated ratings. Could IPA be the Beeriverse messiah ?  
+From this plot, we can clearly observe that certain beers receive more attention than their counterparts. It is particularly the case for India Pale Ales, Pale Ales, Strong Ales and Stouts. Indian Pale Ales (IPAs) particularly stand out, with almost 3 millions cumulated ratings. Could IPA be the Beeriverse messiah ?  <br>
+</div>
+
+<div style="text-align: justify;">
+To get a more quantitative view of Beeriversers appreciation towards the beer styles distinguishable in the previous graph, we compared mean grades assigned to each of these styles with tukey’s HSD test.
 </div>
 
 ### Heat map
@@ -210,10 +214,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
+
+
+
+## PEUT ETRE A MODIFIER 
+
+<div style="text-align: justify;">
+On this heatmap, we can observe that every beer style has a mean significantly different from other beer styles. What is interesting is the value of Meandiff for a given cell. A positive value signifies that the beer style defining the line has a higher mean than the beer style defining the column and vice versa. What we can observe is that IPAs
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Language analysis
 
 <div style="text-align: justify;">
-Let’s see what the Beeriversers from BeerAdvocate think of this by looking at their reviews. First of all, we've found that 99.99% of the comments on both sites are written in English, so we can ignore other languages in our future analysis. Below you can observe word clouds obtained with text from positive (grade&gt;4) and negative (grade&lt;2) reviews, as well as reviews for IPAs and Stouts. You might think, why compare IPAs and stouts ? We could have chosen to compare IPAs and pale ales, but you will see later that stouts are more interesting.
+Let’s see what the Beeriversers from BeerAdvocate think of this by looking at their reviews. First of all, we have found that 99.99% of the comments on both sites are written in English, so we can ignore other languages in our future analysis. Below you can observe word clouds obtained with text from positive (grade&gt;4) and negative (grade&lt;2) reviews, as well as reviews for IPAs and Stouts. You might think, why compare IPAs and stouts ? We could have chosen to compare IPAs and Pale Ales, but you will see later that Stouts are more interesting.
 </div>
 
 
@@ -589,7 +619,7 @@ In the case of a beer trend, we want to look at fan groups and their preferred s
 
 <div style="text-align: justify;">
 It's evident that IPA stands out as the preferred style among fans, showing a great enthusiasm for this type of beer. Additionally, Pale Lagers and Stouts also constitute big fanbases. 
-But where do these BeerAficionados come from ? As mentioned, before the trend of IPA started in the United States. However, is it due to the country’s extensive brewery count and diverse beer styles ? Alternatively, could it be that the IPA fans are american ?
+But where do these BeerAficionados come from ? As mentioned, before the trend of IPA started in the United States. However, is it due to the country’s extensive brewery count and diverse beer styles ? Alternatively, could it be that the IPA fans are American ?
 </div>
 
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/fan_IPA_worldmap_690px.html" width="700px" height="620px"></object>
