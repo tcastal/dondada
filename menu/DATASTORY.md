@@ -492,113 +492,66 @@ Reject the null hypothesis: There is a significant difference.
 # TEST 
 
 <!-- ... Votre code existant ... -->
-
-<select id="selector4">
-    <option value="ba_IPA">BeerAdvocate</option>
-    <option value="rb_IPA">RateBeer</option>
+<select id="selecteur" onchange="afficherDonnees()">
+<option value="beeradvocate">BeerAdvocate</option>
+<option value="ratebeer">RateBeer</option>
 </select>
 
-<!-- Conteneur pour afficher le contenu sélectionné -->
-<div id="content_nb_rating_year">
-    <!-- Tableau pour BeerAdvocate -->
-    <div id="ba_table">
-        <div style="display: flex; justify-content: center;">
-            <table class="styled-table-no-last-tr">
-                <tbody>
-                    <tr>
-                        <th class="first-column">Chi-square statistic:</th>
-                        <td>853.347</td>
-                    </tr>
-                    <tr>
-                        <th class="first-column">P-value:</th>
-                        <td>1.361e<sup>-187</sup></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<div id="contenu">
+<!-- Les données de BeerAdvocate -->
+<div id="beeradvocate" style="display:none;">
+    <object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>
+<div style="display: flex; justify-content: center;">
+        <table class="styled-table-no-last-tr">
+            <tbody>
+                <tr>
+                    <th class="first-column">Chi-square statistic:</th>
+                    <td>853.347</td>
+                </tr>
+                <tr>
+                    <th class="first-column">P-value:</th>
+                    <td>1.361e<sup>-187</sup></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <!-- Tableau pour RateBeer -->
-    <div id="rb_table" style="display: none;">
-        <div style="display: flex; justify-content: center;">
-            <table class="styled-table-no-last-tr">
-                <tbody>
-                    <tr>
-                        <th class="first-column">Chi-square statistic:</th>
-                        <td>8</td>
-                    </tr>
-                    <tr>
-                        <th class="first-column">P-value:</th>
-                        <td>1.36TEST</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <!-- HTML de l'objet BeerAdvocate initiallement affiché -->
-    <div id="ba_htmlContent" style="display: none;">
-        <object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>
-    </div>
-    <!-- HTML de l'objet RateBeer initiallement caché -->
-    <div id="rb_htmlContent" style="display: none;">
-        <object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>
+</div>
+<!-- Les données de RateBeer -->
+<div id="ratebeer" style="display:none;">
+    <object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>
+    <div style="display: flex; justify-content: center;">
+        <table class="styled-table-no-last-tr">
+            <tbody>
+                <tr>
+                    <th class="first-column">Chi-square statistic:</th>
+                    <td>853.347</td>
+                </tr>
+                <tr>
+                    <th class="first-column">P-value:</th>
+                    <td>1.361e<sup>-187</sup></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 
-<!-- Inclusion du script JavaScript -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector4');
-    const baTable = document.getElementById('ba_table');
-    const rbTable = document.getElementById('rb_table');
-    const baHtmlContent = document.getElementById('ba_htmlContent');
-    const rbHtmlContent = document.getElementById('rb_htmlContent');
-    const content = document.getElementById('content_nb_rating_year');
+    function afficherDonnees() {
+        var selecteur = document.getElementById("selecteur");
+        var contenu = document.getElementById("contenu");
+        var ratebeerDiv = document.getElementById("ratebeer");
+        var beeradvocateDiv = document.getElementById("beeradvocate");
 
-    function showBaTable() {
-        baTable.style.display = 'block';
-        rbTable.style.display = 'none';
-        baHtmlContent.style.display = 'none';
-        rbHtmlContent.style.display = 'none';
-    }
-
-    function showRbTable() {
-        baTable.style.display = 'none';
-        rbTable.style.display = 'block';
-        baHtmlContent.style.display = 'none';
-        rbHtmlContent.style.display = 'none';
-    }
-
-    function showBaHTML() {
-        baTable.style.display = 'none';
-        rbTable.style.display = 'none';
-        baHtmlContent.style.display = 'block';
-        rbHtmlContent.style.display = 'none';
-    }
-
-    function showRbHTML() {
-        baTable.style.display = 'none';
-        rbTable.style.display = 'none';
-        baHtmlContent.style.display = 'none';
-        rbHtmlContent.style.display = 'block';
-    }
-
-    function loadInitialContent() {
-        showBaTable(); // Afficher initialement le tableau BeerAdvocate
-        //showBaHTML(); // Afficher initialement l'objet HTML BeerAdvocate
-    }
-
-    // Chargement initial
-    loadInitialContent();
-
-    select.addEventListener('change', function() {
-        const selectedValue = select.value;
-        if (selectedValue === 'ba_IPA') {
-            showBaTable();
-            showBaHTML();
-        } else if (selectedValue === 'rb_IPA') {
-            showRbTable();
-            showRbHTML();
+        if (selecteur.value === "beeradvocate") {
+        ratebeerDiv.style.display = "none";
+        beeradvocateDiv.style.display = "block";
+        } else if (selecteur.value === "ratebeer") {
+        ratebeerDiv.style.display = "block";
+        beeradvocateDiv.style.display = "none";
         }
-    });
-});
+    }
+
+    window.onload = function() {
+        afficherDonnees();
+    };
 </script>
