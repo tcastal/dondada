@@ -500,10 +500,10 @@ Reject the null hypothesis: There is a significant difference.
 <div id="contenu">
 <!-- Les données de BeerAdvocate -->
 <div id="beeradvocate" style="display:none;">
-    <div style="width: 100%; overflow-x: auto;">
-      <div style="width: 700px; margin: 0 auto;">
-        <object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html"></object>
-      </div>
+    <div style="width: 100%; overflow-x: auto; margin-bottom: 30px;">
+        <div style="width: 700px; margin: 0 auto;">
+            <object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 100%; height: 620px;"></object>
+        </div>
     </div>
     <div style="display: flex; justify-content: center;">
         <table class="styled-table-no-last-tr">
