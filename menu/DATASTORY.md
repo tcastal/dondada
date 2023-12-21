@@ -168,6 +168,48 @@ Moreover, some styles share similarities like Imperial Stout and Stout. Hence, w
 From this plot, we can clearly observe that certain beers receive more attention than their counterparts. It is particularly the case for India Pale Ales, Pale Ales, Strong Ales and Stouts. Indian Pale Ales (IPAs) particularly stand out, with almost 3 millions cumulated ratings. Could IPA be the Beeriverse messiah ?  
 </div>
 
+### Heat map
+
+
+<select id="heat">
+    <option value="ba_IPA">BeerAdvocate</option>
+    <option value="rb_IPA">RateBeer</option>
+</select>
+
+<!-- Conteneur pour afficher le contenu sélectionné -->
+<div id="heatcont">
+    <!-- Le contenu sera affiché ici -->
+</div>
+
+<!-- Inclusion du script JavaScript -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const select = document.getElementById('heat');
+    const content = document.getElementById('heatcont');
+
+
+        function loadBeerAdvocateImage() {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_heatmap_690px.html" style="width: 700px; height: 620px;"></object>';
+        }
+
+        // Charger l'image BeerAdvocate au chargement initial
+        loadBeerAdvocateImage();
+
+
+    select.addEventListener('change', function() {
+        const selectedValue = select.value;
+        if (selectedValue === 'ba_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_heatmap_690px.html" style="width: 700px; height: 620px;"></object>';
+        } else if (selectedValue === 'rb_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_heatmap_690px.html" style="width: 700px; height: 620px;"></object>';
+        }
+    });
+});
+</script>
+
+
+
+
 ### Language analysis
 
 <div style="text-align: justify;">
