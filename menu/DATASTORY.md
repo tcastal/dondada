@@ -299,9 +299,9 @@ Then, if we take a look at Stout reviews, we see that many words are exclusive t
 
 <!-- Trois lignes avec les couleurs spécifiées -->
 <div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 100px;">
-    <div style="background-color: rgba(236,112,20,0.3); width: 200px; height: 5px; margin-right: 10px;">Words that are in good reviews top 10 but not bad reviews</div>
-    <div style="background-color: rgba(254,196,79,0.3); width: 200px; height: 5px; margin-right: 10px;">Match words only in good reviews and IPA reviews </div>
-    <div style="background-color: rgba(149, 0, 0, 0.36); width: 200px; height: 5px;">Words exclusive to stout reviews top 10 </div>
+    <div style="background-color: rgba(236,112,20,0.3); width: 200px; height: 5px; margin-right: 10px; text-align: center;">Words that are in good reviews top 10 but not bad reviews</div>
+    <div style="background-color: rgba(254,196,79,0.3); width: 200px; height: 5px; margin-right: 10px; text-align: center;">Match words only in good reviews and IPA reviews </div>
+    <div style="background-color: rgba(149, 0, 0, 0.36); width: 200px; height: 5px; text-align: center;">Words exclusive to stout reviews top 10 </div>
 </div>
 
 
