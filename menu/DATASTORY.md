@@ -104,9 +104,10 @@ Styles communs, similaires à .styled-table mais taille réduite pour les graphs
 .styled-table_small {
         border-collapse: collapse;
         margin: 25px 0;
-        font-size: 0.9em;
+        font-size: 0.7em;
         font-family: sans-serif;
-        min-width: 100px;
+        width: 300px;
+        height: 200px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         border-radius: 5px 5px 5px 5px;
         overflow: hidden
@@ -382,7 +383,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadBeerAdvocateTable() {
         const tableContent = `
             <div style="display: flex; justify-content: center;">
-                    <table class="styled-table_small" style="width: 40%;">
+                    <table class="styled-table_small">
                         <thead>
                             <tr>
                                 <th>Style</th>
