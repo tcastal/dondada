@@ -518,21 +518,8 @@ Reject the null hypothesis: There is a significant difference.
 </div>
 <!-- Les données de RateBeer -->
 <div id="ratebeer" style="display:none;">
-    <object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 720px; height: 650px;"></object>
-    <div style="display: flex; justify-content: center;">
-        <table class="styled-table-no-last-tr">
-            <tbody>
-                <tr>
-                    <th class="first-column">Chi-square statistic:</th>
-                    <td>853.347</td>
-                </tr>
-                <tr>
-                    <th class="first-column">P-value:</th>
-                    <td>1.361e<sup>-187</sup></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>
+
 </div>
 
 <script>
