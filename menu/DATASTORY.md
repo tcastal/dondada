@@ -24,7 +24,7 @@ permalink: /datastory
 
     .styled-table th,
     .styled-table td {
-        padding: 8px 11px;
+        padding: 3px 11px;
     }
 
     .styled-table tbody tr {
