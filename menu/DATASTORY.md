@@ -24,7 +24,7 @@ permalink: /datastory
 
     .styled-table th,
     .styled-table td {
-        padding: 12px 15px;
+        padding: 8px 11px;
     }
 
     .styled-table tbody tr {
@@ -322,79 +322,79 @@ It is only now that we look at this graph that we understand at what point IPAs 
 
 ## NEW GRAPH MARGOT + TABLE 
 
-
-
-<select id="selector3">
+<select id="selector10">
     <option value="ba_IPA">BeerAdvocate</option>
     <option value="rb_IPA">RateBeer</option>
 </select>
 
 <!-- Conteneur pour afficher le contenu sélectionné -->
-<div id="content_nb_rating_year">
+<div id="content10">
     <!-- Le contenu sera affiché ici -->
 </div>
 
-<!-- Inclusion du script JavaScript -->
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector3');
-    const content = document.getElementById('content_nb_rating_year');
+    const select = document.getElementById('selector10');
+    const content = document.getElementById('content10');
 
+    function loadBeerAdvocateImage() {
+        content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+    }
 
-        function loadBeerAdvocateImage() {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
-        }
-
-        // Charger l'image BeerAdvocate au chargement initial
-        loadBeerAdvocateImage();
-
-
-    select.addEventListener('change', function() {
-        const selectedValue = select.value;
-        if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
-        } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
-        }
-    });
-});
-</script>
-
-/* // Chargement du tableau
-                <div style="display: flex; justify-content: center;">
-                    <table class="styled-table">
+    function loadBeerAdvocateTable() {
+        const tableContent = `
+            <div style="display: flex; justify-content: center;">
+                    <table class="styled-table" style="width: 30%;">
                         <thead>
                             <tr>
                                 <th>Style</th>
-                                <th>Mean Increase for each style per year:</th>
+                                <th style="text-align: center;">Mean increase per year:</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>India Pale Ales: </td>
-                                <td><strong>217.70%</strong></td>
+                                <td style="text-align: center;"><strong>217.70%</strong></td>
                             </tr>
                             <tr>
                                 <td>Pale Ales: </td>
-                                <td><strong>610.90%</strong></td>
+                                <td style="text-align: center;"><strong>610.90%</strong></td>
                             </tr>
                             <tr>
                                 <td>Stouts: </td>
-                                <td><strong>129.22%</strong></td>
+                                <td style="text-align: center;"><strong>129.22%</strong></td>
                             </tr>
                             <tr>
                                 <td>Strong Ales: </td>
-                                <td><strong>120.00%</strong></td>
+                                <td style="text-align: center;"><strong>120.00%</strong></td>
                             </tr>
                             <tr>
                                 <td>Wild/Sour Beers: </td>
-                                <td><strong>107.95%</strong></td>
+                                <td style="text-align: center;"><strong>107.95%</strong></td>
                             </tr>
                         </tbody>
                     </table>
-                </div>*/
+                </div>`;
+        content.insertAdjacentHTML('beforeend', tableContent);
+    }
 
+    // Charger l'image BeerAdvocate au chargement initial
+    loadBeerAdvocateImage();
+    loadBeerAdvocateTable();
 
+    select.addEventListener('change', function() {
+        const selectedValue = select.value;
+        if (selectedValue === 'ba_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+            loadBeerAdvocateTable();
+        } else if (selectedValue === 'rb_IPA') {
+            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
+            // Tu peux charger le tableau correspondant pour RateBeer ici si nécessaire
+        }
+    });
+});
+</script>
 
 
 
@@ -491,76 +491,3 @@ Reject the null hypothesis: There is a significant difference.
 
 # TEST 
 
-<select id="selector10">
-    <option value="ba_IPA">BeerAdvocate</option>
-    <option value="rb_IPA">RateBeer</option>
-</select>
-
-<!-- Conteneur pour afficher le contenu sélectionné -->
-<div id="content10">
-    <!-- Le contenu sera affiché ici -->
-</div>
-
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector10');
-    const content = document.getElementById('content10');
-
-    function loadBeerAdvocateImage() {
-        content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
-    }
-
-    function loadBeerAdvocateTable() {
-        const tableContent = `
-            <div style="display: flex; justify-content: center;">
-                    <table class="styled-table" style="width: 70%;">
-                        <thead>
-                            <tr>
-                                <th>Style</th>
-                                <th>Mean increase per year:</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>India Pale Ales: </td>
-                                <td style="text-align: center;"><strong>217.70%</strong></td>
-                            </tr>
-                            <tr>
-                                <td>Pale Ales: </td>
-                                <td style="text-align: center;"><strong>610.90%</strong></td>
-                            </tr>
-                            <tr>
-                                <td>Stouts: </td>
-                                <td style="text-align: center;"><strong>129.22%</strong></td>
-                            </tr>
-                            <tr>
-                                <td>Strong Ales: </td>
-                                <td style="text-align: center;"><strong>120.00%</strong></td>
-                            </tr>
-                            <tr>
-                                <td>Wild/Sour Beers: </td>
-                                <td style="text-align: center;"><strong>107.95%</strong></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>`;
-        content.insertAdjacentHTML('beforeend', tableContent);
-    }
-
-    // Charger l'image BeerAdvocate au chargement initial
-    loadBeerAdvocateImage();
-    loadBeerAdvocateTable();
-
-    select.addEventListener('change', function() {
-        const selectedValue = select.value;
-        if (selectedValue === 'ba_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/ba_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
-            loadBeerAdvocateTable();
-        } else if (selectedValue === 'rb_IPA') {
-            content.innerHTML = '<object type="text/html" data="{{ site.baseurl }}/assets/plots/rb_increase_ratings_690px.html" style="width: 700px; height: 620px;"></object>';
-            // Tu peux charger le tableau correspondant pour RateBeer ici si nécessaire
-        }
-    });
-});
-</script>
