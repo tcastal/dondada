@@ -97,6 +97,43 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
     background-color: #ffffff;
 }
 
+/* #################################################################
+Styles communs, similaires à .styled-table mais taille réduite pour les graphs d'acroissement 
+*/
+
+.styled-table_small {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 100px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border-radius: 5px 5px 5px 5px;
+        overflow: hidden
+    }
+
+    .styled-table_small thead tr {
+        background-color: #e38b11;
+        color: #ffffff;
+        text-align: left;
+    }
+
+    .styled-table_small th,
+    .styled-table_small td {
+        padding: 8px 11px;
+    }
+
+    .styled-table_small tbody tr {
+        border: none;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .styled-table_small tbody tr.active-row {
+    font-weight: bold;
+    color: #b84d14;
+    }
+
+
 </style>
 
 
@@ -345,7 +382,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadBeerAdvocateTable() {
         const tableContent = `
             <div style="display: flex; justify-content: center;">
-                    <table class="styled-table" style="width: 30%;">
+                    <table class="styled-table_small" style="width: 40%;">
                         <thead>
                             <tr>
                                 <th>Style</th>
