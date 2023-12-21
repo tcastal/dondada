@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Brewmageddon:<br> How IPAs Took Over the Beeriverse"
+title: "Brewmageddon: How IPAs took over the Beeriverse"
 permalink: /datastory
 ---
 
@@ -541,19 +541,24 @@ In the case of a beer trend, we want to look at fan groups and their preferred s
 We noticed that some Beeriversers were present on both sites and decided to keep their comments on only one of them to avoid duplicates. The following graph shows the combined fan base of both sites.
 </div>
 
-# INSERER PLOT NUMBER OF FAN FOR EACH BEER STYLE
-
-
+<!-- FAN FOR EACH BEER STYLE  -->
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/nbr_fans_per_style_690px.html" width="700px" height="620px"></object>
 
 <div style="text-align: justify;">
 It's evident that IPA stands out as the preferred style among fans, showing a great enthusiasm for this type of beer. Additionally, Pale Lagers and Stouts also constitute big fanbases. 
-But where do these BeerAficionados come from ? As mentioned, before the trend of IPA started in the United States. However, is it due to the country’s extensive brewery count and diverse beer styles ? Alternatively, could it be that the BeerAficionados of IPA are american ?
+But where do these BeerAficionados come from ? As mentioned, before the trend of IPA started in the United States. However, is it due to the country’s extensive brewery count and diverse beer styles ? Alternatively, could it be that the IPA fans are american ?
+</div>
+
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/fan_IPA_worldmap_690px.html" width="700px" height="620px"></object>
+
+
+<div style="text-align: justify;">
+The BeerAficionados of IPA are primarily situated in the US. Now there is no doubt: the IPA trend exists and originated in the United States. Its American fanbase certainly played a pivotal role in initiating this trend.
 </div>
 
 
 
-
-
+### Microbreweries
 
 
 
