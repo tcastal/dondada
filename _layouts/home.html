@@ -7,9 +7,16 @@ layout: default
   body {
     margin: 0;
     /* Fond de couleur pour toute la page */
-    background-color: transparent; /* Fond transparent pour que l'arrière-plan jaune apparaisse plus tard */
+    background-color: transparent;
     z-index: 0;
     overflow-x: hidden;
+    opacity: 0; /* Rendre le corps initialement invisible */
+    transition: opacity 5s ease-in-out; /* Ajouter une transition d'opacité */
+  }
+
+  /* Lorsque la classe .show est ajoutée au corps, il devient visible */
+  body.show {
+    opacity: 1;
   }
 
   /* Arrière-plan jaune initial avec transition */
