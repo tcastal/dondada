@@ -139,23 +139,13 @@ Styles communs, similaires à .styled-table mais taille réduite pour les graphs
 
 
 
-
-
-## Setting the scene
+## __Introduction__
 
 <div style="text-align: justify;">
-Beer is one of the oldest human-producest drinks. At the dawn of Beeriverse, about 6 tho"pils years before B.C. (Beerus Christ), humans in Mesopotamia produced a drink by fermenting bread. If one of us drinked it nowadays, we would probably find the taste awful. Later, during the middle age, people in Germany started to cultivate hops, which flower can be used to adjust beer flavor and bitterness. Then, in the past centuries, what was just a simple beverage with plain taste eventually evolved with the humans that produced it. For example porters were brewed for cargo carriers working in the cold Londonian environment, while trappist monks in belgium who used to produce everything they consumed developed a taste for strong “tripel” beers. These two examples are but a glimpse of the many styles of this godly beverage that were created and how they were influenced by many geographical and social factors.  
-
-So embark on a journey to discover which style will win the battle to claim the title of most popular beer style of the Beeriverse.
+In this datastory, we will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, <a href="https://www.beeradvocate.com/" target="_blank">BeerAdvocate</a> and <a href="https://www.ratebeer.com/" target="_blank">RateBeer</a>. These websites populate the Beeriverse with more than 100 beer styles, thousands of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
 </div>
 
-## Introduction
-
-<div style="text-align: justify;">
-We will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, <a href="https://www.beeradvocate.com/" target="_blank">BeerAdvocate</a> and <a href="https://www.ratebeer.com/" target="_blank">RateBeer</a>. These websites populate the Beeriverse with more than 100 beer styles, tho"pilss of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
-</div>
-
-## What styles of beers are popular?
+## __What styles of beers are popular?__
 
 <div style="text-align: justify;">
 After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. But are all these beer styles equally popular ? Let’s have a look at distribution of ratings and number of beers per beer style. Note that to enhance visual clarity, we will only display the fifteen most important beer styles, not the 100 existing.
