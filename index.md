@@ -13,6 +13,6 @@ Beer is one of the oldest human-producest drinks. At the dawn of Beeriverse, abo
 
 So embark on a journey to discover which style will win the battle to claim the title of most popular beer style of the Beeriverse.
 
-To find out more about our work, <a href="https://tcastal.github.io/dondada/datastory.html">visit the DataStory page</a> page by clicking on the link at the top left corner.
+To find out more about our work, <a href="https://tcastal.github.io/dondada/datastory.html">visit the DataStory page</a>.
 
 *Alcohol abuse is dangerous for your health. Drink responsibly.*🍺

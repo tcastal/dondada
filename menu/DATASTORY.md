@@ -514,33 +514,33 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadBeerAdvocateTable() {
         const tableContent = `
             <div style="display: flex; justify-content: center;">
-                    <table class="styled-table">
+                    <table class="styled-table" style="width: 70%;">
                         <thead>
                             <tr>
                                 <th>Style</th>
-                                <th>Mean Increase for each style per year:</th>
+                                <th>Mean increase per year:</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>India Pale Ales: </td>
-                                <td><strong>217.70%</strong></td>
+                                <td style="text-align: center;"><strong>217.70%</strong></td>
                             </tr>
                             <tr>
                                 <td>Pale Ales: </td>
-                                <td><strong>610.90%</strong></td>
+                                <td style="text-align: center;"><strong>610.90%</strong></td>
                             </tr>
                             <tr>
                                 <td>Stouts: </td>
-                                <td><strong>129.22%</strong></td>
+                                <td style="text-align: center;"><strong>129.22%</strong></td>
                             </tr>
                             <tr>
                                 <td>Strong Ales: </td>
-                                <td><strong>120.00%</strong></td>
+                                <td style="text-align: center;"><strong>120.00%</strong></td>
                             </tr>
                             <tr>
                                 <td>Wild/Sour Beers: </td>
-                                <td><strong>107.95%</strong></td>
+                                <td style="text-align: center;"><strong>107.95%</strong></td>
                             </tr>
                         </tbody>
                     </table>
