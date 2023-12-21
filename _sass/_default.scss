@@ -36,6 +36,7 @@
 
 .header a:hover {
   color:black;
+  border-bottom: 1px solid black;
 }
 
 .header-title a {
@@ -45,7 +46,7 @@
 }
 
 .header-subtitle {
-  color: $light-gray-color;
+  color: black;
 }
 
 /*
@@ -62,7 +63,7 @@
 }
 
 .menu-content a {
-  color: $light-gray-color;
+  color: black;
   font-size: 1rem;
   padding-right: 10px;
 }
@@ -72,7 +73,7 @@
 }
 
 .social-icons a {
-  color: $light-gray-color;
+  color: black;
   font-size: 1rem;
 }
 
@@ -104,6 +105,7 @@
 
 .footer a:hover {
   color: black;
+  border-bottom: 1px solid black;
 }
 
 .footer-description {
