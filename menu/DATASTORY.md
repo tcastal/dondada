@@ -493,7 +493,7 @@ Reject the null hypothesis: There is a significant difference.
 
 <!-- ... Votre code existant ... -->
 
-<select id="selector3">
+<select id="selector4">
     <option value="ba_IPA">BeerAdvocate</option>
     <option value="rb_IPA">RateBeer</option>
 </select>
@@ -547,7 +547,7 @@ Reject the null hypothesis: There is a significant difference.
 <!-- Inclusion du script JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const select = document.getElementById('selector3');
+    const select = document.getElementById('selector4');
     const baTable = document.getElementById('ba_table');
     const rbTable = document.getElementById('rb_table');
     const baHtmlContent = document.getElementById('ba_htmlContent');
@@ -584,7 +584,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function loadInitialContent() {
         showBaTable(); // Afficher initialement le tableau BeerAdvocate
-        showBaHTML(); // Afficher initialement l'objet HTML BeerAdvocate
+        //showBaHTML(); // Afficher initialement l'objet HTML BeerAdvocate
     }
 
     // Chargement initial
