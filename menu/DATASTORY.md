@@ -274,7 +274,7 @@ Let’s observe words that are highly represented in positive reviews, but not i
 <br>
 Looking at the words most frequently mentioned in comments on IPAs, we can identify that these are notoriously hoppy, represented by "hops" and "hop" in the first 3 words. This might be a factor explaining the IPA popularity, since people seem to enjoy beers with hoppy characteristics. We can also notice the presence of the word “nice” that seems to be a good indicator of a beer's popularity. In contrast, we cannot find any word associated exclusively with bad reviews, such as “bad” or “water”. These observations suggest that in general, IPAs are quite appreciated by Beeriversers. <br>
 
-Then, if we take a look at Stout reviews, we see that many words found in stout reviews are exclusive to stouts. This may come as surprising, as we saw that stouts seemed to be quite popular given the number of ratings they received. However, considering that stouts have a unique taste, very different from other beers, it makes sense that the vocabulary used to describe them is also unique.
+Then, if we take a look at Stout reviews, we see that many wordsare exclusive to this style of beer. This may come as surprising, as we saw that stouts seemed to be quite popular given the number of ratings they received. However, considering that stouts have a unique taste, very different from other beers, it makes sense that the vocabulary used to describe them is also unique.
 <br>
 </div>
 
@@ -362,7 +362,7 @@ Then, if we take a look at Stout reviews, we see that many words found in stout 
 
 
 <div style="text-align: justify;">
-Now that we have the intuition that the IPA is a popular beer style, let’s try to dive deeper in the analysis. Even though tales about this style have been around for a long time, it seems that recently they are on many Beeriversers lips. Let’s confirm that by looking at the distribution of ratings per beer style in the past decades for the favorite beers. These were the beers that had a grade and score bigger than 75% of all beers.
+Now that we have the intuition that the IPA is a popular beer style, let’s try to dive deeper in the understanding of this phenomenon. Even though tales about this style have been around for a long time, it seems that recently they are on many Beeriversers lips. Let’s confirm that by looking at the distribution of ratings per beer style in the past decades for the favorite beers. These were the beers that had a grade and score bigger than 75% of all beers.
 </div>
 
 <select id="selector2">
@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <div style="text-align: justify;">
-It is only now that we look at this graph that we understand how much IPAs have taken over the Beeriverse. Since 2004, the number of rated IPAs hasn’t stopped growing, up to the point where, in 2017, more than 40% of beer rated were IPAs. Interestingly they started to be popular at the same time as stouts, however stouts made astonishing debuts, only to be slowly taken over by IPAs in the past years. Among other beers Strong Ales also stand out, but it seems that their popularity peaked in the early 2000 and since subsequent ratings have shown a gradual decline.
+It is only now that we look at this graph that we understand how much IPAs have taken over the Beeriverse. Since 2004, the number of rated IPAs hasn’t stopped growing, up to the point where, in 2017, more than 40% of beer rated were IPAs. Interestingly they started to be popular at the same time as stouts, however stouts made astonishing debuts, only to be slowly taken over by IPAs in the past years. Among other beer, Strong Ales also stand out, but it seems that their popularity peaked in the early 2000 and since subsequent ratings have shown a gradual decline.
 </div>
 
 
@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <thead>
                             <tr>
                                 <th>Style</th>
-                                <th style="text-align: center;">Mean increase per year:</th>
+                                <th style="text-align: center;">Mean increase per year (BA):</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -477,7 +477,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <thead>
                             <tr>
                                 <th>Style</th>
-                                <th style="text-align: center;">Mean increase per year:</th>
+                                <th style="text-align: center;">Mean increase per year (RB):</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -662,6 +662,7 @@ As many wise Beeriversers reading our story, you probably cannot stop but wonder
 
 ## Conclusion
 
+<div style="text-align: justify;">
 Our journey through the Beeriverse comes to an end. We've been able to dissect popular beer styles and unravel the underlying factors dictating their popularity.
 One of the highlights of our analysis showed that IPAs have emerged as a dominant force, captivating the hearts of beer lovers the world over. The enthusiasm of beer lovers for IPAs, particularly in the USA, attests to the origin and growth of this trend.<br>
 
@@ -670,5 +671,7 @@ Beyond geographical frontiers, social dynamics have come into play, highlighting
 We also came upon locations where beer lovers in a quest for new flavors would meet. We investigated the role of microbreweries and we discovered that they seem to offer a platform for IPAs, bringing their name out in the world.<br>
 
 Finally, we tried to identify the magic recipe that led to IPA popularity and tried to predict the future of the Beeriverse. Pale Ales CHECK were found to be the most likely groundbreaking beer style. <br>
+<br>
 
 Overall, the History of Beer is a fascinating journey through time, mixing history, people and flavors into the amazing world of beer, the Beeriverse. The evolution of our lifestyles and tastes has shaped and will continue to shape this incredible beverage, like a never-ending story. <br>
+</div>
