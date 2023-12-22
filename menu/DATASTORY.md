@@ -97,6 +97,11 @@ Styles communs, similaires à .styled-table mais sans tr:last-of-type
     background-color: #ffffff;
 }
 
+.styled-table-no-last-tr tbody tr:last-child {
+    /* Supprimer la bordure de la dernière ligne */
+    border-bottom: none;
+}
+
 /* #################################################################
 Styles communs, similaires à .styled-table mais taille réduite pour les graphs d'acroissement 
 */
@@ -165,12 +170,13 @@ Moreover, some styles share similarities like Imperial Stout and Stout. Hence, w
 
 
 <div style="text-align: justify;">
-From this plot, we can clearly observe that certain beers receive more attention than their counterparts. It is particularly the case for India Pale Ales, Pale Ales, Strong Ales and Stouts. Indian Pale Ales (IPAs) particularly stand out, with almost 3 millions cumulated ratings. Could IPA be the Beeriverse messiah ?  <br>
+From this plot, it's evident that specific beers attract more attention than their counterparts, notably India Pale Ales, Pale Ales, Pale Lager, Strong Ales and Stouts. Notably, Indian Pale Ales (IPAs) stand out prominently, accumulating almost 3 million ratings. This leads us to ponder: could IPA be the Beeriverse messiah? <br>
 </div>
 
 <div style="text-align: justify;">
-To get a more quantitative view of Beeriversers appreciation towards the beer styles distinguishable in the previous graph, we compared mean grades assigned to each of these styles with tukey’s HSD test.
+To delve deeper into Beeriversers' sentiments toward these discernible beer styles from the previous graph, we conducted a quantitative analysis by comparing the mean grades assigned to each style using Tukey's HSD test.
 </div>
+
 
 ### Heat map
 
@@ -211,40 +217,19 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-
-
-
-
-
-
-
-
-## PEUT ETRE A MODIFIER 
-
 <div style="text-align: justify;">
-On this heatmap, we can observe that every beer style has a mean significantly different from other beer styles. What is interesting is the value of Meandiff for a given cell. A positive value signifies that the beer style defining the line has a higher mean than the beer style defining the column and vice versa. What we can observe is that IPAs
+On these heatmaps, we can observe that every beer style has a mean significantly different from other beer styles. What is interesting is the value of Meandiff for a given cell. A positive value signifies that the beer style defining the line has a higher mean than the beer style defining the column and vice versa. What we can observe is that IPAs have slightly lower grades than Pale Lagers and Pale Ales, however these differences are not as large as differences observed between other styles with Pale Lagers and Pale Ales. Given that it is complicated to draw meaningful conclusions from this simple test, we will explore more creative metrics to try to quantify IPAs popularity.
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 ### Language analysis
 
 <div style="text-align: justify;">
-Let’s see what the Beeriversers from BeerAdvocate think of this by looking at their reviews. First of all, we have found that 99.99% of the comments on both sites are written in English, so we can ignore other languages in our future analysis. Below you can observe word clouds obtained with text from positive (grade&gt;4) and negative (grade&lt;2) reviews, as well as reviews for IPAs and Stouts. You might think, why compare IPAs and stouts ? We could have chosen to compare IPAs and Pale Ales, but you will see later that Stouts are more interesting.
+Let’s see what the Beeriversers from BeerAdvocate think of this by looking at their reviews. First of all, we have found that 99.99% of the comments on both sites are written in English, so we can ignore other languages in our future analysis. Below you can observe word clouds obtained with text from positive (grade&gt;4) and negative (grade&lt;1.5) reviews, as well as reviews for IPAs and Stouts. We compare IPAs and Stouts as these are two beer types with very different characteristics and we might be able to observe interesting discrepancies.
 </div>
+
+
 
 
 <div style="display: flex; justify-content: center;">
@@ -287,9 +272,9 @@ Let’s observe words that are highly represented in positive reviews, but not i
 
 <div style="text-align: justify;">
 <br>
-Now let’s look at words highly represented in reviews about IPAs. IPAs are notoriously very hoppy, which is represented by “hops” and “hop” in the top 3 words. This might be a factor explaining the IPA popularity, since people seem to enjoy beers with hoppy characteristics. We can also notice the presence of the word “nice” that seems to be a good indicator of a beer's popularity. In contrast, we cannot find any word associated exclusively with bad reviews, such as “bad” or “water”. These observations suggest that in general, IPAs are quite appreciated by Beeriversers.
+Looking at the words most frequently mentioned in comments on IPAs, we can identify that these are notoriously hoppy, represented by "hops" and "hop" in the first 3 words. This might be a factor explaining the IPA popularity, since people seem to enjoy beers with hoppy characteristics. We can also notice the presence of the word “nice” that seems to be a good indicator of a beer's popularity. In contrast, we cannot find any word associated exclusively with bad reviews, such as “bad” or “water”. These observations suggest that in general, IPAs are quite appreciated by Beeriversers. <br>
 
-Then, if we take a look at Stout reviews, we see that many words are exclusive to stouts. This may come as surprising, as we saw that stouts seemed to be quite popular. However, considering that stouts have a unique taste, very different from other beers, it makes sense that the vocabulary used to describe them is also unique.
+Then, if we take a look at Stout reviews, we see that many words found in stout reviews are exclusive to stouts. This may come as surprising, as we saw that stouts seemed to be quite popular given the number of ratings they received. However, considering that stouts have a unique taste, very different from other beers, it makes sense that the vocabulary used to describe them is also unique.
 <br>
 </div>
 
@@ -632,14 +617,19 @@ The BeerAficionados of IPA are primarily situated in the US. Now there is no dou
 
 ### Microbreweries
 
-
-
-
-
+<div style="text-align: justify;">
+Another interesting aspect of a beer trend revolves around the breweries themselves. Not only can we differentiate large-scale factories from microbreweries based on their size, but their mentalities also set them apart. While larger beer factories prioritize product consistency and mass production, microbreweries prefer quality, flavor diversity, and unique recipes playing with different ingredients and techniques. The trend of microbreweries originated in the 80s in the United States and the United Kingdom. The term later evolved in the 20s into ‘Craft brewery’. Thus, could this trend be linked to our IPA trend ? 
+To answer this question, let’s do some language processing and take a look at the reviews that speak about microbreweries. 
+</div>
 
 
 <!-- Image Microbrewery IPA overall  -->
 <object type="text/html" data="{{ site.baseurl }}/assets/plots/microbrewery_ipa_overall.html" width="700px" height="520px"></object>
+
+<div style="text-align: justify;">
+In this analysis, we observe that the proportion of IPA reviews mentioning microbreweries is higher than the percentage of reviews discussing microbreweries across all beer styles. In fact there are only Pale Ales that seem to show the same affinity with the microbrewing culture as IPAs.
+</div>
+
 
 <div style="display: flex; justify-content: center;">
     <table class="styled-table-no-last-tr">
