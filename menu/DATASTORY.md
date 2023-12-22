@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Prelude
+title:
 permalink: /datastory
 ---
 
@@ -141,6 +141,8 @@ Styles communs, similaires à .styled-table mais taille réduite pour les graphs
 
 
 </style>
+
+# Prelude
 
 <div style="text-align: justify;">
 In this datastory, we will try to understand which beer styles are popular, but also factors that favored their popularity. To do so, we will use data from two major rating websites from the Beeriverse, <a href="https://www.beeradvocate.com/" target="_blank">BeerAdvocate</a> and <a href="https://www.ratebeer.com/" target="_blank">RateBeer</a>. These websites populate the Beeriverse with more than 100 beer styles, thousands of beers and millions of reviews. The reviews span from the early 2000’s to 2017 and consist of grades given by the reviewer and an optional text describing their opinion.
@@ -670,6 +672,7 @@ Beyond geographical frontiers, social dynamics have come into play, highlighting
 We also came upon locations where beer lovers in a quest for new flavors would meet. We investigated the role of microbreweries and we discovered that they seem to offer a platform for IPAs, bringing their name out in the world.<br>
 
 Finally, we tried to predict what beers will shape the future of the Beeriverse by identifying styles that shared similar patterns to IPAs. Pale Ales CHECK were found to be the most likely groundbreaking beer style.
+<br>
 <br>
 
 Overall, the History of Beer is a fascinating journey through time, mixing history, people and flavors into the amazing world of beer, the Beeriverse. The evolution of our lifestyles and tastes has shaped and will continue to shape this incredible beverage, like a never-ending story. <br>
