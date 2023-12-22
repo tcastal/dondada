@@ -631,7 +631,7 @@ In this analysis, we observe that the proportion of IPA reviews mentioning micro
 </div>
 
 
-<div style="display: flex; justify-content: center; margin-top: 30px;">
+<div style="display: flex; justify-content: center; margin-top: 30px; margin-bottom: 30px;">
     <table class="styled-table-no-last-tr">
         <tbody>
             <tr>
