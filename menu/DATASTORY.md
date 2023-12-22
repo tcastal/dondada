@@ -528,8 +528,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Geographical analysis
 
 <div style="text-align: justify;">
-Now, let's delve into some geography.
-With our conviction that IPA is the style of the moment in the Beeriverse, let’s try to understand how this happened. What were the key factors of this explosion?  
+With our conviction that IPA is the style of the moment in the Beeriverse, let’s try to understand how this happened. What were the key factors of this explosion?  To answer this question, we can now try to take a look at the beeriverse from a geographical approach. <br>
 First of all, let’s see if we can identify a pattern at the scale of the world by displaying the IPA ratings  for each years.
 </div>
 
@@ -664,13 +663,13 @@ As many wise Beeriversers reading our story, you probably cannot stop but wonder
 
 <div style="text-align: justify;">
 Our journey through the Beeriverse comes to an end. We've been able to dissect popular beer styles and unravel the underlying factors dictating their popularity.
-One of the highlights of our analysis showed that IPAs have emerged as a dominant force, captivating the hearts of beer lovers the world over. The enthusiasm of beer lovers for IPAs, particularly in the USA, attests to the origin and growth of this trend.<br>
+One of the highlights of our analysis is that IPAs have emerged as a dominant force, captivating the hearts of beer lovers all over the world. The enthusiasm of beer lovers for IPAs, particularly in the USA, attests to the origin and growth of this trend. <br>
 
 Beyond geographical frontiers, social dynamics have come into play, highlighting the distinction between occasional beer lovers and fervent fans. These BeerAficionados, with their penchant for IPAs, Pale Lagers and Stouts, marked a turning point in the beer landscape. They brought their favorite beverages on a whole other level of popularity.<br>
 
 We also came upon locations where beer lovers in a quest for new flavors would meet. We investigated the role of microbreweries and we discovered that they seem to offer a platform for IPAs, bringing their name out in the world.<br>
 
-Finally, we tried to identify the magic recipe that led to IPA popularity and tried to predict the future of the Beeriverse. Pale Ales CHECK were found to be the most likely groundbreaking beer style. <br>
+Finally, we tried to predict what beers will shape the future of the Beeriverse by identifying styles that shared similar patterns to IPAs. Pale Ales CHECK were found to be the most likely groundbreaking beer style.
 <br>
 
 Overall, the History of Beer is a fascinating journey through time, mixing history, people and flavors into the amazing world of beer, the Beeriverse. The evolution of our lifestyles and tastes has shaped and will continue to shape this incredible beverage, like a never-ending story. <br>
