@@ -36,6 +36,14 @@ permalink: /contact
         <p>Thibaut</p>
     </div>
     <div class="image-container">
+        <img src="{{ site.baseurl }}/assets/img/Margot.png">
+        <p>Margot</p>
+    </div>
+    <div class="image-container">
+        <img src="{{ site.baseurl }}/assets/img/Thomas.png">
+        <p>Thomas</p>
+    </div>
+        <div class="image-container">
         <img src="{{ site.baseurl }}/assets/img/Gaspard.png">
         <p>Gaspard</p>
     </div>
