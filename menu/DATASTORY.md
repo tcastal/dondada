@@ -180,7 +180,7 @@ To delve deeper into Beeriversers' sentiments toward these discernible beer styl
 </div>
 
 
-### Heat map
+### Grade Analysis
 
 
 <select id="heat">
@@ -362,6 +362,7 @@ Then, if we take a look at Stout reviews, we see that many wordsare exclusive to
     <div style="background-color: rgba(102,37,6, 0.5); width: 200px; height: 5px; text-align: center;">Words exclusive to stout reviews</div>
 </div>
 
+### Ratings analysis
 
 <div style="text-align: justify;">
 Now that we have the intuition that the IPA is a popular beer style, let’s try to dive deeper in the understanding of this phenomenon. Even though tales about this style have been around for a long time, it seems that recently they are on many Beeriversers lips. Let’s confirm that by looking at the distribution of ratings per beer style in the past decades for the favorite beers. These were the beers that had a grade and score bigger than 75% of all beers.
