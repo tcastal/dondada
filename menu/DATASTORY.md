@@ -147,7 +147,7 @@ In this datastory, we will try to understand which beer styles are popular, but 
 ### Beer style analysis
 
 <div style="text-align: justify;">
-After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. But are all these beer styles equally popular ? Let’s have a look at distribution of ratings and number of beers per beer style. We see that several IPAs are greatly represented on both websites as well as Pale Ales and Stouts.  
+After years of continuous progress in the pursuit of crafting the finest beers, a lot of styles emerged, increasing the size of the Beeriverse up to more than 100 styles. But are all these beer styles equally popular ? Let’s have a look at distribution of ratings and number of beers per beer style.
 </div>
 
 <!-- Distribution of number of beers per beer style  -->
@@ -156,6 +156,7 @@ After years of continuous progress in the pursuit of crafting the finest beers, 
 
 
 <div style="text-align: justify;">
+We see that several IPAs are greatly represented on both websites as well as Pale Ales and Stouts. <br>
 Moreover, some styles share similarities like Imperial Stout and Stout. Hence, we opted to consolidate styles into broader categories. We drew inspiration from the <a href="https://www.beeradvocate.com/beer/styles/" target="_blank">BeerAdvocate</a> website, which has already established some "bigger style" groupings; we now have a total of fifteen larger styles. This approach enables us to present a more streamlined version of the Beeriverse for enhanced visualization.
 </div>
 
@@ -605,7 +606,7 @@ However, one undeniable observation from this map is that California and Pennsyl
 </div>
 
 
-## SOCIAL POINT OF VIEW
+## Social perspective
 ### Fanbase
 
 <div style="text-align: justify;">
