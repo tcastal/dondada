@@ -660,6 +660,20 @@ In our case, the connection between IPAs and the already popular microbreweries 
 As many wise Beeriversers reading our story, you probably cannot stop but wondering about the next trendy hoppy beverage. We were also puzzled by that question and tried to predict the course of the Beeriverse. We made the assumption that a beer as groundbreaking as IPAs should share some similar characteristics with it. The extent of such similarities might be out of our reach, hidden in the mysteries of the Beeriverse. To identify it more clearly we came across an Ale-chemist that provided us with dark potions labeled as feature selection and DBSCAN. It first helped us to narrow down the number of characteristics associated with beer styles. We then managed to group them according to their resemblance and obtained the following graph.  
 </div>
 
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/clusters_hist_690px.html" width="700px" height="620px"></object>
+
+<object type="text/html" data="{{ site.baseurl }}/assets/plots/clusters_polar_690px.html" width="700px" height="620px"></object>
+
+<div style="text-align: justify;">
+As you can see above, we tried to group beers by clusters based on the number of ratings and reviews, and the mean increase in number of ratings per year. <br>
+This analysis tends to group beers such as IPAs, Stouts and Pale Ales together, meaning that they all share similar properties. Once more we notice that Pale Ales seem to share a lot of common ground with IPAs. We got that intuition several times during our hoppy travel but this gives us a final hint on the fact that Pale Ales might be the next possible trendy beverage.
+<br>
+<br>
+
+We tried to conduct a more thorough analysis to confirm this finding but unfortunately the Ale-chemist came back at us and restricted the memory capacity of our computers. We wanted to add the percentage of microbrewery-related terms in beer reviews but failed to do so. Therefore, our clustering capacity appears to be not as relevant as we thought, given the small number of features given to DBSCAN. We are well aware of the simplicity of this conclusion but we still wanted to share these insights with our fellow beeriversers.
+</div>
+
+
 
 ## Conclusion
 
@@ -671,7 +685,7 @@ Beyond geographical frontiers, social dynamics have come into play, highlighting
 
 We also came upon locations where beer lovers in a quest for new flavors would meet. We investigated the role of microbreweries and we discovered that they seem to offer a platform for IPAs, bringing their name out in the world.<br>
 
-Finally, we tried to predict what beers will shape the future of the Beeriverse by identifying styles that shared similar patterns to IPAs. Pale Ales CHECK were found to be the most likely groundbreaking beer style.
+Finally, we tried to predict what beers will shape the future of the Beeriverse by identifying styles that shared similar patterns to IPAs. Pale Ales were found to be one of the most likely groundbreaking beer style although we lacked some evidences and computational power in the process.
 <br>
 <br>
 
