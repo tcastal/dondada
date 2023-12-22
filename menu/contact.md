@@ -20,8 +20,8 @@ permalink: /contact
         margin-right: 0; /* Aucun espacement à droite pour la dernière image */
     }
     #imagesMain img {
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
         vertical-align: middle;
     }
 </style>
