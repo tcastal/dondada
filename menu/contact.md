@@ -8,7 +8,7 @@ permalink: /contact
         padding: 0;
         margin-left: 20px;
         margin-right: 20px;
-        margin-top: 20px;
+        margin-top: 100px;
         text-align: center;
         display: flex; /* Utilisation de flexbox */
         justify-content: center; /* Centrer horizontalement */
