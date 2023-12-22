@@ -631,7 +631,7 @@ In this analysis, we observe that the proportion of IPA reviews mentioning micro
 </div>
 
 
-<div style="display: flex; justify-content: center; margin-top: 50px;">
+<div style="display: flex; justify-content: center; margin-top: 30px;">
     <table class="styled-table-no-last-tr">
         <tbody>
             <tr>
@@ -646,11 +646,29 @@ In this analysis, we observe that the proportion of IPA reviews mentioning micro
     </table>
 </div>
 
-Reject the null hypothesis: There is a significant difference.
+<div style="text-align: justify;">
+This difference in percentage was statistically different indicating a strong association between IPAs and microbreweries. This might suggest the contribution of a trend to the emergence and growth of another one. <br>
+In our case, the connection between IPAs and the already popular microbreweries could have played a role in fostering or influencing the growth of the IPA trend.
+</div>
 
 
 
+## Prediction of the next trendy beer
+
+<div style="text-align: justify;">
+As many wise Beeriversers reading our story, you probably cannot stop but wondering about the next trendy hoppy beverage. We were also puzzled by that question and tried to predict the course of the Beeriverse. We made the assumption that a beer as groundbreaking as IPAs should share some similar characteristics with it. The extent of such similarities might be out of our reach, hidden in the mysteries of the Beeriverse. To identify it more clearly we came across an Ale-chemist that provided us with dark potions labeled as feature selection and DBSCAN. It first helped us to narrow down the number of characteristics associated with beer styles. We then managed to group them according to their resemblance and obtained the following graph.  
+</div>
 
 
-### 
+## Conclusion
 
+Our journey through the Beeriverse comes to an end. We've been able to dissect popular beer styles and unravel the underlying factors dictating their popularity.
+One of the highlights of our analysis showed that IPAs have emerged as a dominant force, captivating the hearts of beer lovers the world over. The enthusiasm of beer lovers for IPAs, particularly in the USA, attests to the origin and growth of this trend.<br>
+
+Beyond geographical frontiers, social dynamics have come into play, highlighting the distinction between occasional beer lovers and fervent fans. These BeerAficionados, with their penchant for IPAs, Pale Lagers and Stouts, marked a turning point in the beer landscape. They brought their favorite beverages on a whole other level of popularity.<br>
+
+We also came upon locations where beer lovers in a quest for new flavors would meet. We investigated the role of microbreweries and we discovered that they seem to offer a platform for IPAs, bringing their name out in the world.<br>
+
+Finally, we tried to identify the magic recipe that led to IPA popularity and tried to predict the future of the Beeriverse. Pale Ales CHECK were found to be the most likely groundbreaking beer style. <br>
+
+Overall, the History of Beer is a fascinating journey through time, mixing history, people and flavors into the amazing world of beer, the Beeriverse. The evolution of our lifestyles and tastes has shaped and will continue to shape this incredible beverage, like a never-ending story. <br>
