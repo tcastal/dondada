@@ -21,7 +21,7 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:		           'Brewmageddon'
-description:	       'Datastory of the dondada group project'
+description:	       'How IPAs took over the Beeriverse'
 author:              'Dondada'
 
 
